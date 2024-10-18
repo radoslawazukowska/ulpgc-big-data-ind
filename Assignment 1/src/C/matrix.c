@@ -1,35 +1,32 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <sys/time.h>
+#include "matrix.h"
 
-#define n 1024
-double a[n][n];
-double b[n][n];
-double c[n][n];
-
-struct timeval start, stop;
-
-int main() {
-    for (int i = 0; i < n; ++i) {
-        for (int j = 0; j < n; ++j) {
-            a[i][j] = (double) rand() / RAND_MAX;
-            b[i][j] = (double) rand() / RAND_MAX;
-            c[i][j] = 0;
+void matrix_multiply(double **A, double **B, double **C, int n) {
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < n; j++) {
+            C[i][j] = 0.0;
+            for (int k = 0; k < n; k++) {
+                C[i][j] += A[i][k] * B[k][j];
+            }
         }
     }
-    gettimeofday(&start,NULL);
-    for (int i = 0; i < n; ++i) {
-        for (int j = 0; j < n; ++j) {
-            for (int k = 0; k < n; ++k) {
-                c[i][j] = a[i][k] * b[k][j];
-             }
-        }
-    }
-    gettimeofday(&stop,NULL);
-    double diff = stop.tv_sec - start.tv_sec
-            + 1e-6*(stop.tv_usec - start.tv_usec);
-    printf("%0.6f\n",diff);
 }
 
+double **allocate_and_init_matrix(int n) {
+    double **matrix = malloc(n * sizeof(double *));
+    for (int i = 0; i < n; i++) {
+        matrix[i] = malloc(n * sizeof(double));
+        for (int j = 0; j < n; j++) {
+            matrix[i][j] = (double)rand() / RAND_MAX;
+        }
+    }
+    return matrix;
+}
 
-
+void free_matrix(double **matrix, int n) {
+    for (int i = 0; i < n; i++) {
+        free(matrix[i]);
+    }
+    free(matrix);
+}
