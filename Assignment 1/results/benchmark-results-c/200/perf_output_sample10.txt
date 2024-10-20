@@ -1,0 +1,20 @@
+# started on Sun Oct 20 20:50:26 2024
+
+
+ Performance counter stats for './matrix_multiplication 200':
+
+             10.01 msec task-clock:u              #    0.469 CPUs utilized          
+                 0      context-switches:u        #    0.000 /sec                   
+                 0      cpu-migrations:u          #    0.000 /sec                   
+               291      page-faults:u             #   29.078 K/sec                  
+   <not supported>      cycles:u                                                    
+   <not supported>      instructions:u                                              
+   <not supported>      branches:u                                                  
+   <not supported>      branch-misses:u                                             
+
+       0.021356081 seconds time elapsed
+
+       0.000000000 seconds user
+       0.010769000 seconds sys
+
+

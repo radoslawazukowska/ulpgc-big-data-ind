@@ -1,20 +1,20 @@
-# started on Fri Oct 18 22:34:10 2024
+# started on Sun Oct 20 20:51:15 2024
 
 
- Performance counter stats for './matrix_multiplication 256':
+ Performance counter stats for './matrix_multiplication 1000':
 
-             17.93 msec task-clock:u              #    0.635 CPUs utilized          
+           2326.41 msec task-clock:u              #    0.997 CPUs utilized          
                  0      context-switches:u        #    0.000 /sec                   
                  0      cpu-migrations:u          #    0.000 /sec                   
-               441      page-faults:u             #   24.594 K/sec                  
+              5929      page-faults:u             #    2.549 K/sec                  
    <not supported>      cycles:u                                                    
    <not supported>      instructions:u                                              
    <not supported>      branches:u                                                  
    <not supported>      branch-misses:u                                             
 
-       0.028251361 seconds time elapsed
+       2.334301849 seconds time elapsed
 
-       0.018287000 seconds user
-       0.000000000 seconds sys
+       2.317177000 seconds user
+       0.010031000 seconds sys
 
 

@@ -1,0 +1,20 @@
+# started on Sun Oct 20 20:50:39 2024
+
+
+ Performance counter stats for './matrix_multiplication 700':
+
+            527.47 msec task-clock:u              #    0.986 CPUs utilized          
+                 0      context-switches:u        #    0.000 /sec                   
+                 0      cpu-migrations:u          #    0.000 /sec                   
+              2934      page-faults:u             #    5.562 K/sec                  
+   <not supported>      cycles:u                                                    
+   <not supported>      instructions:u                                              
+   <not supported>      branches:u                                                  
+   <not supported>      branch-misses:u                                             
+
+       0.534943956 seconds time elapsed
+
+       0.518117000 seconds user
+       0.009963000 seconds sys
+
+
