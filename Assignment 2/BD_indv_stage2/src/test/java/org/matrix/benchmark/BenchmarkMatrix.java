@@ -13,7 +13,7 @@ import org.openjdk.jmh.annotations.*;
 @Warmup(iterations = 1)
 @Measurement(iterations = 1)
 public class BenchmarkMatrix {
-    @Param({"2500"})
+    @Param({"5000"})
     private int size;
 
     private double [][] a;
@@ -33,19 +33,19 @@ public class BenchmarkMatrix {
             }
         }
     }
-
-    @Benchmark
-    public void testNaive() {
-        NaiveMatrixMultiplication.multiply(a, b);
-    }
+//
+//    @Benchmark
+//    public void testNaive() {
+//        NaiveMatrixMultiplication.multiply(a, b);
+//    }
 
     @Benchmark
     public void testStrassen() {
         StrassenMatrixMultiplication.multiply(a, b);
     }
-
-    @Benchmark
-    public void testLoop() {
-        LoopUnrollingMatrixMultiplication.multiply(a, b);
-    }
+//
+//    @Benchmark
+//    public void testLoop() {
+//        LoopUnrollingMatrixMultiplication.multiply(a, b);
+//    }
 }

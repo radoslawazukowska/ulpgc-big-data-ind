@@ -11,7 +11,7 @@ public class MainBenchmark {
                 .forks(1)
                 .addProfiler("gc")
                 .addProfiler("stack")
-                .output("results/benchmark_results_final_2500.txt")
+                .output("results/benchmark_results_strassen_5000.txt")
                 .build();
         new Runner(opt).run();
     }
