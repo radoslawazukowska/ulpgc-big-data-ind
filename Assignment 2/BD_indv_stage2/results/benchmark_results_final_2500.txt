@@ -1,0 +1,17 @@
+# JMH version: 1.35
+# VM version: JDK 21.0.2, OpenJDK 64-Bit Server VM, 21.0.2+13-58
+# VM invoker: C:\Program Files\Java\OpenJDK-21\bin\java.exe
+# VM options: -javaagent:C:\Users\Radka\AppData\Local\JetBrains\IntelliJ IDEA 2024.2.3\lib\idea_rt.jar=62583:C:\Users\Radka\AppData\Local\JetBrains\IntelliJ IDEA 2024.2.3\bin -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 1 iterations, 10 s each
+# Measurement: 1 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.matrix.benchmark.BenchmarkMatrix.testLoop
+# Parameters: (size = 2500)
+
+# Run progress: 0.00% complete, ETA 00:01:00
+# Fork: 1 of 1
+# Warmup Iteration   1: 461699.552 ms/op
+Iteration   1: 

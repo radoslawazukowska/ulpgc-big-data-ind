@@ -1,0 +1,2113 @@
+# JMH version: 1.35
+# VM version: JDK 21.0.2, OpenJDK 64-Bit Server VM, 21.0.2+13-58
+# VM invoker: C:\Program Files\Java\OpenJDK-21\bin\java.exe
+# VM options: -javaagent:C:\Users\Radka\AppData\Local\JetBrains\IntelliJ IDEA 2024.2.3\lib\idea_rt.jar=55780:C:\Users\Radka\AppData\Local\JetBrains\IntelliJ IDEA 2024.2.3\bin -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.matrix.benchmark.BenchmarkMatrix.testLoop
+# Parameters: (size = 64)
+
+# Run progress: 0.00% complete, ETA 00:25:00
+# Fork: 1 of 1
+# Warmup Iteration   1: 0.512 ms/op
+# Warmup Iteration   2: 0.432 ms/op
+# Warmup Iteration   3: 0.392 ms/op
+# Warmup Iteration   4: 0.442 ms/op
+# Warmup Iteration   5: 0.368 ms/op
+Iteration   1: 0.470 ms/op
+                 ·gc.alloc.rate:                   65.766 MB/sec
+                 ·gc.alloc.rate.norm:              34067.738 B/op
+                 ·gc.churn.G1_Eden_Space:          84.406 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm:     43723.492 B/op
+                 ·gc.churn.G1_Survivor_Space:      0.235 MB/sec
+                 ·gc.churn.G1_Survivor_Space.norm: 121.541 B/op
+                 ·gc.count:                        3.000 counts
+                 ·gc.time:                         11.000 ms
+                 ·stack:                           <delayed till summary>
+
+Iteration   2: 0.492 ms/op
+                 ·gc.alloc.rate:               62.813 MB/sec
+                 ·gc.alloc.rate.norm:          34066.620 B/op
+                 ·gc.churn.G1_Eden_Space:      56.280 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm: 30523.528 B/op
+                 ·gc.count:                    2.000 counts
+                 ·gc.time:                     6.000 ms
+                 ·stack:                       <delayed till summary>
+
+Iteration   3: 0.709 ms/op
+                 ·gc.alloc.rate:                   43.616 MB/sec
+                 ·gc.alloc.rate.norm:              34067.784 B/op
+                 ·gc.churn.G1_Eden_Space:          56.345 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm:     44009.712 B/op
+                 ·gc.churn.G1_Survivor_Space:      0.014 MB/sec
+                 ·gc.churn.G1_Survivor_Space.norm: 10.557 B/op
+                 ·gc.count:                        2.000 counts
+                 ·gc.time:                         4.000 ms
+                 ·stack:                           <delayed till summary>
+
+Iteration   4: 0.971 ms/op
+                 ·gc.alloc.rate:                   31.861 MB/sec
+                 ·gc.alloc.rate.norm:              34066.608 B/op
+                 ·gc.churn.G1_Eden_Space:          27.998 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm:     29936.198 B/op
+                 ·gc.churn.G1_Survivor_Space:      0.001 MB/sec
+                 ·gc.churn.G1_Survivor_Space.norm: 0.775 B/op
+                 ·gc.count:                        1.000 counts
+                 ·gc.time:                         1.000 ms
+                 ·stack:                           <delayed till summary>
+
+Iteration   5: 0.651 ms/op
+                 ·gc.alloc.rate:                   47.526 MB/sec
+                 ·gc.alloc.rate.norm:              34067.467 B/op
+                 ·gc.churn.G1_Eden_Space:          56.276 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm:     40340.330 B/op
+                 ·gc.churn.G1_Survivor_Space:      0.002 MB/sec
+                 ·gc.churn.G1_Survivor_Space.norm: 1.131 B/op
+                 ·gc.count:                        2.000 counts
+                 ·gc.time:                         2.000 ms
+                 ·stack:                           <delayed till summary>
+
+
+
+Result "org.matrix.benchmark.BenchmarkMatrix.testLoop":
+  0.659 ±(99.9%) 0.778 ms/op [Average]
+  (min, avg, max) = (0.470, 0.659, 0.971), stdev = 0.202
+  CI (99.9%): [≈ 0, 1.437] (assumes normal distribution)
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testLoop:·gc.alloc.rate":
+  50.316 ±(99.9%) 54.051 MB/sec [Average]
+  (min, avg, max) = (31.861, 50.316, 65.766), stdev = 14.037
+  CI (99.9%): [≈ 0, 104.368] (assumes normal distribution)
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testLoop:·gc.alloc.rate.norm":
+  34067.243 ±(99.9%) 2.261 B/op [Average]
+  (min, avg, max) = (34066.608, 34067.243, 34067.784), stdev = 0.587
+  CI (99.9%): [34064.983, 34069.504] (assumes normal distribution)
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testLoop:·gc.churn.G1_Eden_Space":
+  56.261 ±(99.9%) 76.795 MB/sec [Average]
+  (min, avg, max) = (27.998, 56.261, 84.406), stdev = 19.943
+  CI (99.9%): [≈ 0, 133.056] (assumes normal distribution)
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testLoop:·gc.churn.G1_Eden_Space.norm":
+  37706.652 ±(99.9%) 26874.931 B/op [Average]
+  (min, avg, max) = (29936.198, 37706.652, 44009.712), stdev = 6979.334
+  CI (99.9%): [10831.721, 64581.583] (assumes normal distribution)
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testLoop:·gc.churn.G1_Survivor_Space":
+  0.050 ±(99.9%) 0.398 MB/sec [Average]
+  (min, avg, max) = (≈ 0, 0.050, 0.235), stdev = 0.103
+  CI (99.9%): [≈ 0, 0.448] (assumes normal distribution)
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testLoop:·gc.churn.G1_Survivor_Space.norm":
+  26.801 ±(99.9%) 204.611 B/op [Average]
+  (min, avg, max) = (≈ 0, 26.801, 121.541), stdev = 53.137
+  CI (99.9%): [≈ 0, 231.412] (assumes normal distribution)
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testLoop:·gc.count":
+  10.000 ±(99.9%) 0.001 counts [Sum]
+  (min, avg, max) = (1.000, 2.000, 3.000), stdev = 0.707
+  CI (99.9%): [10.000, 10.000] (assumes normal distribution)
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testLoop:·gc.time":
+  24.000 ±(99.9%) 0.001 ms [Sum]
+  (min, avg, max) = (1.000, 4.800, 11.000), stdev = 3.962
+  CI (99.9%): [24.000, 24.000] (assumes normal distribution)
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testLoop:·stack":
+Stack profiler:
+
+....[Thread state distributions]....................................................................
+ 75.0%         RUNNABLE
+ 25.0%         TIMED_WAITING
+
+....[Thread state: RUNNABLE]........................................................................
+ 25.0%  33.3% sun.nio.ch.SocketDispatcher.read0
+ 25.0%  33.3% org.matrix.LoopUnrollingMatrixMultiplication.multiply
+ 25.0%  33.3% <stack is empty, everything is filtered?>
+  0.0%   0.0% javax.management.openmbean.TabularType.isAssignableFrom
+  0.0%   0.0% java.util.TreeMap.containsKey
+
+....[Thread state: TIMED_WAITING]...................................................................
+ 25.0% 100.0% jdk.internal.misc.Unsafe.park
+
+
+
+# JMH version: 1.35
+# VM version: JDK 21.0.2, OpenJDK 64-Bit Server VM, 21.0.2+13-58
+# VM invoker: C:\Program Files\Java\OpenJDK-21\bin\java.exe
+# VM options: -javaagent:C:\Users\Radka\AppData\Local\JetBrains\IntelliJ IDEA 2024.2.3\lib\idea_rt.jar=55780:C:\Users\Radka\AppData\Local\JetBrains\IntelliJ IDEA 2024.2.3\bin -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.matrix.benchmark.BenchmarkMatrix.testLoop
+# Parameters: (size = 128)
+
+# Run progress: 6.67% complete, ETA 00:25:07
+# Fork: 1 of 1
+# Warmup Iteration   1: 6.220 ms/op
+# Warmup Iteration   2: 6.046 ms/op
+# Warmup Iteration   3: 4.942 ms/op
+# Warmup Iteration   4: 6.072 ms/op
+# Warmup Iteration   5: 4.125 ms/op
+Iteration   1: 3.463 ms/op
+                 ·gc.alloc.rate:                   35.006 MB/sec
+                 ·gc.alloc.rate.norm:              133657.253 B/op
+                 ·gc.churn.G1_Eden_Space:          27.868 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm:     106403.324 B/op
+                 ·gc.churn.G1_Survivor_Space:      0.035 MB/sec
+                 ·gc.churn.G1_Survivor_Space.norm: 133.471 B/op
+                 ·gc.count:                        1.000 counts
+                 ·gc.time:                         4.000 ms
+                 ·stack:                           <delayed till summary>
+
+Iteration   2: 3.886 ms/op
+                 ·gc.alloc.rate:                   31.175 MB/sec
+                 ·gc.alloc.rate.norm:              133663.335 B/op
+                 ·gc.churn.G1_Eden_Space:          27.588 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm:     118284.488 B/op
+                 ·gc.churn.G1_Survivor_Space:      0.002 MB/sec
+                 ·gc.churn.G1_Survivor_Space.norm: 10.564 B/op
+                 ·gc.count:                        1.000 counts
+                 ·gc.time:                         4.000 ms
+                 ·stack:                           <delayed till summary>
+
+Iteration   3: 7.359 ms/op
+                 ·gc.alloc.rate:               16.177 MB/sec
+                 ·gc.alloc.rate.norm:          133666.611 B/op
+                 ·gc.churn.G1_Eden_Space:      25.923 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm: 214201.861 B/op
+                 ·gc.count:                    1.000 counts
+                 ·gc.time:                     12.000 ms
+                 ·stack:                       <delayed till summary>
+
+Iteration   4: 5.599 ms/op
+                 ·gc.alloc.rate:      21.608 MB/sec
+                 ·gc.alloc.rate.norm: 133648.224 B/op
+                 ·gc.count:           ≈ 0 counts
+                 ·stack:              <delayed till summary>
+
+Iteration   5: 4.475 ms/op
+                 ·gc.alloc.rate:               27.115 MB/sec
+                 ·gc.alloc.rate.norm:          133659.965 B/op
+                 ·gc.churn.G1_Eden_Space:      27.836 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm: 137214.189 B/op
+                 ·gc.count:                    1.000 counts
+                 ·gc.time:                     4.000 ms
+                 ·stack:                       <delayed till summary>
+
+
+
+Result "org.matrix.benchmark.BenchmarkMatrix.testLoop":
+  4.957 ±(99.9%) 6.025 ms/op [Average]
+  (min, avg, max) = (3.463, 4.957, 7.359), stdev = 1.565
+  CI (99.9%): [≈ 0, 10.982] (assumes normal distribution)
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testLoop:·gc.alloc.rate":
+  26.216 ±(99.9%) 28.860 MB/sec [Average]
+  (min, avg, max) = (16.177, 26.216, 35.006), stdev = 7.495
+  CI (99.9%): [≈ 0, 55.076] (assumes normal distribution)
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testLoop:·gc.alloc.rate.norm":
+  133659.078 ±(99.9%) 27.009 B/op [Average]
+  (min, avg, max) = (133648.224, 133659.078, 133666.611), stdev = 7.014
+  CI (99.9%): [133632.069, 133686.087] (assumes normal distribution)
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testLoop:·gc.churn.G1_Eden_Space":
+  21.843 ±(99.9%) 47.121 MB/sec [Average]
+  (min, avg, max) = (≈ 0, 21.843, 27.868), stdev = 12.237
+  CI (99.9%): [≈ 0, 68.964] (assumes normal distribution)
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testLoop:·gc.churn.G1_Eden_Space.norm":
+  115220.772 ±(99.9%) 296048.704 B/op [Average]
+  (min, avg, max) = (≈ 0, 115220.772, 214201.861), stdev = 76882.908
+  CI (99.9%): [≈ 0, 411269.476] (assumes normal distribution)
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testLoop:·gc.churn.G1_Survivor_Space":
+  0.007 ±(99.9%) 0.059 MB/sec [Average]
+  (min, avg, max) = (≈ 0, 0.007, 0.035), stdev = 0.015
+  CI (99.9%): [≈ 0, 0.067] (assumes normal distribution)
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testLoop:·gc.churn.G1_Survivor_Space.norm":
+  28.807 ±(99.9%) 225.985 B/op [Average]
+  (min, avg, max) = (≈ 0, 28.807, 133.471), stdev = 58.688
+  CI (99.9%): [≈ 0, 254.792] (assumes normal distribution)
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testLoop:·gc.count":
+  4.000 ±(99.9%) 0.001 counts [Sum]
+  (min, avg, max) = (≈ 0, 0.800, 1.000), stdev = 0.447
+  CI (99.9%): [4.000, 4.000] (assumes normal distribution)
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testLoop:·gc.time":
+  24.000 ±(99.9%) 0.001 ms [Sum]
+  (min, avg, max) = (≈ 0, 4.800, 12.000), stdev = 4.382
+  CI (99.9%): [24.000, 24.000] (assumes normal distribution)
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testLoop:·stack":
+Stack profiler:
+
+....[Thread state distributions]....................................................................
+ 75.0%         RUNNABLE
+ 25.0%         TIMED_WAITING
+
+....[Thread state: RUNNABLE]........................................................................
+ 25.0%  33.3% org.matrix.LoopUnrollingMatrixMultiplication.multiply
+ 25.0%  33.3% sun.nio.ch.SocketDispatcher.read0
+ 25.0%  33.3% <stack is empty, everything is filtered?>
+  0.0%   0.0% javax.management.ObjectName.<init>
+
+....[Thread state: TIMED_WAITING]...................................................................
+ 25.0% 100.0% jdk.internal.misc.Unsafe.park
+
+
+
+# JMH version: 1.35
+# VM version: JDK 21.0.2, OpenJDK 64-Bit Server VM, 21.0.2+13-58
+# VM invoker: C:\Program Files\Java\OpenJDK-21\bin\java.exe
+# VM options: -javaagent:C:\Users\Radka\AppData\Local\JetBrains\IntelliJ IDEA 2024.2.3\lib\idea_rt.jar=55780:C:\Users\Radka\AppData\Local\JetBrains\IntelliJ IDEA 2024.2.3\bin -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.matrix.benchmark.BenchmarkMatrix.testLoop
+# Parameters: (size = 256)
+
+# Run progress: 13.33% complete, ETA 00:23:28
+# Fork: 1 of 1
+# Warmup Iteration   1: 34.780 ms/op
+# Warmup Iteration   2: 45.654 ms/op
+# Warmup Iteration   3: 40.837 ms/op
+# Warmup Iteration   4: 61.826 ms/op
+# Warmup Iteration   5: 45.627 ms/op
+Iteration   1: 46.903 ms/op
+                 ·gc.alloc.rate:                   10.229 MB/sec
+                 ·gc.alloc.rate.norm:              529550.355 B/op
+                 ·gc.churn.G1_Eden_Space:          28.017 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm:     1450366.804 B/op
+                 ·gc.churn.G1_Survivor_Space:      0.011 MB/sec
+                 ·gc.churn.G1_Survivor_Space.norm: 584.449 B/op
+                 ·gc.count:                        1.000 counts
+                 ·gc.time:                         3.000 ms
+                 ·stack:                           <delayed till summary>
+
+Iteration   2: 41.797 ms/op
+                 ·gc.alloc.rate:      11.357 MB/sec
+                 ·gc.alloc.rate.norm: 529425.679 B/op
+                 ·gc.count:           ≈ 0 counts
+                 ·stack:              <delayed till summary>
+
+Iteration   3: 32.235 ms/op
+                 ·gc.alloc.rate:               14.820 MB/sec
+                 ·gc.alloc.rate.norm:          529510.487 B/op
+                 ·gc.churn.G1_Eden_Space:      27.843 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm: 994802.872 B/op
+                 ·gc.count:                    1.000 counts
+                 ·gc.time:                     1.000 ms
+                 ·stack:                       <delayed till summary>
+
+Iteration   4: 55.275 ms/op
+                 ·gc.alloc.rate:      8.689 MB/sec
+                 ·gc.alloc.rate.norm: 529426.431 B/op
+                 ·gc.count:           ≈ 0 counts
+                 ·stack:              <delayed till summary>
+
+Iteration   5: 38.396 ms/op
+                 ·gc.alloc.rate:               12.508 MB/sec
+                 ·gc.alloc.rate.norm:          529527.387 B/op
+                 ·gc.churn.G1_Eden_Space:      28.090 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm: 1189189.640 B/op
+                 ·gc.count:                    1.000 counts
+                 ·gc.time:                     2.000 ms
+                 ·stack:                       <delayed till summary>
+
+
+
+Result "org.matrix.benchmark.BenchmarkMatrix.testLoop":
+  42.921 ±(99.9%) 33.591 ms/op [Average]
+  (min, avg, max) = (32.235, 42.921, 55.275), stdev = 8.723
+  CI (99.9%): [9.330, 76.512] (assumes normal distribution)
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testLoop:·gc.alloc.rate":
+  11.521 ±(99.9%) 8.943 MB/sec [Average]
+  (min, avg, max) = (8.689, 11.521, 14.820), stdev = 2.322
+  CI (99.9%): [2.578, 20.463] (assumes normal distribution)
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testLoop:·gc.alloc.rate.norm":
+  529488.068 ±(99.9%) 224.693 B/op [Average]
+  (min, avg, max) = (529425.679, 529488.068, 529550.355), stdev = 58.352
+  CI (99.9%): [529263.375, 529712.760] (assumes normal distribution)
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testLoop:·gc.churn.G1_Eden_Space":
+  16.790 ±(99.9%) 59.020 MB/sec [Average]
+  (min, avg, max) = (≈ 0, 16.790, 28.090), stdev = 15.327
+  CI (99.9%): [≈ 0, 75.810] (assumes normal distribution)
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testLoop:·gc.churn.G1_Eden_Space.norm":
+  726871.863 ±(99.9%) 2629777.736 B/op [Average]
+  (min, avg, max) = (≈ 0, 726871.863, 1450366.804), stdev = 682944.927
+  CI (99.9%): [≈ 0, 3356649.599] (assumes normal distribution)
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testLoop:·gc.churn.G1_Survivor_Space":
+  0.002 ±(99.9%) 0.019 MB/sec [Average]
+  (min, avg, max) = (≈ 0, 0.002, 0.011), stdev = 0.005
+  CI (99.9%): [≈ 0, 0.022] (assumes normal distribution)
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testLoop:·gc.churn.G1_Survivor_Space.norm":
+  116.890 ±(99.9%) 1006.456 B/op [Average]
+  (min, avg, max) = (≈ 0, 116.890, 584.449), stdev = 261.373
+  CI (99.9%): [≈ 0, 1123.345] (assumes normal distribution)
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testLoop:·gc.count":
+  3.000 ±(99.9%) 0.001 counts [Sum]
+  (min, avg, max) = (≈ 0, 0.600, 1.000), stdev = 0.548
+  CI (99.9%): [3.000, 3.000] (assumes normal distribution)
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testLoop:·gc.time":
+  6.000 ±(99.9%) 0.001 ms [Sum]
+  (min, avg, max) = (≈ 0, 1.200, 3.000), stdev = 1.304
+  CI (99.9%): [6.000, 6.000] (assumes normal distribution)
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testLoop:·stack":
+Stack profiler:
+
+....[Thread state distributions]....................................................................
+ 75.0%         RUNNABLE
+ 25.0%         TIMED_WAITING
+
+....[Thread state: RUNNABLE]........................................................................
+ 25.0%  33.3% org.matrix.LoopUnrollingMatrixMultiplication.multiply
+ 25.0%  33.3% sun.nio.ch.SocketDispatcher.read0
+ 25.0%  33.3% <stack is empty, everything is filtered?>
+  0.0%   0.0% java.util.TreeMap$KeySet.size
+
+....[Thread state: TIMED_WAITING]...................................................................
+ 25.0% 100.0% jdk.internal.misc.Unsafe.park
+
+
+
+# JMH version: 1.35
+# VM version: JDK 21.0.2, OpenJDK 64-Bit Server VM, 21.0.2+13-58
+# VM invoker: C:\Program Files\Java\OpenJDK-21\bin\java.exe
+# VM options: -javaagent:C:\Users\Radka\AppData\Local\JetBrains\IntelliJ IDEA 2024.2.3\lib\idea_rt.jar=55780:C:\Users\Radka\AppData\Local\JetBrains\IntelliJ IDEA 2024.2.3\bin -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.matrix.benchmark.BenchmarkMatrix.testLoop
+# Parameters: (size = 512)
+
+# Run progress: 20.00% complete, ETA 00:21:42
+# Fork: 1 of 1
+# Warmup Iteration   1: 289.057 ms/op
+# Warmup Iteration   2: 425.089 ms/op
+# Warmup Iteration   3: 431.652 ms/op
+# Warmup Iteration   4: 570.923 ms/op
+# Warmup Iteration   5: 494.184 ms/op
+Iteration   1: 458.691 ms/op
+                 ·gc.alloc.rate:      4.164 MB/sec
+                 ·gc.alloc.rate.norm: 2107425.739 B/op
+                 ·gc.count:           ≈ 0 counts
+                 ·stack:              <delayed till summary>
+
+Iteration   2: 511.803 ms/op
+                 ·gc.alloc.rate:      3.742 MB/sec
+                 ·gc.alloc.rate.norm: 2107428.400 B/op
+                 ·gc.count:           ≈ 0 counts
+                 ·stack:              <delayed till summary>
+
+Iteration   3: 394.366 ms/op
+                 ·gc.alloc.rate:               4.854 MB/sec
+                 ·gc.alloc.rate.norm:          2108447.077 B/op
+                 ·gc.churn.G1_Eden_Space:      27.481 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm: 11937634.462 B/op
+                 ·gc.count:                    1.000 counts
+                 ·gc.time:                     3.000 ms
+                 ·stack:                       <delayed till summary>
+
+Iteration   4: 526.366 ms/op
+                 ·gc.alloc.rate:      3.639 MB/sec
+                 ·gc.alloc.rate.norm: 2107428.400 B/op
+                 ·gc.count:           ≈ 0 counts
+                 ·stack:              <delayed till summary>
+
+Iteration   5: 773.421 ms/op
+                 ·gc.alloc.rate:      2.465 MB/sec
+                 ·gc.alloc.rate.norm: 2107439.385 B/op
+                 ·gc.count:           ≈ 0 counts
+                 ·stack:              <delayed till summary>
+
+
+
+Result "org.matrix.benchmark.BenchmarkMatrix.testLoop":
+  532.930 ±(99.9%) 554.802 ms/op [Average]
+  (min, avg, max) = (394.366, 532.930, 773.421), stdev = 144.080
+  CI (99.9%): [≈ 0, 1087.732] (assumes normal distribution)
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testLoop:·gc.alloc.rate":
+  3.773 ±(99.9%) 3.362 MB/sec [Average]
+  (min, avg, max) = (2.465, 3.773, 4.854), stdev = 0.873
+  CI (99.9%): [0.410, 7.135] (assumes normal distribution)
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testLoop:·gc.alloc.rate.norm":
+  2107633.800 ±(99.9%) 1750.757 B/op [Average]
+  (min, avg, max) = (2107425.739, 2107633.800, 2108447.077), stdev = 454.666
+  CI (99.9%): [2105883.044, 2109384.557] (assumes normal distribution)
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testLoop:·gc.churn.G1_Eden_Space":
+  5.496 ±(99.9%) 47.323 MB/sec [Average]
+  (min, avg, max) = (≈ 0, 5.496, 27.481), stdev = 12.290
+  CI (99.9%): [≈ 0, 52.819] (assumes normal distribution)
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testLoop:·gc.churn.G1_Eden_Space.norm":
+  2387526.892 ±(99.9%) 20557326.576 B/op [Average]
+  (min, avg, max) = (≈ 0, 2387526.892, 11937634.462), stdev = 5338672.429
+  CI (99.9%): [≈ 0, 22944853.469] (assumes normal distribution)
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testLoop:·gc.count":
+  1.000 ±(99.9%) 0.001 counts [Sum]
+  (min, avg, max) = (≈ 0, 0.200, 1.000), stdev = 0.447
+  CI (99.9%): [1.000, 1.000] (assumes normal distribution)
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testLoop:·gc.time":
+  3.000 ±(99.9%) 0.001 ms [Sum]
+  (min, avg, max) = (≈ 0, 0.600, 3.000), stdev = 1.342
+  CI (99.9%): [3.000, 3.000] (assumes normal distribution)
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testLoop:·stack":
+Stack profiler:
+
+....[Thread state distributions]....................................................................
+ 75.0%         RUNNABLE
+ 25.0%         TIMED_WAITING
+
+....[Thread state: RUNNABLE]........................................................................
+ 25.0%  33.3% org.matrix.LoopUnrollingMatrixMultiplication.multiply
+ 25.0%  33.3% <stack is empty, everything is filtered?>
+ 25.0%  33.3% sun.nio.ch.SocketDispatcher.read0
+  0.0%   0.0% jdk.internal.misc.Unsafe.getIntVolatile
+
+....[Thread state: TIMED_WAITING]...................................................................
+ 25.0% 100.0% jdk.internal.misc.Unsafe.park
+
+
+
+# JMH version: 1.35
+# VM version: JDK 21.0.2, OpenJDK 64-Bit Server VM, 21.0.2+13-58
+# VM invoker: C:\Program Files\Java\OpenJDK-21\bin\java.exe
+# VM options: -javaagent:C:\Users\Radka\AppData\Local\JetBrains\IntelliJ IDEA 2024.2.3\lib\idea_rt.jar=55780:C:\Users\Radka\AppData\Local\JetBrains\IntelliJ IDEA 2024.2.3\bin -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.matrix.benchmark.BenchmarkMatrix.testLoop
+# Parameters: (size = 1024)
+
+# Run progress: 26.67% complete, ETA 00:20:00
+# Fork: 1 of 1
+# Warmup Iteration   1: 4334.347 ms/op
+# Warmup Iteration   2: 5059.304 ms/op
+# Warmup Iteration   3: 5246.102 ms/op
+# Warmup Iteration   4: 5215.709 ms/op
+# Warmup Iteration   5: 4316.007 ms/op
+Iteration   1: 4483.699 ms/op
+                 ·gc.alloc.rate:      1.724 MB/sec
+                 ·gc.alloc.rate.norm: 8409240.000 B/op
+                 ·gc.count:           ≈ 0 counts
+                 ·stack:              <delayed till summary>
+
+Iteration   2: 5131.588 ms/op
+                 ·gc.alloc.rate:      1.488 MB/sec
+                 ·gc.alloc.rate.norm: 8409324.000 B/op
+                 ·gc.count:           ≈ 0 counts
+                 ·stack:              <delayed till summary>
+
+Iteration   3: 4978.503 ms/op
+                 ·gc.alloc.rate:      1.558 MB/sec
+                 ·gc.alloc.rate.norm: 8409240.000 B/op
+                 ·gc.count:           ≈ 0 counts
+                 ·stack:              <delayed till summary>
+
+Iteration   4: 4687.855 ms/op
+                 ·gc.alloc.rate:      1.651 MB/sec
+                 ·gc.alloc.rate.norm: 8409240.000 B/op
+                 ·gc.count:           ≈ 0 counts
+                 ·stack:              <delayed till summary>
+
+Iteration   5: 5344.978 ms/op
+                 ·gc.alloc.rate:      1.432 MB/sec
+                 ·gc.alloc.rate.norm: 8409324.000 B/op
+                 ·gc.count:           ≈ 0 counts
+                 ·stack:              <delayed till summary>
+
+
+
+Result "org.matrix.benchmark.BenchmarkMatrix.testLoop":
+  4925.325 ±(99.9%) 1324.009 ms/op [Average]
+  (min, avg, max) = (4483.699, 4925.325, 5344.978), stdev = 343.841
+  CI (99.9%): [3601.316, 6249.333] (assumes normal distribution)
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testLoop:·gc.alloc.rate":
+  1.571 ±(99.9%) 0.455 MB/sec [Average]
+  (min, avg, max) = (1.432, 1.571, 1.724), stdev = 0.118
+  CI (99.9%): [1.115, 2.026] (assumes normal distribution)
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testLoop:·gc.alloc.rate.norm":
+  8409273.600 ±(99.9%) 177.163 B/op [Average]
+  (min, avg, max) = (8409240.000, 8409273.600, 8409324.000), stdev = 46.009
+  CI (99.9%): [8409096.437, 8409450.763] (assumes normal distribution)
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testLoop:·gc.count":
+  ≈ 0 counts
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testLoop:·stack":
+Stack profiler:
+
+....[Thread state distributions]....................................................................
+ 75.0%         RUNNABLE
+ 25.0%         TIMED_WAITING
+
+....[Thread state: RUNNABLE]........................................................................
+ 25.0%  33.3% org.matrix.LoopUnrollingMatrixMultiplication.multiply
+ 25.0%  33.3% sun.nio.ch.SocketDispatcher.read0
+ 25.0%  33.3% <stack is empty, everything is filtered?>
+
+....[Thread state: TIMED_WAITING]...................................................................
+ 25.0% 100.0% jdk.internal.misc.Unsafe.park
+
+
+
+# JMH version: 1.35
+# VM version: JDK 21.0.2, OpenJDK 64-Bit Server VM, 21.0.2+13-58
+# VM invoker: C:\Program Files\Java\OpenJDK-21\bin\java.exe
+# VM options: -javaagent:C:\Users\Radka\AppData\Local\JetBrains\IntelliJ IDEA 2024.2.3\lib\idea_rt.jar=55780:C:\Users\Radka\AppData\Local\JetBrains\IntelliJ IDEA 2024.2.3\bin -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.matrix.benchmark.BenchmarkMatrix.testNaive
+# Parameters: (size = 64)
+
+# Run progress: 33.33% complete, ETA 00:18:47
+# Fork: 1 of 1
+# Warmup Iteration   1: 0.554 ms/op
+# Warmup Iteration   2: 0.972 ms/op
+# Warmup Iteration   3: 0.705 ms/op
+# Warmup Iteration   4: 0.852 ms/op
+# Warmup Iteration   5: 0.498 ms/op
+Iteration   1: 0.541 ms/op
+                 ·gc.alloc.rate:                   57.057 MB/sec
+                 ·gc.alloc.rate.norm:              34066.880 B/op
+                 ·gc.churn.G1_Eden_Space:          56.229 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm:     33572.579 B/op
+                 ·gc.churn.G1_Survivor_Space:      0.005 MB/sec
+                 ·gc.churn.G1_Survivor_Space.norm: 3.195 B/op
+                 ·gc.count:                        2.000 counts
+                 ·gc.time:                         13.000 ms
+                 ·stack:                           <delayed till summary>
+
+Iteration   2: 0.990 ms/op
+                 ·gc.alloc.rate:               31.186 MB/sec
+                 ·gc.alloc.rate.norm:          34066.677 B/op
+                 ·gc.churn.G1_Eden_Space:      28.099 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm: 30694.076 B/op
+                 ·gc.count:                    1.000 counts
+                 ·gc.time:                     5.000 ms
+                 ·stack:                       <delayed till summary>
+
+Iteration   3: 0.769 ms/op
+                 ·gc.alloc.rate:                   40.017 MB/sec
+                 ·gc.alloc.rate.norm:              34066.062 B/op
+                 ·gc.churn.G1_Eden_Space:          27.851 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm:     23709.304 B/op
+                 ·gc.churn.G1_Survivor_Space:      0.021 MB/sec
+                 ·gc.churn.G1_Survivor_Space.norm: 17.921 B/op
+                 ·gc.count:                        1.000 counts
+                 ·gc.time:                         7.000 ms
+                 ·stack:                           <delayed till summary>
+
+Iteration   4: 0.599 ms/op
+                 ·gc.alloc.rate:                   51.627 MB/sec
+                 ·gc.alloc.rate.norm:              34067.186 B/op
+                 ·gc.churn.G1_Eden_Space:          56.264 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm:     37126.614 B/op
+                 ·gc.churn.G1_Survivor_Space:      0.217 MB/sec
+                 ·gc.churn.G1_Survivor_Space.norm: 142.983 B/op
+                 ·gc.count:                        2.000 counts
+                 ·gc.time:                         8.000 ms
+                 ·stack:                           <delayed till summary>
+
+Iteration   5: 0.615 ms/op
+                 ·gc.alloc.rate:                   50.168 MB/sec
+                 ·gc.alloc.rate.norm:              34067.275 B/op
+                 ·gc.churn.G1_Eden_Space:          56.089 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm:     38087.924 B/op
+                 ·gc.churn.G1_Survivor_Space:      0.020 MB/sec
+                 ·gc.churn.G1_Survivor_Space.norm: 13.858 B/op
+                 ·gc.count:                        2.000 counts
+                 ·gc.time:                         3.000 ms
+                 ·stack:                           <delayed till summary>
+
+
+
+Result "org.matrix.benchmark.BenchmarkMatrix.testNaive":
+  0.703 ±(99.9%) 0.699 ms/op [Average]
+  (min, avg, max) = (0.541, 0.703, 0.990), stdev = 0.181
+  CI (99.9%): [0.004, 1.402] (assumes normal distribution)
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testNaive:·gc.alloc.rate":
+  46.011 ±(99.9%) 39.764 MB/sec [Average]
+  (min, avg, max) = (31.186, 46.011, 57.057), stdev = 10.327
+  CI (99.9%): [6.247, 85.775] (assumes normal distribution)
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testNaive:·gc.alloc.rate.norm":
+  34066.816 ±(99.9%) 1.866 B/op [Average]
+  (min, avg, max) = (34066.062, 34066.816, 34067.275), stdev = 0.485
+  CI (99.9%): [34064.950, 34068.682] (assumes normal distribution)
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testNaive:·gc.churn.G1_Eden_Space":
+  44.906 ±(99.9%) 59.518 MB/sec [Average]
+  (min, avg, max) = (27.851, 44.906, 56.264), stdev = 15.457
+  CI (99.9%): [≈ 0, 104.425] (assumes normal distribution)
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testNaive:·gc.churn.G1_Eden_Space.norm":
+  32638.100 ±(99.9%) 22305.769 B/op [Average]
+  (min, avg, max) = (23709.304, 32638.100, 38087.924), stdev = 5792.737
+  CI (99.9%): [10332.330, 54943.869] (assumes normal distribution)
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testNaive:·gc.churn.G1_Survivor_Space":
+  0.053 ±(99.9%) 0.355 MB/sec [Average]
+  (min, avg, max) = (≈ 0, 0.053, 0.217), stdev = 0.092
+  CI (99.9%): [≈ 0, 0.407] (assumes normal distribution)
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testNaive:·gc.churn.G1_Survivor_Space.norm":
+  35.591 ±(99.9%) 232.906 B/op [Average]
+  (min, avg, max) = (≈ 0, 35.591, 142.983), stdev = 60.485
+  CI (99.9%): [≈ 0, 268.498] (assumes normal distribution)
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testNaive:·gc.count":
+  8.000 ±(99.9%) 0.001 counts [Sum]
+  (min, avg, max) = (1.000, 1.600, 2.000), stdev = 0.548
+  CI (99.9%): [8.000, 8.000] (assumes normal distribution)
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testNaive:·gc.time":
+  36.000 ±(99.9%) 0.001 ms [Sum]
+  (min, avg, max) = (3.000, 7.200, 13.000), stdev = 3.768
+  CI (99.9%): [36.000, 36.000] (assumes normal distribution)
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testNaive:·stack":
+Stack profiler:
+
+....[Thread state distributions]....................................................................
+ 75.0%         RUNNABLE
+ 25.0%         TIMED_WAITING
+
+....[Thread state: RUNNABLE]........................................................................
+ 25.0%  33.3% sun.nio.ch.SocketDispatcher.read0
+ 25.0%  33.3% org.matrix.NaiveMatrixMultiplication.multiply
+ 25.0%  33.3% <stack is empty, everything is filtered?>
+  0.0%   0.0% java.util.Collections.unmodifiableList
+  0.0%   0.0% com.sun.management.internal.GcInfoCompositeData.<init>
+  0.0%   0.0% org.matrix.benchmark.jmh_generated.BenchmarkMatrix_testNaive_jmhTest.testNaive_avgt_jmhStub
+
+....[Thread state: TIMED_WAITING]...................................................................
+ 25.0% 100.0% jdk.internal.misc.Unsafe.park
+
+
+
+# JMH version: 1.35
+# VM version: JDK 21.0.2, OpenJDK 64-Bit Server VM, 21.0.2+13-58
+# VM invoker: C:\Program Files\Java\OpenJDK-21\bin\java.exe
+# VM options: -javaagent:C:\Users\Radka\AppData\Local\JetBrains\IntelliJ IDEA 2024.2.3\lib\idea_rt.jar=55780:C:\Users\Radka\AppData\Local\JetBrains\IntelliJ IDEA 2024.2.3\bin -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.matrix.benchmark.BenchmarkMatrix.testNaive
+# Parameters: (size = 128)
+
+# Run progress: 40.00% complete, ETA 00:16:46
+# Fork: 1 of 1
+# Warmup Iteration   1: 3.992 ms/op
+# Warmup Iteration   2: 5.595 ms/op
+# Warmup Iteration   3: 6.136 ms/op
+# Warmup Iteration   4: 7.851 ms/op
+# Warmup Iteration   5: 6.293 ms/op
+Iteration   1: 5.676 ms/op
+                 ·gc.alloc.rate:               21.383 MB/sec
+                 ·gc.alloc.rate.norm:          133663.279 B/op
+                 ·gc.churn.G1_Eden_Space:      28.164 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm: 176051.331 B/op
+                 ·gc.count:                    1.000 counts
+                 ·gc.time:                     3.000 ms
+                 ·stack:                       <delayed till summary>
+
+Iteration   2: 5.139 ms/op
+                 ·gc.alloc.rate:               23.617 MB/sec
+                 ·gc.alloc.rate.norm:          133661.844 B/op
+                 ·gc.churn.G1_Eden_Space:      28.153 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm: 159331.877 B/op
+                 ·gc.count:                    1.000 counts
+                 ·gc.time:                     3.000 ms
+                 ·stack:                       <delayed till summary>
+
+Iteration   3: 5.070 ms/op
+                 ·gc.alloc.rate:                   23.942 MB/sec
+                 ·gc.alloc.rate.norm:              133668.375 B/op
+                 ·gc.churn.G1_Eden_Space:          28.148 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm:     157153.669 B/op
+                 ·gc.churn.G1_Survivor_Space:      0.008 MB/sec
+                 ·gc.churn.G1_Survivor_Space.norm: 46.278 B/op
+                 ·gc.count:                        1.000 counts
+                 ·gc.time:                         3.000 ms
+                 ·stack:                           <delayed till summary>
+
+Iteration   4: 5.993 ms/op
+                 ·gc.alloc.rate:      20.243 MB/sec
+                 ·gc.alloc.rate.norm: 133648.244 B/op
+                 ·gc.count:           ≈ 0 counts
+                 ·stack:              <delayed till summary>
+
+Iteration   5: 8.483 ms/op
+                 ·gc.alloc.rate:               14.305 MB/sec
+                 ·gc.alloc.rate.norm:          133670.936 B/op
+                 ·gc.churn.G1_Eden_Space:      28.149 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm: 263032.624 B/op
+                 ·gc.count:                    1.000 counts
+                 ·gc.time:                     6.000 ms
+                 ·stack:                       <delayed till summary>
+
+
+
+Result "org.matrix.benchmark.BenchmarkMatrix.testNaive":
+  6.072 ±(99.9%) 5.394 ms/op [Average]
+  (min, avg, max) = (5.070, 6.072, 8.483), stdev = 1.401
+  CI (99.9%): [0.678, 11.466] (assumes normal distribution)
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testNaive:·gc.alloc.rate":
+  20.698 ±(99.9%) 14.987 MB/sec [Average]
+  (min, avg, max) = (14.305, 20.698, 23.942), stdev = 3.892
+  CI (99.9%): [5.711, 35.685] (assumes normal distribution)
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testNaive:·gc.alloc.rate.norm":
+  133662.535 ±(99.9%) 33.895 B/op [Average]
+  (min, avg, max) = (133648.244, 133662.535, 133670.936), stdev = 8.802
+  CI (99.9%): [133628.641, 133696.430] (assumes normal distribution)
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testNaive:·gc.churn.G1_Eden_Space":
+  22.523 ±(99.9%) 48.482 MB/sec [Average]
+  (min, avg, max) = (≈ 0, 22.523, 28.164), stdev = 12.591
+  CI (99.9%): [≈ 0, 71.005] (assumes normal distribution)
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testNaive:·gc.churn.G1_Eden_Space.norm":
+  151113.900 ±(99.9%) 365745.812 B/op [Average]
+  (min, avg, max) = (≈ 0, 151113.900, 263032.624), stdev = 94983.026
+  CI (99.9%): [≈ 0, 516859.712] (assumes normal distribution)
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testNaive:·gc.churn.G1_Survivor_Space":
+  0.002 ±(99.9%) 0.014 MB/sec [Average]
+  (min, avg, max) = (≈ 0, 0.002, 0.008), stdev = 0.004
+  CI (99.9%): [≈ 0, 0.016] (assumes normal distribution)
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testNaive:·gc.churn.G1_Survivor_Space.norm":
+  9.256 ±(99.9%) 79.694 B/op [Average]
+  (min, avg, max) = (≈ 0, 9.256, 46.278), stdev = 20.696
+  CI (99.9%): [≈ 0, 88.950] (assumes normal distribution)
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testNaive:·gc.count":
+  4.000 ±(99.9%) 0.001 counts [Sum]
+  (min, avg, max) = (≈ 0, 0.800, 1.000), stdev = 0.447
+  CI (99.9%): [4.000, 4.000] (assumes normal distribution)
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testNaive:·gc.time":
+  15.000 ±(99.9%) 0.001 ms [Sum]
+  (min, avg, max) = (≈ 0, 3.000, 6.000), stdev = 2.121
+  CI (99.9%): [15.000, 15.000] (assumes normal distribution)
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testNaive:·stack":
+Stack profiler:
+
+....[Thread state distributions]....................................................................
+ 75.0%         RUNNABLE
+ 25.0%         TIMED_WAITING
+
+....[Thread state: RUNNABLE]........................................................................
+ 25.0%  33.3% <stack is empty, everything is filtered?>
+ 25.0%  33.3% sun.nio.ch.SocketDispatcher.read0
+ 25.0%  33.3% org.matrix.NaiveMatrixMultiplication.multiply
+  0.0%   0.0% java.lang.System.nanoTime
+  0.0%   0.0% org.matrix.benchmark.jmh_generated.BenchmarkMatrix_testNaive_jmhTest.testNaive_avgt_jmhStub
+
+....[Thread state: TIMED_WAITING]...................................................................
+ 25.0% 100.0% jdk.internal.misc.Unsafe.park
+
+
+
+# JMH version: 1.35
+# VM version: JDK 21.0.2, OpenJDK 64-Bit Server VM, 21.0.2+13-58
+# VM invoker: C:\Program Files\Java\OpenJDK-21\bin\java.exe
+# VM options: -javaagent:C:\Users\Radka\AppData\Local\JetBrains\IntelliJ IDEA 2024.2.3\lib\idea_rt.jar=55780:C:\Users\Radka\AppData\Local\JetBrains\IntelliJ IDEA 2024.2.3\bin -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.matrix.benchmark.BenchmarkMatrix.testNaive
+# Parameters: (size = 256)
+
+# Run progress: 46.67% complete, ETA 00:14:48
+# Fork: 1 of 1
+# Warmup Iteration   1: 32.231 ms/op
+# Warmup Iteration   2: 36.635 ms/op
+# Warmup Iteration   3: 42.231 ms/op
+# Warmup Iteration   4: 48.200 ms/op
+# Warmup Iteration   5: 43.955 ms/op
+Iteration   1: 39.823 ms/op
+                 ·gc.alloc.rate:      12.056 MB/sec
+                 ·gc.alloc.rate.norm: 529425.619 B/op
+                 ·gc.count:           ≈ 0 counts
+                 ·stack:              <delayed till summary>
+
+Iteration   2: 33.799 ms/op
+                 ·gc.alloc.rate:               14.223 MB/sec
+                 ·gc.alloc.rate.norm:          529514.389 B/op
+                 ·gc.churn.G1_Eden_Space:      27.975 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm: 1041538.577 B/op
+                 ·gc.count:                    1.000 counts
+                 ·gc.time:                     5.000 ms
+                 ·stack:                       <delayed till summary>
+
+Iteration   3: 34.253 ms/op
+                 ·gc.alloc.rate:      14.027 MB/sec
+                 ·gc.alloc.rate.norm: 529425.502 B/op
+                 ·gc.count:           ≈ 0 counts
+                 ·stack:              <delayed till summary>
+
+Iteration   4: 31.991 ms/op
+                 ·gc.alloc.rate:                   15.016 MB/sec
+                 ·gc.alloc.rate.norm:              529509.962 B/op
+                 ·gc.churn.G1_Eden_Space:          27.652 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm:     975108.892 B/op
+                 ·gc.churn.G1_Survivor_Space:      0.041 MB/sec
+                 ·gc.churn.G1_Survivor_Space.norm: 1438.828 B/op
+                 ·gc.count:                        1.000 counts
+                 ·gc.time:                         3.000 ms
+                 ·stack:                           <delayed till summary>
+
+Iteration   5: 34.316 ms/op
+                 ·gc.alloc.rate:      14.006 MB/sec
+                 ·gc.alloc.rate.norm: 529425.392 B/op
+                 ·gc.count:           ≈ 0 counts
+                 ·stack:              <delayed till summary>
+
+
+
+Result "org.matrix.benchmark.BenchmarkMatrix.testNaive":
+  34.836 ±(99.9%) 11.334 ms/op [Average]
+  (min, avg, max) = (31.991, 34.836, 39.823), stdev = 2.943
+  CI (99.9%): [23.502, 46.171] (assumes normal distribution)
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testNaive:·gc.alloc.rate":
+  13.866 ±(99.9%) 4.205 MB/sec [Average]
+  (min, avg, max) = (12.056, 13.866, 15.016), stdev = 1.092
+  CI (99.9%): [9.661, 18.071] (assumes normal distribution)
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testNaive:·gc.alloc.rate.norm":
+  529460.173 ±(99.9%) 182.896 B/op [Average]
+  (min, avg, max) = (529425.392, 529460.173, 529514.389), stdev = 47.498
+  CI (99.9%): [529277.277, 529643.069] (assumes normal distribution)
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testNaive:·gc.churn.G1_Eden_Space":
+  11.125 ±(99.9%) 58.663 MB/sec [Average]
+  (min, avg, max) = (≈ 0, 11.125, 27.975), stdev = 15.235
+  CI (99.9%): [≈ 0, 69.788] (assumes normal distribution)
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testNaive:·gc.churn.G1_Eden_Space.norm":
+  403329.494 ±(99.9%) 2128562.122 B/op [Average]
+  (min, avg, max) = (≈ 0, 403329.494, 1041538.577), stdev = 552780.824
+  CI (99.9%): [≈ 0, 2531891.616] (assumes normal distribution)
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testNaive:·gc.churn.G1_Survivor_Space":
+  0.008 ±(99.9%) 0.070 MB/sec [Average]
+  (min, avg, max) = (≈ 0, 0.008, 0.041), stdev = 0.018
+  CI (99.9%): [≈ 0, 0.078] (assumes normal distribution)
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testNaive:·gc.churn.G1_Survivor_Space.norm":
+  287.766 ±(99.9%) 2477.749 B/op [Average]
+  (min, avg, max) = (≈ 0, 287.766, 1438.828), stdev = 643.463
+  CI (99.9%): [≈ 0, 2765.514] (assumes normal distribution)
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testNaive:·gc.count":
+  2.000 ±(99.9%) 0.001 counts [Sum]
+  (min, avg, max) = (≈ 0, 0.400, 1.000), stdev = 0.548
+  CI (99.9%): [2.000, 2.000] (assumes normal distribution)
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testNaive:·gc.time":
+  8.000 ±(99.9%) 0.001 ms [Sum]
+  (min, avg, max) = (≈ 0, 1.600, 5.000), stdev = 2.302
+  CI (99.9%): [8.000, 8.000] (assumes normal distribution)
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testNaive:·stack":
+Stack profiler:
+
+....[Thread state distributions]....................................................................
+ 75.0%         RUNNABLE
+ 25.0%         TIMED_WAITING
+
+....[Thread state: RUNNABLE]........................................................................
+ 25.0%  33.3% sun.nio.ch.SocketDispatcher.read0
+ 25.0%  33.3% <stack is empty, everything is filtered?>
+ 25.0%  33.3% org.matrix.NaiveMatrixMultiplication.multiply
+  0.0%   0.0% jdk.internal.misc.Unsafe.putInt
+  0.0%   0.0% java.lang.reflect.Method.invoke
+
+....[Thread state: TIMED_WAITING]...................................................................
+ 25.0% 100.0% jdk.internal.misc.Unsafe.park
+
+
+
+# JMH version: 1.35
+# VM version: JDK 21.0.2, OpenJDK 64-Bit Server VM, 21.0.2+13-58
+# VM invoker: C:\Program Files\Java\OpenJDK-21\bin\java.exe
+# VM options: -javaagent:C:\Users\Radka\AppData\Local\JetBrains\IntelliJ IDEA 2024.2.3\lib\idea_rt.jar=55780:C:\Users\Radka\AppData\Local\JetBrains\IntelliJ IDEA 2024.2.3\bin -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.matrix.benchmark.BenchmarkMatrix.testNaive
+# Parameters: (size = 512)
+
+# Run progress: 53.33% complete, ETA 00:12:54
+# Fork: 1 of 1
+# Warmup Iteration   1: 318.271 ms/op
+# Warmup Iteration   2: 303.624 ms/op
+# Warmup Iteration   3: 340.621 ms/op
+# Warmup Iteration   4: 460.873 ms/op
+# Warmup Iteration   5: 431.979 ms/op
+Iteration   1: 349.539 ms/op
+                 ·gc.alloc.rate:      5.471 MB/sec
+                 ·gc.alloc.rate.norm: 2107422.069 B/op
+                 ·gc.count:           ≈ 0 counts
+                 ·stack:              <delayed till summary>
+
+Iteration   2: 424.540 ms/op
+                 ·gc.alloc.rate:                   4.513 MB/sec
+                 ·gc.alloc.rate.norm:              2108534.667 B/op
+                 ·gc.churn.G1_Eden_Space:          27.679 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm:     12932437.333 B/op
+                 ·gc.churn.G1_Survivor_Space:      0.022 MB/sec
+                 ·gc.churn.G1_Survivor_Space.norm: 10269.333 B/op
+                 ·gc.count:                        1.000 counts
+                 ·gc.time:                         2.000 ms
+                 ·stack:                           <delayed till summary>
+
+Iteration   3: 333.407 ms/op
+                 ·gc.alloc.rate:      5.754 MB/sec
+                 ·gc.alloc.rate.norm: 2107421.750 B/op
+                 ·gc.count:           ≈ 0 counts
+                 ·stack:              <delayed till summary>
+
+Iteration   4: 562.349 ms/op
+                 ·gc.alloc.rate:      3.404 MB/sec
+                 ·gc.alloc.rate.norm: 2107430.667 B/op
+                 ·gc.count:           ≈ 0 counts
+                 ·stack:              <delayed till summary>
+
+Iteration   5: 655.292 ms/op
+                 ·gc.alloc.rate:      2.923 MB/sec
+                 ·gc.alloc.rate.norm: 2107433.500 B/op
+                 ·gc.count:           ≈ 0 counts
+                 ·stack:              <delayed till summary>
+
+
+
+Result "org.matrix.benchmark.BenchmarkMatrix.testNaive":
+  465.025 ±(99.9%) 537.619 ms/op [Average]
+  (min, avg, max) = (333.407, 465.025, 655.292), stdev = 139.618
+  CI (99.9%): [≈ 0, 1002.645] (assumes normal distribution)
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testNaive:·gc.alloc.rate":
+  4.413 ±(99.9%) 4.781 MB/sec [Average]
+  (min, avg, max) = (2.923, 4.413, 5.754), stdev = 1.242
+  CI (99.9%): [≈ 0, 9.194] (assumes normal distribution)
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testNaive:·gc.alloc.rate.norm":
+  2107648.530 ±(99.9%) 1907.580 B/op [Average]
+  (min, avg, max) = (2107421.750, 2107648.530, 2108534.667), stdev = 495.392
+  CI (99.9%): [2105740.951, 2109556.110] (assumes normal distribution)
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testNaive:·gc.churn.G1_Eden_Space":
+  5.536 ±(99.9%) 47.665 MB/sec [Average]
+  (min, avg, max) = (≈ 0, 5.536, 27.679), stdev = 12.378
+  CI (99.9%): [≈ 0, 53.201] (assumes normal distribution)
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testNaive:·gc.churn.G1_Eden_Space.norm":
+  2586487.467 ±(99.9%) 22270437.124 B/op [Average]
+  (min, avg, max) = (≈ 0, 2586487.467, 12932437.333), stdev = 5783561.798
+  CI (99.9%): [≈ 0, 24856924.591] (assumes normal distribution)
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testNaive:·gc.churn.G1_Survivor_Space":
+  0.004 ±(99.9%) 0.038 MB/sec [Average]
+  (min, avg, max) = (≈ 0, 0.004, 0.022), stdev = 0.010
+  CI (99.9%): [≈ 0, 0.042] (assumes normal distribution)
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testNaive:·gc.churn.G1_Survivor_Space.norm":
+  2053.867 ±(99.9%) 17684.411 B/op [Average]
+  (min, avg, max) = (≈ 0, 2053.867, 10269.333), stdev = 4592.585
+  CI (99.9%): [≈ 0, 19738.278] (assumes normal distribution)
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testNaive:·gc.count":
+  1.000 ±(99.9%) 0.001 counts [Sum]
+  (min, avg, max) = (≈ 0, 0.200, 1.000), stdev = 0.447
+  CI (99.9%): [1.000, 1.000] (assumes normal distribution)
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testNaive:·gc.time":
+  2.000 ±(99.9%) 0.001 ms [Sum]
+  (min, avg, max) = (≈ 0, 0.400, 2.000), stdev = 0.894
+  CI (99.9%): [2.000, 2.000] (assumes normal distribution)
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testNaive:·stack":
+Stack profiler:
+
+....[Thread state distributions]....................................................................
+ 75.0%         RUNNABLE
+ 25.0%         TIMED_WAITING
+
+....[Thread state: RUNNABLE]........................................................................
+ 25.0%  33.3% <stack is empty, everything is filtered?>
+ 25.0%  33.3% sun.nio.ch.SocketDispatcher.read0
+ 25.0%  33.3% org.matrix.NaiveMatrixMultiplication.multiply
+  0.0%   0.0% jdk.internal.misc.Unsafe.putReference
+
+....[Thread state: TIMED_WAITING]...................................................................
+ 25.0% 100.0% jdk.internal.misc.Unsafe.park
+
+
+
+# JMH version: 1.35
+# VM version: JDK 21.0.2, OpenJDK 64-Bit Server VM, 21.0.2+13-58
+# VM invoker: C:\Program Files\Java\OpenJDK-21\bin\java.exe
+# VM options: -javaagent:C:\Users\Radka\AppData\Local\JetBrains\IntelliJ IDEA 2024.2.3\lib\idea_rt.jar=55780:C:\Users\Radka\AppData\Local\JetBrains\IntelliJ IDEA 2024.2.3\bin -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.matrix.benchmark.BenchmarkMatrix.testNaive
+# Parameters: (size = 1024)
+
+# Run progress: 60.00% complete, ETA 00:11:02
+# Fork: 1 of 1
+# Warmup Iteration   1: 4064.427 ms/op
+# Warmup Iteration   2: 4477.350 ms/op
+# Warmup Iteration   3: 5454.689 ms/op
+# Warmup Iteration   4: 3570.370 ms/op
+# Warmup Iteration   5: 3033.589 ms/op
+Iteration   1: 3140.494 ms/op
+                 ·gc.alloc.rate:      2.455 MB/sec
+                 ·gc.alloc.rate.norm: 8409214.000 B/op
+                 ·gc.count:           ≈ 0 counts
+                 ·stack:              <delayed till summary>
+
+Iteration   2: 3205.561 ms/op
+                 ·gc.alloc.rate:      2.407 MB/sec
+                 ·gc.alloc.rate.norm: 8409206.000 B/op
+                 ·gc.count:           ≈ 0 counts
+                 ·stack:              <delayed till summary>
+
+Iteration   3: 2922.970 ms/op
+                 ·gc.alloc.rate:      2.629 MB/sec
+                 ·gc.alloc.rate.norm: 8409206.000 B/op
+                 ·gc.count:           ≈ 0 counts
+                 ·stack:              <delayed till summary>
+
+Iteration   4: 3034.109 ms/op
+                 ·gc.alloc.rate:      2.537 MB/sec
+                 ·gc.alloc.rate.norm: 8409206.000 B/op
+                 ·gc.count:           ≈ 0 counts
+                 ·stack:              <delayed till summary>
+
+Iteration   5: 3059.488 ms/op
+                 ·gc.alloc.rate:      2.515 MB/sec
+                 ·gc.alloc.rate.norm: 8409206.000 B/op
+                 ·gc.count:           ≈ 0 counts
+                 ·stack:              <delayed till summary>
+
+
+
+Result "org.matrix.benchmark.BenchmarkMatrix.testNaive":
+  3072.524 ±(99.9%) 414.418 ms/op [Average]
+  (min, avg, max) = (2922.970, 3072.524, 3205.561), stdev = 107.623
+  CI (99.9%): [2658.106, 3486.942] (assumes normal distribution)
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testNaive:·gc.alloc.rate":
+  2.509 ±(99.9%) 0.326 MB/sec [Average]
+  (min, avg, max) = (2.407, 2.509, 2.629), stdev = 0.085
+  CI (99.9%): [2.183, 2.835] (assumes normal distribution)
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testNaive:·gc.alloc.rate.norm":
+  8409207.600 ±(99.9%) 13.776 B/op [Average]
+  (min, avg, max) = (8409206.000, 8409207.600, 8409214.000), stdev = 3.578
+  CI (99.9%): [8409193.824, 8409221.376] (assumes normal distribution)
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testNaive:·gc.count":
+  ≈ 0 counts
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testNaive:·stack":
+Stack profiler:
+
+....[Thread state distributions]....................................................................
+ 75.0%         RUNNABLE
+ 25.0%         TIMED_WAITING
+
+....[Thread state: RUNNABLE]........................................................................
+ 25.0%  33.3% org.matrix.NaiveMatrixMultiplication.multiply
+ 25.0%  33.3% sun.nio.ch.SocketDispatcher.read0
+ 25.0%  33.3% <stack is empty, everything is filtered?>
+
+....[Thread state: TIMED_WAITING]...................................................................
+ 25.0% 100.0% jdk.internal.misc.Unsafe.park
+
+
+
+# JMH version: 1.35
+# VM version: JDK 21.0.2, OpenJDK 64-Bit Server VM, 21.0.2+13-58
+# VM invoker: C:\Program Files\Java\OpenJDK-21\bin\java.exe
+# VM options: -javaagent:C:\Users\Radka\AppData\Local\JetBrains\IntelliJ IDEA 2024.2.3\lib\idea_rt.jar=55780:C:\Users\Radka\AppData\Local\JetBrains\IntelliJ IDEA 2024.2.3\bin -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.matrix.benchmark.BenchmarkMatrix.testStrassen
+# Parameters: (size = 64)
+
+# Run progress: 66.67% complete, ETA 00:09:21
+# Fork: 1 of 1
+# Warmup Iteration   1: 54.837 ms/op
+# Warmup Iteration   2: 51.896 ms/op
+# Warmup Iteration   3: 53.842 ms/op
+# Warmup Iteration   4: 52.576 ms/op
+# Warmup Iteration   5: 51.160 ms/op
+Iteration   1: 52.465 ms/op
+                 ·gc.alloc.rate:                   659.891 MB/sec
+                 ·gc.alloc.rate.norm:              38122966.667 B/op
+                 ·gc.churn.G1_Eden_Space:          671.564 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm:     38797312.000 B/op
+                 ·gc.churn.G1_Survivor_Space:      0.016 MB/sec
+                 ·gc.churn.G1_Survivor_Space.norm: 925.792 B/op
+                 ·gc.count:                        24.000 counts
+                 ·gc.time:                         28.000 ms
+                 ·stack:                           <delayed till summary>
+
+Iteration   2: 63.236 ms/op
+                 ·gc.alloc.rate:                   547.590 MB/sec
+                 ·gc.alloc.rate.norm:              38122538.868 B/op
+                 ·gc.churn.G1_Eden_Space:          560.787 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm:     39041320.252 B/op
+                 ·gc.churn.G1_Survivor_Space:      0.014 MB/sec
+                 ·gc.churn.G1_Survivor_Space.norm: 961.107 B/op
+                 ·gc.count:                        20.000 counts
+                 ·gc.time:                         22.000 ms
+                 ·stack:                           <delayed till summary>
+
+Iteration   3: 53.140 ms/op
+                 ·gc.alloc.rate:                   651.055 MB/sec
+                 ·gc.alloc.rate.norm:              38122419.894 B/op
+                 ·gc.churn.G1_Eden_Space:          645.052 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm:     37770928.085 B/op
+                 ·gc.churn.G1_Survivor_Space:      0.017 MB/sec
+                 ·gc.churn.G1_Survivor_Space.norm: 1002.159 B/op
+                 ·gc.count:                        23.000 counts
+                 ·gc.time:                         26.000 ms
+                 ·stack:                           <delayed till summary>
+
+Iteration   4: 49.649 ms/op
+                 ·gc.alloc.rate:                   697.175 MB/sec
+                 ·gc.alloc.rate.norm:              38122399.723 B/op
+                 ·gc.churn.G1_Eden_Space:          702.493 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm:     38413180.198 B/op
+                 ·gc.churn.G1_Survivor_Space:      0.018 MB/sec
+                 ·gc.churn.G1_Survivor_Space.norm: 957.149 B/op
+                 ·gc.count:                        25.000 counts
+                 ·gc.time:                         24.000 ms
+                 ·stack:                           <delayed till summary>
+
+Iteration   5: 50.681 ms/op
+                 ·gc.alloc.rate:                   682.010 MB/sec
+                 ·gc.alloc.rate.norm:              38122339.960 B/op
+                 ·gc.churn.G1_Eden_Space:          673.053 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm:     37621635.879 B/op
+                 ·gc.churn.G1_Survivor_Space:      0.018 MB/sec
+                 ·gc.churn.G1_Survivor_Space.norm: 999.232 B/op
+                 ·gc.count:                        24.000 counts
+                 ·gc.time:                         21.000 ms
+                 ·stack:                           <delayed till summary>
+
+
+
+Result "org.matrix.benchmark.BenchmarkMatrix.testStrassen":
+  53.834 ±(99.9%) 20.933 ms/op [Average]
+  (min, avg, max) = (49.649, 53.834, 63.236), stdev = 5.436
+  CI (99.9%): [32.901, 74.767] (assumes normal distribution)
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testStrassen:·gc.alloc.rate":
+  647.544 ±(99.9%) 226.229 MB/sec [Average]
+  (min, avg, max) = (547.590, 647.544, 697.175), stdev = 58.751
+  CI (99.9%): [421.315, 873.774] (assumes normal distribution)
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testStrassen:·gc.alloc.rate.norm":
+  38122533.022 ±(99.9%) 973.995 B/op [Average]
+  (min, avg, max) = (38122339.960, 38122533.022, 38122966.667), stdev = 252.943
+  CI (99.9%): [38121559.027, 38123507.017] (assumes normal distribution)
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testStrassen:·gc.churn.G1_Eden_Space":
+  650.590 ±(99.9%) 208.554 MB/sec [Average]
+  (min, avg, max) = (560.787, 650.590, 702.493), stdev = 54.161
+  CI (99.9%): [442.036, 859.143] (assumes normal distribution)
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testStrassen:·gc.churn.G1_Eden_Space.norm":
+  38328875.283 ±(99.9%) 2393610.227 B/op [Average]
+  (min, avg, max) = (37621635.879, 38328875.283, 39041320.252), stdev = 621612.975
+  CI (99.9%): [35935265.056, 40722485.509] (assumes normal distribution)
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testStrassen:·gc.churn.G1_Survivor_Space":
+  0.016 ±(99.9%) 0.006 MB/sec [Average]
+  (min, avg, max) = (0.014, 0.016, 0.018), stdev = 0.002
+  CI (99.9%): [0.010, 0.023] (assumes normal distribution)
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testStrassen:·gc.churn.G1_Survivor_Space.norm":
+  969.088 ±(99.9%) 123.028 B/op [Average]
+  (min, avg, max) = (925.792, 969.088, 1002.159), stdev = 31.950
+  CI (99.9%): [846.060, 1092.115] (assumes normal distribution)
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testStrassen:·gc.count":
+  116.000 ±(99.9%) 0.001 counts [Sum]
+  (min, avg, max) = (20.000, 23.200, 25.000), stdev = 1.924
+  CI (99.9%): [116.000, 116.000] (assumes normal distribution)
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testStrassen:·gc.time":
+  121.000 ±(99.9%) 0.001 ms [Sum]
+  (min, avg, max) = (21.000, 24.200, 28.000), stdev = 2.864
+  CI (99.9%): [121.000, 121.000] (assumes normal distribution)
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testStrassen:·stack":
+Stack profiler:
+
+....[Thread state distributions]....................................................................
+ 75.0%         RUNNABLE
+ 25.0%         TIMED_WAITING
+
+....[Thread state: RUNNABLE]........................................................................
+ 25.0%  33.3% sun.nio.ch.SocketDispatcher.read0
+ 24.9%  33.2% <stack is empty, everything is filtered?>
+ 10.6%  14.1% org.matrix.StrassenMatrixMultiplication.multiply
+  8.0%  10.6% org.matrix.StrassenMatrixMultiplication.addMatrix
+  5.5%   7.3% org.matrix.StrassenMatrixMultiplication.subtractMatrix
+  0.6%   0.8% org.matrix.StrassenMatrixMultiplication.splitMatrix
+  0.4%   0.5% org.matrix.StrassenMatrixMultiplication.mergeMatrix
+  0.0%   0.0% java.util.HashMap.hash
+  0.0%   0.0% java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.newConditionNode
+  0.0%   0.0% javax.management.openmbean.CompositeType.isValue
+
+....[Thread state: TIMED_WAITING]...................................................................
+ 25.0% 100.0% jdk.internal.misc.Unsafe.park
+
+
+
+# JMH version: 1.35
+# VM version: JDK 21.0.2, OpenJDK 64-Bit Server VM, 21.0.2+13-58
+# VM invoker: C:\Program Files\Java\OpenJDK-21\bin\java.exe
+# VM options: -javaagent:C:\Users\Radka\AppData\Local\JetBrains\IntelliJ IDEA 2024.2.3\lib\idea_rt.jar=55780:C:\Users\Radka\AppData\Local\JetBrains\IntelliJ IDEA 2024.2.3\bin -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.matrix.benchmark.BenchmarkMatrix.testStrassen
+# Parameters: (size = 128)
+
+# Run progress: 73.33% complete, ETA 00:07:27
+# Fork: 1 of 1
+# Warmup Iteration   1: 424.983 ms/op
+# Warmup Iteration   2: 298.182 ms/op
+# Warmup Iteration   3: 308.103 ms/op
+# Warmup Iteration   4: 338.904 ms/op
+# Warmup Iteration   5: 401.666 ms/op
+Iteration   1: 539.975 ms/op
+                 ·gc.alloc.rate:                   449.982 MB/sec
+                 ·gc.alloc.rate.norm:              267877429.053 B/op
+                 ·gc.churn.G1_Eden_Space:          466.123 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm:     277486322.526 B/op
+                 ·gc.churn.G1_Survivor_Space:      0.045 MB/sec
+                 ·gc.churn.G1_Survivor_Space.norm: 26858.526 B/op
+                 ·gc.count:                        17.000 counts
+                 ·gc.time:                         24.000 ms
+                 ·stack:                           <delayed till summary>
+
+Iteration   2: 387.461 ms/op
+                 ·gc.alloc.rate:                   627.441 MB/sec
+                 ·gc.alloc.rate.norm:              267876250.462 B/op
+                 ·gc.churn.G1_Eden_Space:          615.148 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm:     262627958.154 B/op
+                 ·gc.churn.G1_Survivor_Space:      0.076 MB/sec
+                 ·gc.churn.G1_Survivor_Space.norm: 32574.462 B/op
+                 ·gc.count:                        22.000 counts
+                 ·gc.time:                         27.000 ms
+                 ·stack:                           <delayed till summary>
+
+Iteration   3: 422.744 ms/op
+                 ·gc.alloc.rate:                   575.659 MB/sec
+                 ·gc.alloc.rate.norm:              267876677.667 B/op
+                 ·gc.churn.G1_Eden_Space:          583.620 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm:     271581184.000 B/op
+                 ·gc.churn.G1_Survivor_Space:      0.069 MB/sec
+                 ·gc.churn.G1_Survivor_Space.norm: 32256.667 B/op
+                 ·gc.count:                        21.000 counts
+                 ·gc.time:                         28.000 ms
+                 ·stack:                           <delayed till summary>
+
+Iteration   4: 393.836 ms/op
+                 ·gc.alloc.rate:                   617.732 MB/sec
+                 ·gc.alloc.rate.norm:              267876540.000 B/op
+                 ·gc.churn.G1_Eden_Space:          633.157 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm:     274565592.615 B/op
+                 ·gc.churn.G1_Survivor_Space:      0.086 MB/sec
+                 ·gc.churn.G1_Survivor_Space.norm: 37153.538 B/op
+                 ·gc.count:                        23.000 counts
+                 ·gc.time:                         32.000 ms
+                 ·stack:                           <delayed till summary>
+
+Iteration   5: 372.934 ms/op
+                 ·gc.alloc.rate:                   649.365 MB/sec
+                 ·gc.alloc.rate.norm:              267875769.481 B/op
+                 ·gc.churn.G1_Eden_Space:          640.931 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm:     264396496.593 B/op
+                 ·gc.churn.G1_Survivor_Space:      0.058 MB/sec
+                 ·gc.churn.G1_Survivor_Space.norm: 23792.889 B/op
+                 ·gc.count:                        23.000 counts
+                 ·gc.time:                         34.000 ms
+                 ·stack:                           <delayed till summary>
+
+
+
+Result "org.matrix.benchmark.BenchmarkMatrix.testStrassen":
+  423.390 ±(99.9%) 260.471 ms/op [Average]
+  (min, avg, max) = (372.934, 423.390, 539.975), stdev = 67.644
+  CI (99.9%): [162.919, 683.861] (assumes normal distribution)
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testStrassen:·gc.alloc.rate":
+  584.036 ±(99.9%) 306.409 MB/sec [Average]
+  (min, avg, max) = (449.982, 584.036, 649.365), stdev = 79.573
+  CI (99.9%): [277.627, 890.445] (assumes normal distribution)
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testStrassen:·gc.alloc.rate.norm":
+  267876533.332 ±(99.9%) 2347.532 B/op [Average]
+  (min, avg, max) = (267875769.481, 267876533.332, 267877429.053), stdev = 609.647
+  CI (99.9%): [267874185.801, 267878880.864] (assumes normal distribution)
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testStrassen:·gc.churn.G1_Eden_Space":
+  587.796 ±(99.9%) 275.332 MB/sec [Average]
+  (min, avg, max) = (466.123, 587.796, 640.931), stdev = 71.503
+  CI (99.9%): [312.464, 863.128] (assumes normal distribution)
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testStrassen:·gc.churn.G1_Eden_Space.norm":
+  270131510.778 ±(99.9%) 24734923.798 B/op [Average]
+  (min, avg, max) = (262627958.154, 270131510.778, 277486322.526), stdev = 6423581.161
+  CI (99.9%): [245396586.980, 294866434.575] (assumes normal distribution)
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testStrassen:·gc.churn.G1_Survivor_Space":
+  0.067 ±(99.9%) 0.061 MB/sec [Average]
+  (min, avg, max) = (0.045, 0.067, 0.086), stdev = 0.016
+  CI (99.9%): [0.006, 0.128] (assumes normal distribution)
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testStrassen:·gc.churn.G1_Survivor_Space.norm":
+  30527.216 ±(99.9%) 20183.841 B/op [Average]
+  (min, avg, max) = (23792.889, 30527.216, 37153.538), stdev = 5241.679
+  CI (99.9%): [10343.376, 50711.057] (assumes normal distribution)
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testStrassen:·gc.count":
+  106.000 ±(99.9%) 0.001 counts [Sum]
+  (min, avg, max) = (17.000, 21.200, 23.000), stdev = 2.490
+  CI (99.9%): [106.000, 106.000] (assumes normal distribution)
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testStrassen:·gc.time":
+  145.000 ±(99.9%) 0.001 ms [Sum]
+  (min, avg, max) = (24.000, 29.000, 34.000), stdev = 4.000
+  CI (99.9%): [145.000, 145.000] (assumes normal distribution)
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testStrassen:·stack":
+Stack profiler:
+
+....[Thread state distributions]....................................................................
+ 75.0%         RUNNABLE
+ 25.0%         TIMED_WAITING
+
+....[Thread state: RUNNABLE]........................................................................
+ 25.0%  33.3% sun.nio.ch.SocketDispatcher.read0
+ 24.9%  33.3% <stack is empty, everything is filtered?>
+ 10.8%  14.4% org.matrix.StrassenMatrixMultiplication.multiply
+  8.0%  10.7% org.matrix.StrassenMatrixMultiplication.addMatrix
+  5.3%   7.1% org.matrix.StrassenMatrixMultiplication.subtractMatrix
+  0.5%   0.7% org.matrix.StrassenMatrixMultiplication.splitMatrix
+  0.3%   0.4% org.matrix.StrassenMatrixMultiplication.mergeMatrix
+  0.0%   0.0% java.util.HashMap.tableSizeFor
+  0.0%   0.0% com.sun.management.internal.GarbageCollectorExtImpl.createGCNotification
+  0.0%   0.0% javax.management.openmbean.CompositeDataSupport.<init>
+
+....[Thread state: TIMED_WAITING]...................................................................
+ 25.0% 100.0% jdk.internal.misc.Unsafe.park
+
+
+
+# JMH version: 1.35
+# VM version: JDK 21.0.2, OpenJDK 64-Bit Server VM, 21.0.2+13-58
+# VM invoker: C:\Program Files\Java\OpenJDK-21\bin\java.exe
+# VM options: -javaagent:C:\Users\Radka\AppData\Local\JetBrains\IntelliJ IDEA 2024.2.3\lib\idea_rt.jar=55780:C:\Users\Radka\AppData\Local\JetBrains\IntelliJ IDEA 2024.2.3\bin -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.matrix.benchmark.BenchmarkMatrix.testStrassen
+# Parameters: (size = 256)
+
+# Run progress: 80.00% complete, ETA 00:05:34
+# Fork: 1 of 1
+# Warmup Iteration   1: 7481.977 ms/op
+# Warmup Iteration   2: 4593.366 ms/op
+# Warmup Iteration   3: 3563.274 ms/op
+# Warmup Iteration   4: 2909.210 ms/op
+# Warmup Iteration   5: 2759.829 ms/op
+Iteration   1: 2820.781 ms/op
+                 ·gc.alloc.rate:                   607.569 MB/sec
+                 ·gc.alloc.rate.norm:              1879150860.000 B/op
+                 ·gc.churn.G1_Eden_Space:          627.200 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm:     1939865600.000 B/op
+                 ·gc.churn.G1_Survivor_Space:      0.255 MB/sec
+                 ·gc.churn.G1_Survivor_Space.norm: 787160.000 B/op
+                 ·gc.count:                        25.000 counts
+                 ·gc.time:                         31.000 ms
+                 ·stack:                           <delayed till summary>
+
+Iteration   2: 2787.490 ms/op
+                 ·gc.alloc.rate:                   614.588 MB/sec
+                 ·gc.alloc.rate.norm:              1879160374.000 B/op
+                 ·gc.churn.G1_Eden_Space:          609.064 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm:     1862270976.000 B/op
+                 ·gc.churn.G1_Survivor_Space:      0.270 MB/sec
+                 ·gc.churn.G1_Survivor_Space.norm: 826940.000 B/op
+                 ·gc.count:                        24.000 counts
+                 ·gc.time:                         32.000 ms
+                 ·stack:                           <delayed till summary>
+
+Iteration   3: 3392.180 ms/op
+                 ·gc.alloc.rate:                   502.892 MB/sec
+                 ·gc.alloc.rate.norm:              1879139925.333 B/op
+                 ·gc.churn.G1_Eden_Space:          498.378 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm:     1862270976.000 B/op
+                 ·gc.churn.G1_Survivor_Space:      0.206 MB/sec
+                 ·gc.churn.G1_Survivor_Space.norm: 770378.667 B/op
+                 ·gc.count:                        18.000 counts
+                 ·gc.time:                         25.000 ms
+                 ·stack:                           <delayed till summary>
+
+Iteration   4: 2947.148 ms/op
+                 ·gc.alloc.rate:                   583.215 MB/sec
+                 ·gc.alloc.rate.norm:              1879137948.000 B/op
+                 ·gc.churn.G1_Eden_Space:          577.980 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm:     1862270976.000 B/op
+                 ·gc.churn.G1_Survivor_Space:      0.223 MB/sec
+                 ·gc.churn.G1_Survivor_Space.norm: 717428.000 B/op
+                 ·gc.count:                        24.000 counts
+                 ·gc.time:                         32.000 ms
+                 ·stack:                           <delayed till summary>
+
+Iteration   5: 2641.984 ms/op
+                 ·gc.alloc.rate:                   646.732 MB/sec
+                 ·gc.alloc.rate.norm:              1879141386.000 B/op
+                 ·gc.churn.G1_Eden_Space:          667.631 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm:     1939865600.000 B/op
+                 ·gc.churn.G1_Survivor_Space:      0.326 MB/sec
+                 ·gc.churn.G1_Survivor_Space.norm: 946090.000 B/op
+                 ·gc.count:                        25.000 counts
+                 ·gc.time:                         33.000 ms
+                 ·stack:                           <delayed till summary>
+
+
+
+Result "org.matrix.benchmark.BenchmarkMatrix.testStrassen":
+  2917.916 ±(99.9%) 1103.270 ms/op [Average]
+  (min, avg, max) = (2641.984, 2917.916, 3392.180), stdev = 286.516
+  CI (99.9%): [1814.646, 4021.187] (assumes normal distribution)
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testStrassen:·gc.alloc.rate":
+  590.999 ±(99.9%) 208.794 MB/sec [Average]
+  (min, avg, max) = (502.892, 590.999, 646.732), stdev = 54.223
+  CI (99.9%): [382.205, 799.793] (assumes normal distribution)
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testStrassen:·gc.alloc.rate.norm":
+  1879146098.667 ±(99.9%) 36184.175 B/op [Average]
+  (min, avg, max) = (1879137948.000, 1879146098.667, 1879160374.000), stdev = 9396.915
+  CI (99.9%): [1879109914.491, 1879182282.842] (assumes normal distribution)
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testStrassen:·gc.churn.G1_Eden_Space":
+  596.050 ±(99.9%) 244.523 MB/sec [Average]
+  (min, avg, max) = (498.378, 596.050, 667.631), stdev = 63.502
+  CI (99.9%): [351.528, 840.573] (assumes normal distribution)
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testStrassen:·gc.churn.G1_Eden_Space.norm":
+  1893308825.600 ±(99.9%) 163653621.911 B/op [Average]
+  (min, avg, max) = (1862270976.000, 1893308825.600, 1939865600.000), stdev = 42500325.906
+  CI (99.9%): [1729655203.689, 2056962447.511] (assumes normal distribution)
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testStrassen:·gc.churn.G1_Survivor_Space":
+  0.256 ±(99.9%) 0.179 MB/sec [Average]
+  (min, avg, max) = (0.206, 0.256, 0.326), stdev = 0.047
+  CI (99.9%): [0.077, 0.435] (assumes normal distribution)
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testStrassen:·gc.churn.G1_Survivor_Space.norm":
+  809599.333 ±(99.9%) 330504.045 B/op [Average]
+  (min, avg, max) = (717428.000, 809599.333, 946090.000), stdev = 85830.851
+  CI (99.9%): [479095.288, 1140103.378] (assumes normal distribution)
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testStrassen:·gc.count":
+  116.000 ±(99.9%) 0.001 counts [Sum]
+  (min, avg, max) = (18.000, 23.200, 25.000), stdev = 2.950
+  CI (99.9%): [116.000, 116.000] (assumes normal distribution)
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testStrassen:·gc.time":
+  153.000 ±(99.9%) 0.001 ms [Sum]
+  (min, avg, max) = (25.000, 30.600, 33.000), stdev = 3.209
+  CI (99.9%): [153.000, 153.000] (assumes normal distribution)
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testStrassen:·stack":
+Stack profiler:
+
+....[Thread state distributions]....................................................................
+ 75.0%         RUNNABLE
+ 25.0%         TIMED_WAITING
+
+....[Thread state: RUNNABLE]........................................................................
+ 25.0%  33.3% sun.nio.ch.SocketDispatcher.read0
+ 25.0%  33.3% <stack is empty, everything is filtered?>
+ 10.5%  14.0% org.matrix.StrassenMatrixMultiplication.multiply
+  7.9%  10.5% org.matrix.StrassenMatrixMultiplication.addMatrix
+  5.7%   7.6% org.matrix.StrassenMatrixMultiplication.subtractMatrix
+  0.6%   0.9% org.matrix.StrassenMatrixMultiplication.splitMatrix
+  0.3%   0.4% org.matrix.StrassenMatrixMultiplication.mergeMatrix
+  0.0%   0.0% com.sun.management.internal.GcInfoBuilder.getPoolNames
+  0.0%   0.0% sun.management.MappedMXBeanType$MapMXBeanType.toOpenTypeData
+  0.0%   0.0% javax.management.openmbean.CompositeDataSupport.makeMap
+
+....[Thread state: TIMED_WAITING]...................................................................
+ 25.0% 100.0% jdk.internal.misc.Unsafe.park
+
+
+
+# JMH version: 1.35
+# VM version: JDK 21.0.2, OpenJDK 64-Bit Server VM, 21.0.2+13-58
+# VM invoker: C:\Program Files\Java\OpenJDK-21\bin\java.exe
+# VM options: -javaagent:C:\Users\Radka\AppData\Local\JetBrains\IntelliJ IDEA 2024.2.3\lib\idea_rt.jar=55780:C:\Users\Radka\AppData\Local\JetBrains\IntelliJ IDEA 2024.2.3\bin -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.matrix.benchmark.BenchmarkMatrix.testStrassen
+# Parameters: (size = 512)
+
+# Run progress: 86.67% complete, ETA 00:03:44
+# Fork: 1 of 1
+# Warmup Iteration   1: 21709.619 ms/op
+# Warmup Iteration   2: 19772.012 ms/op
+# Warmup Iteration   3: 22121.132 ms/op
+# Warmup Iteration   4: 33170.680 ms/op
+# Warmup Iteration   5: 27303.431 ms/op
+Iteration   1: 24164.998 ms/op
+                 ·gc.alloc.rate:                   509.181 MB/sec
+                 ·gc.alloc.rate.norm:              13169821960.000 B/op
+                 ·gc.churn.G1_Eden_Space:          499.138 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm:     12910067712.000 B/op
+                 ·gc.churn.G1_Survivor_Space:      0.531 MB/sec
+                 ·gc.churn.G1_Survivor_Space.norm: 13736048.000 B/op
+                 ·gc.count:                        42.000 counts
+                 ·gc.time:                         74.000 ms
+                 ·stack:                           <delayed till summary>
+
+Iteration   2: 26456.156 ms/op
+                 ·gc.alloc.rate:                   465.539 MB/sec
+                 ·gc.alloc.rate.norm:              13169844152.000 B/op
+                 ·gc.churn.G1_Eden_Space:          467.476 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm:     13224640512.000 B/op
+                 ·gc.churn.G1_Survivor_Space:      0.513 MB/sec
+                 ·gc.churn.G1_Survivor_Space.norm: 14500360.000 B/op
+                 ·gc.count:                        43.000 counts
+                 ·gc.time:                         77.000 ms
+                 ·stack:                           <delayed till summary>
+
+Iteration   3: 27424.646 ms/op
+                 ·gc.alloc.rate:                   449.283 MB/sec
+                 ·gc.alloc.rate.norm:              13169842864.000 B/op
+                 ·gc.churn.G1_Eden_Space:          451.153 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm:     13224640512.000 B/op
+                 ·gc.churn.G1_Survivor_Space:      0.566 MB/sec
+                 ·gc.churn.G1_Survivor_Space.norm: 16601640.000 B/op
+                 ·gc.count:                        43.000 counts
+                 ·gc.time:                         71.000 ms
+                 ·stack:                           <delayed till summary>
+
+Iteration   4: 19711.473 ms/op
+                 ·gc.alloc.rate:                   621.129 MB/sec
+                 ·gc.alloc.rate.norm:              13169827736.000 B/op
+                 ·gc.churn.G1_Eden_Space:          623.516 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm:     13220446208.000 B/op
+                 ·gc.churn.G1_Survivor_Space:      0.702 MB/sec
+                 ·gc.churn.G1_Survivor_Space.norm: 14885600.000 B/op
+                 ·gc.count:                        43.000 counts
+                 ·gc.time:                         77.000 ms
+                 ·stack:                           <delayed till summary>
+
+Iteration   5: 20885.786 ms/op
+                 ·gc.alloc.rate:                   586.996 MB/sec
+                 ·gc.alloc.rate.norm:              13169827856.000 B/op
+                 ·gc.churn.G1_Eden_Space:          589.439 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm:     13224640512.000 B/op
+                 ·gc.churn.G1_Survivor_Space:      0.698 MB/sec
+                 ·gc.churn.G1_Survivor_Space.norm: 15666896.000 B/op
+                 ·gc.count:                        43.000 counts
+                 ·gc.time:                         79.000 ms
+                 ·stack:                           <delayed till summary>
+
+
+
+Result "org.matrix.benchmark.BenchmarkMatrix.testStrassen":
+  23728.612 ±(99.9%) 12988.385 ms/op [Average]
+  (min, avg, max) = (19711.473, 23728.612, 27424.646), stdev = 3373.042
+  CI (99.9%): [10740.226, 36716.997] (assumes normal distribution)
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testStrassen:·gc.alloc.rate":
+  526.426 ±(99.9%) 289.394 MB/sec [Average]
+  (min, avg, max) = (449.283, 526.426, 621.129), stdev = 75.155
+  CI (99.9%): [237.031, 815.820] (assumes normal distribution)
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testStrassen:·gc.alloc.rate.norm":
+  13169832913.600 ±(99.9%) 38394.623 B/op [Average]
+  (min, avg, max) = (13169821960.000, 13169832913.600, 13169844152.000), stdev = 9970.962
+  CI (99.9%): [13169794518.977, 13169871308.223] (assumes normal distribution)
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testStrassen:·gc.churn.G1_Eden_Space":
+  526.144 ±(99.9%) 293.778 MB/sec [Average]
+  (min, avg, max) = (451.153, 526.144, 623.516), stdev = 76.293
+  CI (99.9%): [232.367, 819.922] (assumes normal distribution)
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testStrassen:·gc.churn.G1_Eden_Space.norm":
+  13160887091.200 ±(99.9%) 539952916.199 B/op [Average]
+  (min, avg, max) = (12910067712.000, 13160887091.200, 13224640512.000), stdev = 140224057.643
+  CI (99.9%): [12620934175.001, 13700840007.399] (assumes normal distribution)
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testStrassen:·gc.churn.G1_Survivor_Space":
+  0.602 ±(99.9%) 0.353 MB/sec [Average]
+  (min, avg, max) = (0.513, 0.602, 0.702), stdev = 0.092
+  CI (99.9%): [0.249, 0.955] (assumes normal distribution)
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testStrassen:·gc.churn.G1_Survivor_Space.norm":
+  15078108.800 ±(99.9%) 4235620.013 B/op [Average]
+  (min, avg, max) = (13736048.000, 15078108.800, 16601640.000), stdev = 1099977.067
+  CI (99.9%): [10842488.787, 19313728.813] (assumes normal distribution)
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testStrassen:·gc.count":
+  214.000 ±(99.9%) 0.001 counts [Sum]
+  (min, avg, max) = (42.000, 42.800, 43.000), stdev = 0.447
+  CI (99.9%): [214.000, 214.000] (assumes normal distribution)
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testStrassen:·gc.time":
+  378.000 ±(99.9%) 0.001 ms [Sum]
+  (min, avg, max) = (71.000, 75.600, 79.000), stdev = 3.130
+  CI (99.9%): [378.000, 378.000] (assumes normal distribution)
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testStrassen:·stack":
+Stack profiler:
+
+....[Thread state distributions]....................................................................
+ 75.0%         RUNNABLE
+ 25.0%         TIMED_WAITING
+
+....[Thread state: RUNNABLE]........................................................................
+ 25.0%  33.3% sun.nio.ch.SocketDispatcher.read0
+ 25.0%  33.3% <stack is empty, everything is filtered?>
+ 10.5%  14.0% org.matrix.StrassenMatrixMultiplication.multiply
+  8.3%  11.0% org.matrix.StrassenMatrixMultiplication.addMatrix
+  5.3%   7.1% org.matrix.StrassenMatrixMultiplication.subtractMatrix
+  0.6%   0.8% org.matrix.StrassenMatrixMultiplication.splitMatrix
+  0.3%   0.4% org.matrix.StrassenMatrixMultiplication.mergeMatrix
+  0.0%   0.0% java.lang.String.substring
+  0.0%   0.0% java.lang.Object.clone
+  0.0%   0.0% java.util.TreeMap.fixAfterInsertion
+
+....[Thread state: TIMED_WAITING]...................................................................
+ 25.0% 100.0% jdk.internal.misc.Unsafe.park
+
+
+
+# JMH version: 1.35
+# VM version: JDK 21.0.2, OpenJDK 64-Bit Server VM, 21.0.2+13-58
+# VM invoker: C:\Program Files\Java\OpenJDK-21\bin\java.exe
+# VM options: -javaagent:C:\Users\Radka\AppData\Local\JetBrains\IntelliJ IDEA 2024.2.3\lib\idea_rt.jar=55780:C:\Users\Radka\AppData\Local\JetBrains\IntelliJ IDEA 2024.2.3\bin -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.matrix.benchmark.BenchmarkMatrix.testStrassen
+# Parameters: (size = 1024)
+
+# Run progress: 93.33% complete, ETA 00:02:02
+# Fork: 1 of 1
+# Warmup Iteration   1: 172726.509 ms/op
+# Warmup Iteration   2: 180719.062 ms/op
+# Warmup Iteration   3: 182093.867 ms/op
+# Warmup Iteration   4: 188462.004 ms/op
+# Warmup Iteration   5: 208544.745 ms/op
+Iteration   1: 189010.297 ms/op
+                 ·gc.alloc.rate:                   463.997 MB/sec
+                 ·gc.alloc.rate.norm:              92248335464.000 B/op
+                 ·gc.churn.G1_Eden_Space:          463.349 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm:     92119498752.000 B/op
+                 ·gc.churn.G1_Survivor_Space:      0.577 MB/sec
+                 ·gc.churn.G1_Survivor_Space.norm: 114652160.000 B/op
+                 ·gc.count:                        163.000 counts
+                 ·gc.time:                         447.000 ms
+                 ·stack:                           <delayed till summary>
+
+Iteration   2: 156089.690 ms/op
+                 ·gc.alloc.rate:                        561.808 MB/sec
+                 ·gc.alloc.rate.norm:                   92248938864.000 B/op
+                 ·gc.churn.Compressed_Class_Space:      ≈ 10⁻⁶ MB/sec
+                 ·gc.churn.Compressed_Class_Space.norm: 512.000 B/op
+                 ·gc.churn.G1_Eden_Space:               563.089 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm:          92459237376.000 B/op
+                 ·gc.churn.G1_Old_Gen:                  2.321 MB/sec
+                 ·gc.churn.G1_Old_Gen.norm:             381113024.000 B/op
+                 ·gc.churn.G1_Survivor_Space:           0.663 MB/sec
+                 ·gc.churn.G1_Survivor_Space.norm:      108829984.000 B/op
+                 ·gc.churn.Metaspace:                   ≈ 10⁻⁵ MB/sec
+                 ·gc.churn.Metaspace.norm:              1720.000 B/op
+                 ·gc.count:                             181.000 counts
+                 ·gc.time:                              372.000 ms
+                 ·stack:                                <delayed till summary>
+
+Iteration   3: 160397.213 ms/op
+                 ·gc.alloc.rate:                   546.730 MB/sec
+                 ·gc.alloc.rate.norm:              92248805464.000 B/op
+                 ·gc.churn.G1_Eden_Space:          547.505 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm:     92379545600.000 B/op
+                 ·gc.churn.G1_Survivor_Space:      0.659 MB/sec
+                 ·gc.churn.G1_Survivor_Space.norm: 111191576.000 B/op
+                 ·gc.count:                        178.000 counts
+                 ·gc.time:                         363.000 ms
+                 ·stack:                           <delayed till summary>
+
+Iteration   4: 192896.268 ms/op
+                 ·gc.alloc.rate:                   454.864 MB/sec
+                 ·gc.alloc.rate.norm:              92248748768.000 B/op
+                 ·gc.churn.G1_Eden_Space:          455.406 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm:     92358574080.000 B/op
+                 ·gc.churn.G1_Survivor_Space:      0.533 MB/sec
+                 ·gc.churn.G1_Survivor_Space.norm: 108079304.000 B/op
+                 ·gc.count:                        178.000 counts
+                 ·gc.time:                         412.000 ms
+                 ·stack:                           <delayed till summary>
+
+Iteration   5: 224234.131 ms/op
+                 ·gc.alloc.rate:                   391.449 MB/sec
+                 ·gc.alloc.rate.norm:              92249246640.000 B/op
+                 ·gc.churn.G1_Eden_Space:          392.553 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm:     92509569024.000 B/op
+                 ·gc.churn.G1_Survivor_Space:      0.497 MB/sec
+                 ·gc.churn.G1_Survivor_Space.norm: 117011008.000 B/op
+                 ·gc.count:                        202.000 counts
+                 ·gc.time:                         472.000 ms
+                 ·stack:                           <delayed till summary>
+
+
+
+Result "org.matrix.benchmark.BenchmarkMatrix.testStrassen":
+  184525.520 ±(99.9%) 106464.005 ms/op [Average]
+  (min, avg, max) = (156089.690, 184525.520, 224234.131), stdev = 27648.364
+  CI (99.9%): [78061.515, 290989.524] (assumes normal distribution)
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testStrassen:·gc.alloc.rate":
+  483.770 ±(99.9%) 270.942 MB/sec [Average]
+  (min, avg, max) = (391.449, 483.770, 561.808), stdev = 70.363
+  CI (99.9%): [212.828, 754.712] (assumes normal distribution)
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testStrassen:·gc.alloc.rate.norm":
+  92248815040.000 ±(99.9%) 1271423.734 B/op [Average]
+  (min, avg, max) = (92248335464.000, 92248815040.000, 92249246640.000), stdev = 330184.706
+  CI (99.9%): [92247543616.266, 92250086463.734] (assumes normal distribution)
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testStrassen:·gc.churn.Compressed_Class_Space":
+  ≈ 10⁻⁶ MB/sec
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testStrassen:·gc.churn.Compressed_Class_Space.norm":
+  102.400 ±(99.9%) 881.695 B/op [Average]
+  (min, avg, max) = (≈ 0, 102.400, 512.000), stdev = 228.973
+  CI (99.9%): [≈ 0, 984.095] (assumes normal distribution)
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testStrassen:·gc.churn.G1_Eden_Space":
+  484.380 ±(99.9%) 271.558 MB/sec [Average]
+  (min, avg, max) = (392.553, 484.380, 563.089), stdev = 70.523
+  CI (99.9%): [212.822, 755.938] (assumes normal distribution)
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testStrassen:·gc.churn.G1_Eden_Space.norm":
+  92365284966.400 ±(99.9%) 578571934.195 B/op [Average]
+  (min, avg, max) = (92119498752.000, 92365284966.400, 92509569024.000), stdev = 150253293.977
+  CI (99.9%): [91786713032.205, 92943856900.595] (assumes normal distribution)
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testStrassen:·gc.churn.G1_Old_Gen":
+  0.464 ±(99.9%) 3.997 MB/sec [Average]
+  (min, avg, max) = (≈ 0, 0.464, 2.321), stdev = 1.038
+  CI (99.9%): [≈ 0, 4.461] (assumes normal distribution)
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testStrassen:·gc.churn.G1_Old_Gen.norm":
+  76222604.800 ±(99.9%) 656299614.646 B/op [Average]
+  (min, avg, max) = (≈ 0, 76222604.800, 381113024.000), stdev = 170438925.755
+  CI (99.9%): [≈ 0, 732522219.446] (assumes normal distribution)
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testStrassen:·gc.churn.G1_Survivor_Space":
+  0.586 ±(99.9%) 0.286 MB/sec [Average]
+  (min, avg, max) = (0.497, 0.586, 0.663), stdev = 0.074
+  CI (99.9%): [0.299, 0.872] (assumes normal distribution)
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testStrassen:·gc.churn.G1_Survivor_Space.norm":
+  111952806.400 ±(99.9%) 14689011.173 B/op [Average]
+  (min, avg, max) = (108079304.000, 111952806.400, 117011008.000), stdev = 3814689.555
+  CI (99.9%): [97263795.227, 126641817.573] (assumes normal distribution)
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testStrassen:·gc.churn.Metaspace":
+  ≈ 10⁻⁶ MB/sec
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testStrassen:·gc.churn.Metaspace.norm":
+  344.000 ±(99.9%) 2961.944 B/op [Average]
+  (min, avg, max) = (≈ 0, 344.000, 1720.000), stdev = 769.207
+  CI (99.9%): [≈ 0, 3305.944] (assumes normal distribution)
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testStrassen:·gc.count":
+  902.000 ±(99.9%) 0.001 counts [Sum]
+  (min, avg, max) = (163.000, 180.400, 202.000), stdev = 13.975
+  CI (99.9%): [902.000, 902.000] (assumes normal distribution)
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testStrassen:·gc.time":
+  2066.000 ±(99.9%) 0.001 ms [Sum]
+  (min, avg, max) = (363.000, 413.200, 472.000), stdev = 46.954
+  CI (99.9%): [2066.000, 2066.000] (assumes normal distribution)
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testStrassen:·stack":
+Stack profiler:
+
+....[Thread state distributions]....................................................................
+ 75.0%         RUNNABLE
+ 25.0%         TIMED_WAITING
+
+....[Thread state: RUNNABLE]........................................................................
+ 25.0%  33.3% sun.nio.ch.SocketDispatcher.read0
+ 25.0%  33.3% <stack is empty, everything is filtered?>
+ 10.5%  14.1% org.matrix.StrassenMatrixMultiplication.multiply
+  8.1%  10.9% org.matrix.StrassenMatrixMultiplication.addMatrix
+  5.3%   7.1% org.matrix.StrassenMatrixMultiplication.subtractMatrix
+  0.6%   0.8% org.matrix.StrassenMatrixMultiplication.splitMatrix
+  0.4%   0.5% org.matrix.StrassenMatrixMultiplication.mergeMatrix
+  0.0%   0.0% java.lang.invoke.DirectMethodHandle$Holder.invokeStatic
+  0.0%   0.0% java.lang.String.intern
+  0.0%   0.0% jdk.internal.reflect.Reflection.getCallerClass
+
+....[Thread state: TIMED_WAITING]...................................................................
+ 25.0% 100.0% jdk.internal.misc.Unsafe.park
+
+
+
+# Run complete. Total time: 00:59:33
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+NOTE: Current JVM experimentally supports Compiler Blackholes, and they are in use. Please exercise
+extra caution when trusting the results, look into the generated code to check the benchmark still
+works, and factor in a small probability of new VM bugs. Additionally, while comparisons between
+different JVMs are already problematic, the performance difference caused by different Blackhole
+modes can be very significant. Please make sure you use the consistent Blackhole mode for comparisons.
+
+Benchmark                                                           (size)  Mode  Cnt            Score           Error   Units
+BenchmarkMatrix.testLoop                                                64  avgt    5            0.659 ±         0.778   ms/op
+BenchmarkMatrix.testLoop:·gc.alloc.rate                                 64  avgt    5           50.316 ±        54.051  MB/sec
+BenchmarkMatrix.testLoop:·gc.alloc.rate.norm                            64  avgt    5        34067.243 ±         2.261    B/op
+BenchmarkMatrix.testLoop:·gc.churn.G1_Eden_Space                        64  avgt    5           56.261 ±        76.795  MB/sec
+BenchmarkMatrix.testLoop:·gc.churn.G1_Eden_Space.norm                   64  avgt    5        37706.652 ±     26874.931    B/op
+BenchmarkMatrix.testLoop:·gc.churn.G1_Survivor_Space                    64  avgt    5            0.050 ±         0.398  MB/sec
+BenchmarkMatrix.testLoop:·gc.churn.G1_Survivor_Space.norm               64  avgt    5           26.801 ±       204.611    B/op
+BenchmarkMatrix.testLoop:·gc.count                                      64  avgt    5           10.000                  counts
+BenchmarkMatrix.testLoop:·gc.time                                       64  avgt    5           24.000                      ms
+BenchmarkMatrix.testLoop:·stack                                         64  avgt                   NaN                     ---
+BenchmarkMatrix.testLoop                                               128  avgt    5            4.957 ±         6.025   ms/op
+BenchmarkMatrix.testLoop:·gc.alloc.rate                                128  avgt    5           26.216 ±        28.860  MB/sec
+BenchmarkMatrix.testLoop:·gc.alloc.rate.norm                           128  avgt    5       133659.078 ±        27.009    B/op
+BenchmarkMatrix.testLoop:·gc.churn.G1_Eden_Space                       128  avgt    5           21.843 ±        47.121  MB/sec
+BenchmarkMatrix.testLoop:·gc.churn.G1_Eden_Space.norm                  128  avgt    5       115220.772 ±    296048.704    B/op
+BenchmarkMatrix.testLoop:·gc.churn.G1_Survivor_Space                   128  avgt    5            0.007 ±         0.059  MB/sec
+BenchmarkMatrix.testLoop:·gc.churn.G1_Survivor_Space.norm              128  avgt    5           28.807 ±       225.985    B/op
+BenchmarkMatrix.testLoop:·gc.count                                     128  avgt    5            4.000                  counts
+BenchmarkMatrix.testLoop:·gc.time                                      128  avgt    5           24.000                      ms
+BenchmarkMatrix.testLoop:·stack                                        128  avgt                   NaN                     ---
+BenchmarkMatrix.testLoop                                               256  avgt    5           42.921 ±        33.591   ms/op
+BenchmarkMatrix.testLoop:·gc.alloc.rate                                256  avgt    5           11.521 ±         8.943  MB/sec
+BenchmarkMatrix.testLoop:·gc.alloc.rate.norm                           256  avgt    5       529488.068 ±       224.693    B/op
+BenchmarkMatrix.testLoop:·gc.churn.G1_Eden_Space                       256  avgt    5           16.790 ±        59.020  MB/sec
+BenchmarkMatrix.testLoop:·gc.churn.G1_Eden_Space.norm                  256  avgt    5       726871.863 ±   2629777.736    B/op
+BenchmarkMatrix.testLoop:·gc.churn.G1_Survivor_Space                   256  avgt    5            0.002 ±         0.019  MB/sec
+BenchmarkMatrix.testLoop:·gc.churn.G1_Survivor_Space.norm              256  avgt    5          116.890 ±      1006.456    B/op
+BenchmarkMatrix.testLoop:·gc.count                                     256  avgt    5            3.000                  counts
+BenchmarkMatrix.testLoop:·gc.time                                      256  avgt    5            6.000                      ms
+BenchmarkMatrix.testLoop:·stack                                        256  avgt                   NaN                     ---
+BenchmarkMatrix.testLoop                                               512  avgt    5          532.930 ±       554.802   ms/op
+BenchmarkMatrix.testLoop:·gc.alloc.rate                                512  avgt    5            3.773 ±         3.362  MB/sec
+BenchmarkMatrix.testLoop:·gc.alloc.rate.norm                           512  avgt    5      2107633.800 ±      1750.757    B/op
+BenchmarkMatrix.testLoop:·gc.churn.G1_Eden_Space                       512  avgt    5            5.496 ±        47.323  MB/sec
+BenchmarkMatrix.testLoop:·gc.churn.G1_Eden_Space.norm                  512  avgt    5      2387526.892 ±  20557326.576    B/op
+BenchmarkMatrix.testLoop:·gc.count                                     512  avgt    5            1.000                  counts
+BenchmarkMatrix.testLoop:·gc.time                                      512  avgt    5            3.000                      ms
+BenchmarkMatrix.testLoop:·stack                                        512  avgt                   NaN                     ---
+BenchmarkMatrix.testLoop                                              1024  avgt    5         4925.325 ±      1324.009   ms/op
+BenchmarkMatrix.testLoop:·gc.alloc.rate                               1024  avgt    5            1.571 ±         0.455  MB/sec
+BenchmarkMatrix.testLoop:·gc.alloc.rate.norm                          1024  avgt    5      8409273.600 ±       177.163    B/op
+BenchmarkMatrix.testLoop:·gc.count                                    1024  avgt    5              ≈ 0                  counts
+BenchmarkMatrix.testLoop:·stack                                       1024  avgt                   NaN                     ---
+BenchmarkMatrix.testNaive                                               64  avgt    5            0.703 ±         0.699   ms/op
+BenchmarkMatrix.testNaive:·gc.alloc.rate                                64  avgt    5           46.011 ±        39.764  MB/sec
+BenchmarkMatrix.testNaive:·gc.alloc.rate.norm                           64  avgt    5        34066.816 ±         1.866    B/op
+BenchmarkMatrix.testNaive:·gc.churn.G1_Eden_Space                       64  avgt    5           44.906 ±        59.518  MB/sec
+BenchmarkMatrix.testNaive:·gc.churn.G1_Eden_Space.norm                  64  avgt    5        32638.100 ±     22305.769    B/op
+BenchmarkMatrix.testNaive:·gc.churn.G1_Survivor_Space                   64  avgt    5            0.053 ±         0.355  MB/sec
+BenchmarkMatrix.testNaive:·gc.churn.G1_Survivor_Space.norm              64  avgt    5           35.591 ±       232.906    B/op
+BenchmarkMatrix.testNaive:·gc.count                                     64  avgt    5            8.000                  counts
+BenchmarkMatrix.testNaive:·gc.time                                      64  avgt    5           36.000                      ms
+BenchmarkMatrix.testNaive:·stack                                        64  avgt                   NaN                     ---
+BenchmarkMatrix.testNaive                                              128  avgt    5            6.072 ±         5.394   ms/op
+BenchmarkMatrix.testNaive:·gc.alloc.rate                               128  avgt    5           20.698 ±        14.987  MB/sec
+BenchmarkMatrix.testNaive:·gc.alloc.rate.norm                          128  avgt    5       133662.535 ±        33.895    B/op
+BenchmarkMatrix.testNaive:·gc.churn.G1_Eden_Space                      128  avgt    5           22.523 ±        48.482  MB/sec
+BenchmarkMatrix.testNaive:·gc.churn.G1_Eden_Space.norm                 128  avgt    5       151113.900 ±    365745.812    B/op
+BenchmarkMatrix.testNaive:·gc.churn.G1_Survivor_Space                  128  avgt    5            0.002 ±         0.014  MB/sec
+BenchmarkMatrix.testNaive:·gc.churn.G1_Survivor_Space.norm             128  avgt    5            9.256 ±        79.694    B/op
+BenchmarkMatrix.testNaive:·gc.count                                    128  avgt    5            4.000                  counts
+BenchmarkMatrix.testNaive:·gc.time                                     128  avgt    5           15.000                      ms
+BenchmarkMatrix.testNaive:·stack                                       128  avgt                   NaN                     ---
+BenchmarkMatrix.testNaive                                              256  avgt    5           34.836 ±        11.334   ms/op
+BenchmarkMatrix.testNaive:·gc.alloc.rate                               256  avgt    5           13.866 ±         4.205  MB/sec
+BenchmarkMatrix.testNaive:·gc.alloc.rate.norm                          256  avgt    5       529460.173 ±       182.896    B/op
+BenchmarkMatrix.testNaive:·gc.churn.G1_Eden_Space                      256  avgt    5           11.125 ±        58.663  MB/sec
+BenchmarkMatrix.testNaive:·gc.churn.G1_Eden_Space.norm                 256  avgt    5       403329.494 ±   2128562.122    B/op
+BenchmarkMatrix.testNaive:·gc.churn.G1_Survivor_Space                  256  avgt    5            0.008 ±         0.070  MB/sec
+BenchmarkMatrix.testNaive:·gc.churn.G1_Survivor_Space.norm             256  avgt    5          287.766 ±      2477.749    B/op
+BenchmarkMatrix.testNaive:·gc.count                                    256  avgt    5            2.000                  counts
+BenchmarkMatrix.testNaive:·gc.time                                     256  avgt    5            8.000                      ms
+BenchmarkMatrix.testNaive:·stack                                       256  avgt                   NaN                     ---
+BenchmarkMatrix.testNaive                                              512  avgt    5          465.025 ±       537.619   ms/op
+BenchmarkMatrix.testNaive:·gc.alloc.rate                               512  avgt    5            4.413 ±         4.781  MB/sec
+BenchmarkMatrix.testNaive:·gc.alloc.rate.norm                          512  avgt    5      2107648.530 ±      1907.580    B/op
+BenchmarkMatrix.testNaive:·gc.churn.G1_Eden_Space                      512  avgt    5            5.536 ±        47.665  MB/sec
+BenchmarkMatrix.testNaive:·gc.churn.G1_Eden_Space.norm                 512  avgt    5      2586487.467 ±  22270437.124    B/op
+BenchmarkMatrix.testNaive:·gc.churn.G1_Survivor_Space                  512  avgt    5            0.004 ±         0.038  MB/sec
+BenchmarkMatrix.testNaive:·gc.churn.G1_Survivor_Space.norm             512  avgt    5         2053.867 ±     17684.411    B/op
+BenchmarkMatrix.testNaive:·gc.count                                    512  avgt    5            1.000                  counts
+BenchmarkMatrix.testNaive:·gc.time                                     512  avgt    5            2.000                      ms
+BenchmarkMatrix.testNaive:·stack                                       512  avgt                   NaN                     ---
+BenchmarkMatrix.testNaive                                             1024  avgt    5         3072.524 ±       414.418   ms/op
+BenchmarkMatrix.testNaive:·gc.alloc.rate                              1024  avgt    5            2.509 ±         0.326  MB/sec
+BenchmarkMatrix.testNaive:·gc.alloc.rate.norm                         1024  avgt    5      8409207.600 ±        13.776    B/op
+BenchmarkMatrix.testNaive:·gc.count                                   1024  avgt    5              ≈ 0                  counts
+BenchmarkMatrix.testNaive:·stack                                      1024  avgt                   NaN                     ---
+BenchmarkMatrix.testStrassen                                            64  avgt    5           53.834 ±        20.933   ms/op
+BenchmarkMatrix.testStrassen:·gc.alloc.rate                             64  avgt    5          647.544 ±       226.229  MB/sec
+BenchmarkMatrix.testStrassen:·gc.alloc.rate.norm                        64  avgt    5     38122533.022 ±       973.995    B/op
+BenchmarkMatrix.testStrassen:·gc.churn.G1_Eden_Space                    64  avgt    5          650.590 ±       208.554  MB/sec
+BenchmarkMatrix.testStrassen:·gc.churn.G1_Eden_Space.norm               64  avgt    5     38328875.283 ±   2393610.227    B/op
+BenchmarkMatrix.testStrassen:·gc.churn.G1_Survivor_Space                64  avgt    5            0.016 ±         0.006  MB/sec
+BenchmarkMatrix.testStrassen:·gc.churn.G1_Survivor_Space.norm           64  avgt    5          969.088 ±       123.028    B/op
+BenchmarkMatrix.testStrassen:·gc.count                                  64  avgt    5          116.000                  counts
+BenchmarkMatrix.testStrassen:·gc.time                                   64  avgt    5          121.000                      ms
+BenchmarkMatrix.testStrassen:·stack                                     64  avgt                   NaN                     ---
+BenchmarkMatrix.testStrassen                                           128  avgt    5          423.390 ±       260.471   ms/op
+BenchmarkMatrix.testStrassen:·gc.alloc.rate                            128  avgt    5          584.036 ±       306.409  MB/sec
+BenchmarkMatrix.testStrassen:·gc.alloc.rate.norm                       128  avgt    5    267876533.332 ±      2347.532    B/op
+BenchmarkMatrix.testStrassen:·gc.churn.G1_Eden_Space                   128  avgt    5          587.796 ±       275.332  MB/sec
+BenchmarkMatrix.testStrassen:·gc.churn.G1_Eden_Space.norm              128  avgt    5    270131510.778 ±  24734923.798    B/op
+BenchmarkMatrix.testStrassen:·gc.churn.G1_Survivor_Space               128  avgt    5            0.067 ±         0.061  MB/sec
+BenchmarkMatrix.testStrassen:·gc.churn.G1_Survivor_Space.norm          128  avgt    5        30527.216 ±     20183.841    B/op
+BenchmarkMatrix.testStrassen:·gc.count                                 128  avgt    5          106.000                  counts
+BenchmarkMatrix.testStrassen:·gc.time                                  128  avgt    5          145.000                      ms
+BenchmarkMatrix.testStrassen:·stack                                    128  avgt                   NaN                     ---
+BenchmarkMatrix.testStrassen                                           256  avgt    5         2917.916 ±      1103.270   ms/op
+BenchmarkMatrix.testStrassen:·gc.alloc.rate                            256  avgt    5          590.999 ±       208.794  MB/sec
+BenchmarkMatrix.testStrassen:·gc.alloc.rate.norm                       256  avgt    5   1879146098.667 ±     36184.175    B/op
+BenchmarkMatrix.testStrassen:·gc.churn.G1_Eden_Space                   256  avgt    5          596.050 ±       244.523  MB/sec
+BenchmarkMatrix.testStrassen:·gc.churn.G1_Eden_Space.norm              256  avgt    5   1893308825.600 ± 163653621.911    B/op
+BenchmarkMatrix.testStrassen:·gc.churn.G1_Survivor_Space               256  avgt    5            0.256 ±         0.179  MB/sec
+BenchmarkMatrix.testStrassen:·gc.churn.G1_Survivor_Space.norm          256  avgt    5       809599.333 ±    330504.045    B/op
+BenchmarkMatrix.testStrassen:·gc.count                                 256  avgt    5          116.000                  counts
+BenchmarkMatrix.testStrassen:·gc.time                                  256  avgt    5          153.000                      ms
+BenchmarkMatrix.testStrassen:·stack                                    256  avgt                   NaN                     ---
+BenchmarkMatrix.testStrassen                                           512  avgt    5        23728.612 ±     12988.385   ms/op
+BenchmarkMatrix.testStrassen:·gc.alloc.rate                            512  avgt    5          526.426 ±       289.394  MB/sec
+BenchmarkMatrix.testStrassen:·gc.alloc.rate.norm                       512  avgt    5  13169832913.600 ±     38394.623    B/op
+BenchmarkMatrix.testStrassen:·gc.churn.G1_Eden_Space                   512  avgt    5          526.144 ±       293.778  MB/sec
+BenchmarkMatrix.testStrassen:·gc.churn.G1_Eden_Space.norm              512  avgt    5  13160887091.200 ± 539952916.199    B/op
+BenchmarkMatrix.testStrassen:·gc.churn.G1_Survivor_Space               512  avgt    5            0.602 ±         0.353  MB/sec
+BenchmarkMatrix.testStrassen:·gc.churn.G1_Survivor_Space.norm          512  avgt    5     15078108.800 ±   4235620.013    B/op
+BenchmarkMatrix.testStrassen:·gc.count                                 512  avgt    5          214.000                  counts
+BenchmarkMatrix.testStrassen:·gc.time                                  512  avgt    5          378.000                      ms
+BenchmarkMatrix.testStrassen:·stack                                    512  avgt                   NaN                     ---
+BenchmarkMatrix.testStrassen                                          1024  avgt    5       184525.520 ±    106464.005   ms/op
+BenchmarkMatrix.testStrassen:·gc.alloc.rate                           1024  avgt    5          483.770 ±       270.942  MB/sec
+BenchmarkMatrix.testStrassen:·gc.alloc.rate.norm                      1024  avgt    5  92248815040.000 ±   1271423.734    B/op
+BenchmarkMatrix.testStrassen:·gc.churn.Compressed_Class_Space         1024  avgt    5           ≈ 10⁻⁶                  MB/sec
+BenchmarkMatrix.testStrassen:·gc.churn.Compressed_Class_Space.norm    1024  avgt    5          102.400 ±       881.695    B/op
+BenchmarkMatrix.testStrassen:·gc.churn.G1_Eden_Space                  1024  avgt    5          484.380 ±       271.558  MB/sec
+BenchmarkMatrix.testStrassen:·gc.churn.G1_Eden_Space.norm             1024  avgt    5  92365284966.400 ± 578571934.195    B/op
+BenchmarkMatrix.testStrassen:·gc.churn.G1_Old_Gen                     1024  avgt    5            0.464 ±         3.997  MB/sec
+BenchmarkMatrix.testStrassen:·gc.churn.G1_Old_Gen.norm                1024  avgt    5     76222604.800 ± 656299614.646    B/op
+BenchmarkMatrix.testStrassen:·gc.churn.G1_Survivor_Space              1024  avgt    5            0.586 ±         0.286  MB/sec
+BenchmarkMatrix.testStrassen:·gc.churn.G1_Survivor_Space.norm         1024  avgt    5    111952806.400 ±  14689011.173    B/op
+BenchmarkMatrix.testStrassen:·gc.churn.Metaspace                      1024  avgt    5           ≈ 10⁻⁶                  MB/sec
+BenchmarkMatrix.testStrassen:·gc.churn.Metaspace.norm                 1024  avgt    5          344.000 ±      2961.944    B/op
+BenchmarkMatrix.testStrassen:·gc.count                                1024  avgt    5          902.000                  counts
+BenchmarkMatrix.testStrassen:·gc.time                                 1024  avgt    5         2066.000                      ms
+BenchmarkMatrix.testStrassen:·stack                                   1024  avgt                   NaN                     ---

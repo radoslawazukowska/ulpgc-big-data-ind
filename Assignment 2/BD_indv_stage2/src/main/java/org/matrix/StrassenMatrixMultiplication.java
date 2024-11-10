@@ -8,6 +8,8 @@ public class StrassenMatrixMultiplication {
 
         if (n==1) {
             C[0][0] = A[0][0] * B[0][0];
+        } else if (n < 127) {
+            C = NaiveMatrixMultiplication.multiply(A, B);
         } else {
             double [][] A00 = new double[n/2][n/2];
             double [][] A01 = new double[n/2][n/2];
@@ -49,41 +51,32 @@ public class StrassenMatrixMultiplication {
     }
 
     private static void mergeMatrix(double[][] child, double[][] parent, int rowOffset, int colOffset) {
-        for (int i=0; i<child.length; i++) {
-            for (int j=0; j<child.length; j++) {
+        for (int i=0; i<child.length; i++)
+            for (int j=0; j<child.length; j++)
                 parent[rowOffset + i][colOffset + j] = child[i][j];
-            }
-        }
     }
 
     private static double[][] subtractMatrix(double[][] A, double[][] B) {
         int n = A.length;
         double[][] C = new double[n][n];
-        for(int i=0; i<n; i++){
-            for (int j=0; j<n; j++){
+        for(int i=0; i<n; i++)
+            for (int j=0; j<n; j++)
                 C[i][j] = A[i][j] - B[i][j];
-            }
-        }
         return C;
     }
 
     private static void splitMatrix(double[][] parent, double[][] child, int rowOffset, int colOffset) {
-        for (int i=0; i<child.length; i++){
-            for (int j=0; j<child.length; j++){
+        for (int i=0; i<child.length; i++)
+            for (int j=0; j<child.length; j++)
                 child[i][j] = parent[rowOffset+i][colOffset+j];
-            }
-        }
-
     }
 
     private static double[][] addMatrix(double[][] A, double[][] B) {
         int n = A.length;
         double[][] C = new double[n][n];
-        for(int i=0; i<n; i++){
-            for (int j=0; j<n; j++){
+        for(int i=0; i<n; i++)
+            for (int j=0; j<n; j++)
                 C[i][j] = A[i][j] + B[i][j];
-            }
-        }
         return C;
     }
 }

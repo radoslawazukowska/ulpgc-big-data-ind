@@ -1,0 +1,61 @@
+Benchmark                                                    (sparsity)  Mode  Cnt        Score        Error   Units
+BenchmarkSparse.testMatrix                                         0.91  avgt    5       10.083 ±      2.557   ms/op
+BenchmarkSparse.testMatrix:·gc.alloc.rate                          0.91  avgt    5      127.319 ±     34.407  MB/sec
+BenchmarkSparse.testMatrix:·gc.alloc.rate.norm                     0.91  avgt    5  1409122.842 ±     52.817    B/op
+BenchmarkSparse.testMatrix:·gc.churn.G1_Eden_Space                 0.91  avgt    5      129.307 ±     58.953  MB/sec
+BenchmarkSparse.testMatrix:·gc.churn.G1_Eden_Space.norm            0.91  avgt    5  1432742.241 ± 622207.927    B/op
+BenchmarkSparse.testMatrix:·gc.churn.G1_Survivor_Space             0.91  avgt    5        0.106 ±      0.211  MB/sec
+BenchmarkSparse.testMatrix:·gc.churn.G1_Survivor_Space.norm        0.91  avgt    5     1157.752 ±   2206.377    B/op
+BenchmarkSparse.testMatrix:·gc.count                               0.91  avgt    5       23.000               counts
+BenchmarkSparse.testMatrix:·gc.time                                0.91  avgt    5       36.000                   ms
+BenchmarkSparse.testMatrix:·stack                                  0.91  avgt               NaN                  ---
+BenchmarkSparse.testMatrix                                         0.96  avgt    5        6.079 ±      6.128   ms/op
+BenchmarkSparse.testMatrix:·gc.alloc.rate                          0.96  avgt    5      195.572 ±    181.921  MB/sec
+BenchmarkSparse.testMatrix:·gc.alloc.rate.norm                     0.96  avgt    5  1245804.302 ±     36.497    B/op
+BenchmarkSparse.testMatrix:·gc.churn.G1_Eden_Space                 0.96  avgt    5      195.928 ±    175.582  MB/sec
+BenchmarkSparse.testMatrix:·gc.churn.G1_Eden_Space.norm            0.96  avgt    5  1252714.030 ± 305338.069    B/op
+BenchmarkSparse.testMatrix:·gc.churn.G1_Survivor_Space             0.96  avgt    5        0.176 ±      0.264  MB/sec
+BenchmarkSparse.testMatrix:·gc.churn.G1_Survivor_Space.norm        0.96  avgt    5     1105.074 ±    874.704    B/op
+BenchmarkSparse.testMatrix:·gc.count                               0.96  avgt    5       35.000               counts
+BenchmarkSparse.testMatrix:·gc.time                                0.96  avgt    5       56.000                   ms
+BenchmarkSparse.testMatrix:·stack                                  0.96  avgt               NaN                  ---
+BenchmarkSparse.testMatrix                                        0.970  avgt    5       11.445 ±     24.252   ms/op
+BenchmarkSparse.testMatrix:·gc.alloc.rate                         0.970  avgt    5      121.448 ±    219.953  MB/sec
+BenchmarkSparse.testMatrix:·gc.alloc.rate.norm                    0.970  avgt    5  1245803.888 ±     49.879    B/op
+BenchmarkSparse.testMatrix:·gc.churn.G1_Eden_Space                0.970  avgt    5      123.387 ±    250.102  MB/sec
+BenchmarkSparse.testMatrix:·gc.churn.G1_Eden_Space.norm           0.970  avgt    5  1259353.532 ± 575911.289    B/op
+BenchmarkSparse.testMatrix:·gc.churn.G1_Survivor_Space            0.970  avgt    5        0.093 ±      0.330  MB/sec
+BenchmarkSparse.testMatrix:·gc.churn.G1_Survivor_Space.norm       0.970  avgt    5      798.793 ±   2203.096    B/op
+BenchmarkSparse.testMatrix:·gc.count                              0.970  avgt    5       22.000               counts
+BenchmarkSparse.testMatrix:·gc.time                               0.970  avgt    5       40.000                   ms
+BenchmarkSparse.testMatrix:·stack                                 0.970  avgt               NaN                  ---
+BenchmarkSparse.testMatrix                                        0.971  avgt    5        3.591 ±      0.216   ms/op
+BenchmarkSparse.testMatrix:·gc.alloc.rate                         0.971  avgt    5      321.153 ±     19.606  MB/sec
+BenchmarkSparse.testMatrix:·gc.alloc.rate.norm                    0.971  avgt    5  1270009.600 ±     26.013    B/op
+BenchmarkSparse.testMatrix:·gc.churn.G1_Eden_Space                0.971  avgt    5      320.816 ±     59.757  MB/sec
+BenchmarkSparse.testMatrix:·gc.churn.G1_Eden_Space.norm           0.971  avgt    5  1268678.631 ± 224109.869    B/op
+BenchmarkSparse.testMatrix:·gc.churn.G1_Survivor_Space            0.971  avgt    5        0.218 ±      0.219  MB/sec
+BenchmarkSparse.testMatrix:·gc.churn.G1_Survivor_Space.norm       0.971  avgt    5      862.994 ±    904.803    B/op
+BenchmarkSparse.testMatrix:·gc.count                              0.971  avgt    5       57.000               counts
+BenchmarkSparse.testMatrix:·gc.time                               0.971  avgt    5       80.000                   ms
+BenchmarkSparse.testMatrix:·stack                                 0.971  avgt               NaN                  ---
+BenchmarkSparse.testMatrix                                        0.982  avgt    5        3.845 ±      6.405   ms/op
+BenchmarkSparse.testMatrix:·gc.alloc.rate                         0.982  avgt    5      379.409 ±    413.060  MB/sec
+BenchmarkSparse.testMatrix:·gc.alloc.rate.norm                    0.982  avgt    5  1452730.616 ±     42.070    B/op
+BenchmarkSparse.testMatrix:·gc.churn.G1_Eden_Space                0.982  avgt    5      381.382 ±    421.133  MB/sec
+BenchmarkSparse.testMatrix:·gc.churn.G1_Eden_Space.norm           0.982  avgt    5  1460538.867 ± 143677.263    B/op
+BenchmarkSparse.testMatrix:·gc.churn.G1_Survivor_Space            0.982  avgt    5        0.371 ±      0.588  MB/sec
+BenchmarkSparse.testMatrix:·gc.churn.G1_Survivor_Space.norm       0.982  avgt    5     1452.919 ±   1798.251    B/op
+BenchmarkSparse.testMatrix:·gc.count                              0.982  avgt    5       68.000               counts
+BenchmarkSparse.testMatrix:·gc.time                               0.982  avgt    5      106.000                   ms
+BenchmarkSparse.testMatrix:·stack                                 0.982  avgt               NaN                  ---
+BenchmarkSparse.testMatrix                                        0.986  avgt    5        2.886 ±      0.945   ms/op
+BenchmarkSparse.testMatrix:·gc.alloc.rate                         0.986  avgt    5      495.267 ±    164.695  MB/sec
+BenchmarkSparse.testMatrix:·gc.alloc.rate.norm                    0.986  avgt    5  1565090.268 ±     57.215    B/op
+BenchmarkSparse.testMatrix:·gc.churn.G1_Eden_Space                0.986  avgt    5      500.832 ±    178.294  MB/sec
+BenchmarkSparse.testMatrix:·gc.churn.G1_Eden_Space.norm           0.986  avgt    5  1583080.123 ± 298923.889    B/op
+BenchmarkSparse.testMatrix:·gc.churn.G1_Survivor_Space            0.986  avgt    5        0.542 ±      0.339  MB/sec
+BenchmarkSparse.testMatrix:·gc.churn.G1_Survivor_Space.norm       0.986  avgt    5     1706.656 ±    793.175    B/op
+BenchmarkSparse.testMatrix:·gc.count                              0.986  avgt    5       89.000               counts
+BenchmarkSparse.testMatrix:·gc.time                               0.986  avgt    5      136.000                   ms
+BenchmarkSparse.testMatrix:·stack                                 0.986  avgt               NaN                  ---

@@ -1,0 +1,254 @@
+# JMH version: 1.35
+# VM version: JDK 21.0.2, OpenJDK 64-Bit Server VM, 21.0.2+13-58
+# VM invoker: C:\Program Files\Java\OpenJDK-21\bin\java.exe
+# VM options: -javaagent:C:\Users\Radka\AppData\Local\JetBrains\IntelliJ IDEA 2024.2.3\lib\idea_rt.jar=62483:C:\Users\Radka\AppData\Local\JetBrains\IntelliJ IDEA 2024.2.3\bin -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 1 iterations, 10 s each
+# Measurement: 1 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.matrix.benchmark.BenchmarkMatrix.testLoop
+# Parameters: (size = 2048)
+
+# Run progress: 0.00% complete, ETA 00:01:00
+# Fork: 1 of 1
+# Warmup Iteration   1: 197388.226 ms/op
+Iteration   1: 272440.919 ms/op
+                 ·gc.alloc.rate:               0.117 MB/sec
+                 ·gc.alloc.rate.norm:          33622552.000 B/op
+                 ·gc.churn.G1_Eden_Space:      0.161 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm: 46137344.000 B/op
+                 ·gc.count:                    1.000 counts
+                 ·gc.time:                     17.000 ms
+                 ·stack:                       <delayed till summary>
+
+
+
+Result "org.matrix.benchmark.BenchmarkMatrix.testLoop":
+  272440.919 ms/op
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testLoop:·gc.alloc.rate":
+  0.117 MB/sec
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testLoop:·gc.alloc.rate.norm":
+  33622552.000 B/op
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testLoop:·gc.churn.G1_Eden_Space":
+  0.161 MB/sec
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testLoop:·gc.churn.G1_Eden_Space.norm":
+  46137344.000 B/op
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testLoop:·gc.count":
+  1.000 counts
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testLoop:·gc.time":
+  17.000 ms
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testLoop:·stack":
+Stack profiler:
+
+....[Thread state distributions]....................................................................
+ 75.0%         RUNNABLE
+ 25.0%         TIMED_WAITING
+
+....[Thread state: RUNNABLE]........................................................................
+ 25.0%  33.3% org.matrix.LoopUnrollingMatrixMultiplication.multiply
+ 25.0%  33.3% <stack is empty, everything is filtered?>
+ 25.0%  33.3% sun.nio.ch.SocketDispatcher.read0
+  0.0%   0.0% java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await
+
+....[Thread state: TIMED_WAITING]...................................................................
+ 25.0% 100.0% jdk.internal.misc.Unsafe.park
+
+
+
+# JMH version: 1.35
+# VM version: JDK 21.0.2, OpenJDK 64-Bit Server VM, 21.0.2+13-58
+# VM invoker: C:\Program Files\Java\OpenJDK-21\bin\java.exe
+# VM options: -javaagent:C:\Users\Radka\AppData\Local\JetBrains\IntelliJ IDEA 2024.2.3\lib\idea_rt.jar=62483:C:\Users\Radka\AppData\Local\JetBrains\IntelliJ IDEA 2024.2.3\bin -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 1 iterations, 10 s each
+# Measurement: 1 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.matrix.benchmark.BenchmarkMatrix.testNaive
+# Parameters: (size = 2048)
+
+# Run progress: 33.33% complete, ETA 00:15:49
+# Fork: 1 of 1
+# Warmup Iteration   1: 222548.141 ms/op
+Iteration   1: 243607.911 ms/op
+                 ·gc.alloc.rate:               0.131 MB/sec
+                 ·gc.alloc.rate.norm:          33622552.000 B/op
+                 ·gc.churn.G1_Eden_Space:      0.246 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm: 62914560.000 B/op
+                 ·gc.count:                    1.000 counts
+                 ·gc.time:                     84.000 ms
+                 ·stack:                       <delayed till summary>
+
+
+
+Result "org.matrix.benchmark.BenchmarkMatrix.testNaive":
+  243607.911 ms/op
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testNaive:·gc.alloc.rate":
+  0.131 MB/sec
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testNaive:·gc.alloc.rate.norm":
+  33622552.000 B/op
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testNaive:·gc.churn.G1_Eden_Space":
+  0.246 MB/sec
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testNaive:·gc.churn.G1_Eden_Space.norm":
+  62914560.000 B/op
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testNaive:·gc.count":
+  1.000 counts
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testNaive:·gc.time":
+  84.000 ms
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testNaive:·stack":
+Stack profiler:
+
+....[Thread state distributions]....................................................................
+ 75.0%         RUNNABLE
+ 25.0%         TIMED_WAITING
+
+....[Thread state: RUNNABLE]........................................................................
+ 25.0%  33.3% org.matrix.NaiveMatrixMultiplication.multiply
+ 25.0%  33.3% sun.nio.ch.SocketDispatcher.read0
+ 25.0%  33.3% <stack is empty, everything is filtered?>
+  0.0%   0.0% java.lang.invoke.DirectMethodHandle$Holder.invokeStatic
+  0.0%   0.0% java.lang.System.nanoTime
+
+....[Thread state: TIMED_WAITING]...................................................................
+ 25.0% 100.0% jdk.internal.misc.Unsafe.park
+
+
+
+# JMH version: 1.35
+# VM version: JDK 21.0.2, OpenJDK 64-Bit Server VM, 21.0.2+13-58
+# VM invoker: C:\Program Files\Java\OpenJDK-21\bin\java.exe
+# VM options: -javaagent:C:\Users\Radka\AppData\Local\JetBrains\IntelliJ IDEA 2024.2.3\lib\idea_rt.jar=62483:C:\Users\Radka\AppData\Local\JetBrains\IntelliJ IDEA 2024.2.3\bin -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 1 iterations, 10 s each
+# Measurement: 1 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.matrix.benchmark.BenchmarkMatrix.testStrassen
+# Parameters: (size = 2048)
+
+# Run progress: 66.67% complete, ETA 00:07:51
+# Fork: 1 of 1
+# Warmup Iteration   1: 20297.735 ms/op
+Iteration   1: 17450.866 ms/op
+                 ·gc.alloc.rate:                   341.643 MB/sec
+                 ·gc.alloc.rate.norm:              6438333704.000 B/op
+                 ·gc.churn.G1_Eden_Space:          394.164 MB/sec
+                 ·gc.churn.G1_Eden_Space.norm:     7428112384.000 B/op
+                 ·gc.churn.G1_Survivor_Space:      4.661 MB/sec
+                 ·gc.churn.G1_Survivor_Space.norm: 87834192.000 B/op
+                 ·gc.count:                        3.000 counts
+                 ·gc.time:                         328.000 ms
+                 ·stack:                           <delayed till summary>
+
+
+
+Result "org.matrix.benchmark.BenchmarkMatrix.testStrassen":
+  17450.866 ms/op
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testStrassen:·gc.alloc.rate":
+  341.643 MB/sec
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testStrassen:·gc.alloc.rate.norm":
+  6438333704.000 B/op
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testStrassen:·gc.churn.G1_Eden_Space":
+  394.164 MB/sec
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testStrassen:·gc.churn.G1_Eden_Space.norm":
+  7428112384.000 B/op
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testStrassen:·gc.churn.G1_Survivor_Space":
+  4.661 MB/sec
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testStrassen:·gc.churn.G1_Survivor_Space.norm":
+  87834192.000 B/op
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testStrassen:·gc.count":
+  3.000 counts
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testStrassen:·gc.time":
+  328.000 ms
+
+Secondary result "org.matrix.benchmark.BenchmarkMatrix.testStrassen:·stack":
+Stack profiler:
+
+....[Thread state distributions]....................................................................
+ 75.0%         RUNNABLE
+ 25.0%         TIMED_WAITING
+
+....[Thread state: RUNNABLE]........................................................................
+ 25.0%  33.3% sun.nio.ch.SocketDispatcher.read0
+ 24.9%  33.2% <stack is empty, everything is filtered?>
+ 20.2%  27.0% org.matrix.NaiveMatrixMultiplication.multiply
+  1.6%   2.2% org.matrix.StrassenMatrixMultiplication.multiply
+  1.4%   1.8% org.matrix.StrassenMatrixMultiplication.addMatrix
+  1.1%   1.4% org.matrix.StrassenMatrixMultiplication.subtractMatrix
+  0.4%   0.6% org.matrix.StrassenMatrixMultiplication.splitMatrix
+  0.3%   0.4% org.matrix.StrassenMatrixMultiplication.mergeMatrix
+  0.0%   0.1% javax.management.openmbean.TabularType.isAssignableFrom
+  0.0%   0.1% java.lang.invoke.DirectMethodHandle$Holder.invokeStatic
+
+....[Thread state: TIMED_WAITING]...................................................................
+ 25.0% 100.0% jdk.internal.misc.Unsafe.park
+
+
+
+# Run complete. Total time: 00:16:24
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+NOTE: Current JVM experimentally supports Compiler Blackholes, and they are in use. Please exercise
+extra caution when trusting the results, look into the generated code to check the benchmark still
+works, and factor in a small probability of new VM bugs. Additionally, while comparisons between
+different JVMs are already problematic, the performance difference caused by different Blackhole
+modes can be very significant. Please make sure you use the consistent Blackhole mode for comparisons.
+
+Benchmark                                                      (size)  Mode  Cnt           Score   Error   Units
+BenchmarkMatrix.testLoop                                         2048  avgt           272440.919           ms/op
+BenchmarkMatrix.testLoop:·gc.alloc.rate                          2048  avgt                0.117          MB/sec
+BenchmarkMatrix.testLoop:·gc.alloc.rate.norm                     2048  avgt         33622552.000            B/op
+BenchmarkMatrix.testLoop:·gc.churn.G1_Eden_Space                 2048  avgt                0.161          MB/sec
+BenchmarkMatrix.testLoop:·gc.churn.G1_Eden_Space.norm            2048  avgt         46137344.000            B/op
+BenchmarkMatrix.testLoop:·gc.count                               2048  avgt                1.000          counts
+BenchmarkMatrix.testLoop:·gc.time                                2048  avgt               17.000              ms
+BenchmarkMatrix.testLoop:·stack                                  2048  avgt                  NaN             ---
+BenchmarkMatrix.testNaive                                        2048  avgt           243607.911           ms/op
+BenchmarkMatrix.testNaive:·gc.alloc.rate                         2048  avgt                0.131          MB/sec
+BenchmarkMatrix.testNaive:·gc.alloc.rate.norm                    2048  avgt         33622552.000            B/op
+BenchmarkMatrix.testNaive:·gc.churn.G1_Eden_Space                2048  avgt                0.246          MB/sec
+BenchmarkMatrix.testNaive:·gc.churn.G1_Eden_Space.norm           2048  avgt         62914560.000            B/op
+BenchmarkMatrix.testNaive:·gc.count                              2048  avgt                1.000          counts
+BenchmarkMatrix.testNaive:·gc.time                               2048  avgt               84.000              ms
+BenchmarkMatrix.testNaive:·stack                                 2048  avgt                  NaN             ---
+BenchmarkMatrix.testStrassen                                     2048  avgt            17450.866           ms/op
+BenchmarkMatrix.testStrassen:·gc.alloc.rate                      2048  avgt              341.643          MB/sec
+BenchmarkMatrix.testStrassen:·gc.alloc.rate.norm                 2048  avgt       6438333704.000            B/op
+BenchmarkMatrix.testStrassen:·gc.churn.G1_Eden_Space             2048  avgt              394.164          MB/sec
+BenchmarkMatrix.testStrassen:·gc.churn.G1_Eden_Space.norm        2048  avgt       7428112384.000            B/op
+BenchmarkMatrix.testStrassen:·gc.churn.G1_Survivor_Space         2048  avgt                4.661          MB/sec
+BenchmarkMatrix.testStrassen:·gc.churn.G1_Survivor_Space.norm    2048  avgt         87834192.000            B/op
+BenchmarkMatrix.testStrassen:·gc.count                           2048  avgt                3.000          counts
+BenchmarkMatrix.testStrassen:·gc.time                            2048  avgt              328.000              ms
+BenchmarkMatrix.testStrassen:·stack                              2048  avgt                  NaN             ---

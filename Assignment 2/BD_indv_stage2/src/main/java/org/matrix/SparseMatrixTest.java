@@ -6,7 +6,7 @@ import java.io.IOException;
 
 public class SparseMatrixTest {
     public static void main(String[] args) {
-        String filePath = "data/test.mtx";
+        String filePath = "data/0.91.mtx";
         try {
             SparseMatrixArray matrix = readMatrixArrayFromFile(filePath);
             SparseMatrixArray matrixC = matrix.multiply(matrix);
@@ -37,7 +37,7 @@ public class SparseMatrixTest {
             parts = line.trim().split("\\s+");
             int row = Integer.parseInt(parts[0]) - 1;
             int col = Integer.parseInt(parts[1]) - 1;
-            int value = Integer.parseInt(parts[2]);
+            int value = 1;
             matrix.insert(row, col, value);
         }
 
@@ -66,7 +66,7 @@ public class SparseMatrixTest {
             parts = line.trim().split("\\s+");
             int row = Integer.parseInt(parts[0]) - 1;
             int col = Integer.parseInt(parts[1]) - 1;
-            int value = Integer.parseInt(parts[2]);
+            int value = 1;
             matrix.insert(row, col, value);
         }
 

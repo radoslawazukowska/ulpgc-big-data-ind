@@ -10,16 +10,19 @@ import org.openjdk.jmh.annotations.*;
 @BenchmarkMode(Mode.AverageTime)
 @OutputTimeUnit(TimeUnit.MILLISECONDS)
 @State(Scope.Benchmark)
+@Warmup(iterations = 1)
+@Measurement(iterations = 1)
 public class BenchmarkMatrix {
-    @Param({"10", "100", "500", "1000", "1500"})
+    @Param({"2500"})
     private int size;
 
     private double [][] a;
     private double [][] b;
+    private Random random;
 
     @Setup(Level.Trial)
     public void setUpMatrices() {
-        Random random = new Random();
+        random = new Random(1234);
         a = new double[size][size];
         b = new double[size][size];
 
