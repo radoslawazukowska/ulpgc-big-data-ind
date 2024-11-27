@@ -1,0 +1,287 @@
+# JMH version: 1.35
+# VM version: JDK 21.0.2, OpenJDK 64-Bit Server VM, 21.0.2+13-58
+# VM invoker: C:\Program Files\Java\OpenJDK-21\bin\java.exe
+# VM options: -javaagent:C:\Users\Radka\AppData\Local\JetBrains\IntelliJ IDEA 2024.2.3\lib\idea_rt.jar=53628:C:\Users\Radka\AppData\Local\JetBrains\IntelliJ IDEA 2024.2.3\bin -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.matrix.benchmark.BenchmarkThreads.testThreads
+# Parameters: (nThreads = 1)
+
+# Run progress: 0.00% complete, ETA 00:13:20
+# Fork: 1 of 1
+# Warmup Iteration   1: 56.752 ms/op
+# Warmup Iteration   2: 59.285 ms/op
+# Warmup Iteration   3: 62.118 ms/op
+# Warmup Iteration   4: 58.096 ms/op
+# Warmup Iteration   5: 57.380 ms/op
+Iteration   1: 56.692 ms/op
+Iteration   2: 56.965 ms/op
+Iteration   3: 56.115 ms/op
+Iteration   4: 55.611 ms/op
+Iteration   5: 54.084 ms/op
+
+
+Result "org.matrix.benchmark.BenchmarkThreads.testThreads":
+  55.894 ±(99.9%) 4.386 ms/op [Average]
+  (min, avg, max) = (54.084, 55.894, 56.965), stdev = 1.139
+  CI (99.9%): [51.508, 60.279] (assumes normal distribution)
+
+
+# JMH version: 1.35
+# VM version: JDK 21.0.2, OpenJDK 64-Bit Server VM, 21.0.2+13-58
+# VM invoker: C:\Program Files\Java\OpenJDK-21\bin\java.exe
+# VM options: -javaagent:C:\Users\Radka\AppData\Local\JetBrains\IntelliJ IDEA 2024.2.3\lib\idea_rt.jar=53628:C:\Users\Radka\AppData\Local\JetBrains\IntelliJ IDEA 2024.2.3\bin -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.matrix.benchmark.BenchmarkThreads.testThreads
+# Parameters: (nThreads = 2)
+
+# Run progress: 12.50% complete, ETA 00:11:52
+# Fork: 1 of 1
+# Warmup Iteration   1: 43.789 ms/op
+# Warmup Iteration   2: 42.237 ms/op
+# Warmup Iteration   3: 43.388 ms/op
+# Warmup Iteration   4: 43.547 ms/op
+# Warmup Iteration   5: 43.373 ms/op
+Iteration   1: 43.514 ms/op
+Iteration   2: 44.106 ms/op
+Iteration   3: 46.495 ms/op
+Iteration   4: 44.703 ms/op
+Iteration   5: 44.339 ms/op
+
+
+Result "org.matrix.benchmark.BenchmarkThreads.testThreads":
+  44.632 ±(99.9%) 4.344 ms/op [Average]
+  (min, avg, max) = (43.514, 44.632, 46.495), stdev = 1.128
+  CI (99.9%): [40.288, 48.975] (assumes normal distribution)
+
+
+# JMH version: 1.35
+# VM version: JDK 21.0.2, OpenJDK 64-Bit Server VM, 21.0.2+13-58
+# VM invoker: C:\Program Files\Java\OpenJDK-21\bin\java.exe
+# VM options: -javaagent:C:\Users\Radka\AppData\Local\JetBrains\IntelliJ IDEA 2024.2.3\lib\idea_rt.jar=53628:C:\Users\Radka\AppData\Local\JetBrains\IntelliJ IDEA 2024.2.3\bin -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.matrix.benchmark.BenchmarkThreads.testThreads
+# Parameters: (nThreads = 4)
+
+# Run progress: 25.00% complete, ETA 00:10:09
+# Fork: 1 of 1
+# Warmup Iteration   1: 39.609 ms/op
+# Warmup Iteration   2: 38.351 ms/op
+# Warmup Iteration   3: 39.444 ms/op
+# Warmup Iteration   4: 40.372 ms/op
+# Warmup Iteration   5: 38.336 ms/op
+Iteration   1: 38.694 ms/op
+Iteration   2: 37.650 ms/op
+Iteration   3: 40.450 ms/op
+Iteration   4: 38.093 ms/op
+Iteration   5: 38.217 ms/op
+
+
+Result "org.matrix.benchmark.BenchmarkThreads.testThreads":
+  38.621 ±(99.9%) 4.190 ms/op [Average]
+  (min, avg, max) = (37.650, 38.621, 40.450), stdev = 1.088
+  CI (99.9%): [34.430, 42.811] (assumes normal distribution)
+
+
+# JMH version: 1.35
+# VM version: JDK 21.0.2, OpenJDK 64-Bit Server VM, 21.0.2+13-58
+# VM invoker: C:\Program Files\Java\OpenJDK-21\bin\java.exe
+# VM options: -javaagent:C:\Users\Radka\AppData\Local\JetBrains\IntelliJ IDEA 2024.2.3\lib\idea_rt.jar=53628:C:\Users\Radka\AppData\Local\JetBrains\IntelliJ IDEA 2024.2.3\bin -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.matrix.benchmark.BenchmarkThreads.testThreads
+# Parameters: (nThreads = 8)
+
+# Run progress: 37.50% complete, ETA 00:08:27
+# Fork: 1 of 1
+# Warmup Iteration   1: 35.348 ms/op
+# Warmup Iteration   2: 40.964 ms/op
+# Warmup Iteration   3: 32.855 ms/op
+# Warmup Iteration   4: 32.366 ms/op
+# Warmup Iteration   5: 32.591 ms/op
+Iteration   1: 32.274 ms/op
+Iteration   2: 33.101 ms/op
+Iteration   3: 33.266 ms/op
+Iteration   4: 33.125 ms/op
+Iteration   5: 32.506 ms/op
+
+
+Result "org.matrix.benchmark.BenchmarkThreads.testThreads":
+  32.854 ±(99.9%) 1.681 ms/op [Average]
+  (min, avg, max) = (32.274, 32.854, 33.266), stdev = 0.436
+  CI (99.9%): [31.174, 34.535] (assumes normal distribution)
+
+
+# JMH version: 1.35
+# VM version: JDK 21.0.2, OpenJDK 64-Bit Server VM, 21.0.2+13-58
+# VM invoker: C:\Program Files\Java\OpenJDK-21\bin\java.exe
+# VM options: -javaagent:C:\Users\Radka\AppData\Local\JetBrains\IntelliJ IDEA 2024.2.3\lib\idea_rt.jar=53628:C:\Users\Radka\AppData\Local\JetBrains\IntelliJ IDEA 2024.2.3\bin -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.matrix.benchmark.BenchmarkThreads.testThreads
+# Parameters: (nThreads = 16)
+
+# Run progress: 50.00% complete, ETA 00:06:45
+# Fork: 1 of 1
+# Warmup Iteration   1: 38.808 ms/op
+# Warmup Iteration   2: 38.437 ms/op
+# Warmup Iteration   3: 39.403 ms/op
+# Warmup Iteration   4: 37.293 ms/op
+# Warmup Iteration   5: 38.789 ms/op
+Iteration   1: 38.156 ms/op
+Iteration   2: 37.746 ms/op
+Iteration   3: 37.942 ms/op
+Iteration   4: 39.022 ms/op
+Iteration   5: 39.058 ms/op
+
+
+Result "org.matrix.benchmark.BenchmarkThreads.testThreads":
+  38.385 ±(99.9%) 2.370 ms/op [Average]
+  (min, avg, max) = (37.746, 38.385, 39.058), stdev = 0.615
+  CI (99.9%): [36.015, 40.755] (assumes normal distribution)
+
+
+# JMH version: 1.35
+# VM version: JDK 21.0.2, OpenJDK 64-Bit Server VM, 21.0.2+13-58
+# VM invoker: C:\Program Files\Java\OpenJDK-21\bin\java.exe
+# VM options: -javaagent:C:\Users\Radka\AppData\Local\JetBrains\IntelliJ IDEA 2024.2.3\lib\idea_rt.jar=53628:C:\Users\Radka\AppData\Local\JetBrains\IntelliJ IDEA 2024.2.3\bin -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.matrix.benchmark.BenchmarkThreads.testThreads
+# Parameters: (nThreads = 24)
+
+# Run progress: 62.50% complete, ETA 00:05:04
+# Fork: 1 of 1
+# Warmup Iteration   1: 41.542 ms/op
+# Warmup Iteration   2: 43.388 ms/op
+# Warmup Iteration   3: 43.735 ms/op
+# Warmup Iteration   4: 42.339 ms/op
+# Warmup Iteration   5: 44.104 ms/op
+Iteration   1: 46.798 ms/op
+Iteration   2: 46.139 ms/op
+Iteration   3: 43.364 ms/op
+Iteration   4: 45.231 ms/op
+Iteration   5: 48.274 ms/op
+
+
+Result "org.matrix.benchmark.BenchmarkThreads.testThreads":
+  45.961 ±(99.9%) 7.037 ms/op [Average]
+  (min, avg, max) = (43.364, 45.961, 48.274), stdev = 1.827
+  CI (99.9%): [38.924, 52.998] (assumes normal distribution)
+
+
+# JMH version: 1.35
+# VM version: JDK 21.0.2, OpenJDK 64-Bit Server VM, 21.0.2+13-58
+# VM invoker: C:\Program Files\Java\OpenJDK-21\bin\java.exe
+# VM options: -javaagent:C:\Users\Radka\AppData\Local\JetBrains\IntelliJ IDEA 2024.2.3\lib\idea_rt.jar=53628:C:\Users\Radka\AppData\Local\JetBrains\IntelliJ IDEA 2024.2.3\bin -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.matrix.benchmark.BenchmarkThreads.testThreads
+# Parameters: (nThreads = 32)
+
+# Run progress: 75.00% complete, ETA 00:03:22
+# Fork: 1 of 1
+# Warmup Iteration   1: 53.961 ms/op
+# Warmup Iteration   2: 69.791 ms/op
+# Warmup Iteration   3: 77.021 ms/op
+# Warmup Iteration   4: 54.575 ms/op
+# Warmup Iteration   5: 43.548 ms/op
+Iteration   1: 46.466 ms/op
+Iteration   2: 43.275 ms/op
+Iteration   3: 42.203 ms/op
+Iteration   4: 37.032 ms/op
+Iteration   5: 34.892 ms/op
+
+
+Result "org.matrix.benchmark.BenchmarkThreads.testThreads":
+  40.774 ±(99.9%) 18.194 ms/op [Average]
+  (min, avg, max) = (34.892, 40.774, 46.466), stdev = 4.725
+  CI (99.9%): [22.580, 58.967] (assumes normal distribution)
+
+
+# JMH version: 1.35
+# VM version: JDK 21.0.2, OpenJDK 64-Bit Server VM, 21.0.2+13-58
+# VM invoker: C:\Program Files\Java\OpenJDK-21\bin\java.exe
+# VM options: -javaagent:C:\Users\Radka\AppData\Local\JetBrains\IntelliJ IDEA 2024.2.3\lib\idea_rt.jar=53628:C:\Users\Radka\AppData\Local\JetBrains\IntelliJ IDEA 2024.2.3\bin -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.matrix.benchmark.BenchmarkThreads.testThreads
+# Parameters: (nThreads = 40)
+
+# Run progress: 87.50% complete, ETA 00:01:41
+# Fork: 1 of 1
+# Warmup Iteration   1: 33.872 ms/op
+# Warmup Iteration   2: 34.528 ms/op
+# Warmup Iteration   3: 32.838 ms/op
+# Warmup Iteration   4: 33.971 ms/op
+# Warmup Iteration   5: 31.603 ms/op
+Iteration   1: 31.970 ms/op
+Iteration   2: 32.285 ms/op
+Iteration   3: 31.849 ms/op
+Iteration   4: 32.363 ms/op
+Iteration   5: 33.159 ms/op
+
+
+Result "org.matrix.benchmark.BenchmarkThreads.testThreads":
+  32.325 ±(99.9%) 1.974 ms/op [Average]
+  (min, avg, max) = (31.849, 32.325, 33.159), stdev = 0.513
+  CI (99.9%): [30.351, 34.299] (assumes normal distribution)
+
+
+# Run complete. Total time: 00:13:31
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+NOTE: Current JVM experimentally supports Compiler Blackholes, and they are in use. Please exercise
+extra caution when trusting the results, look into the generated code to check the benchmark still
+works, and factor in a small probability of new VM bugs. Additionally, while comparisons between
+different JVMs are already problematic, the performance difference caused by different Blackhole
+modes can be very significant. Please make sure you use the consistent Blackhole mode for comparisons.
+
+Benchmark                     (nThreads)  Mode  Cnt   Score    Error  Units
+BenchmarkThreads.testThreads           1  avgt    5  55.894 ±  4.386  ms/op
+BenchmarkThreads.testThreads           2  avgt    5  44.632 ±  4.344  ms/op
+BenchmarkThreads.testThreads           4  avgt    5  38.621 ±  4.190  ms/op
+BenchmarkThreads.testThreads           8  avgt    5  32.854 ±  1.681  ms/op
+BenchmarkThreads.testThreads          16  avgt    5  38.385 ±  2.370  ms/op
+BenchmarkThreads.testThreads          24  avgt    5  45.961 ±  7.037  ms/op
+BenchmarkThreads.testThreads          32  avgt    5  40.774 ± 18.194  ms/op
+BenchmarkThreads.testThreads          40  avgt    5  32.325 ±  1.974  ms/op

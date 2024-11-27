@@ -12,6 +12,11 @@ public class MatrixMultiplicationThreads {
         return multiplication(A, B);
     }
 
+    public static double[][] multiply(double[][] A, double[][] B, int numberThreads) {
+        executorService = Executors.newFixedThreadPool(numberThreads);
+        return multiplication(A, B);
+    }
+
     private static double[][] multiplication(double[][] A, double[][] B) {
         int size = A.length;
         double[][] C = new double[size][size];

@@ -5,14 +5,12 @@ import org.openjdk.jmh.runner.RunnerException;
 import org.openjdk.jmh.runner.options.Options;
 import org.openjdk.jmh.runner.options.OptionsBuilder;
 
-public class MainBenchmark {
+public class MainThreads {
     public static void main(String[] args) throws RunnerException {
         Options opt = new OptionsBuilder()
-                .include(BenchmarkMatrix.class.getSimpleName())
+                .include(BenchmarkThreads.class.getSimpleName())
                 .forks(1)
-//                .addProfiler("gc")
-//                .addProfiler("stack")
-                .output("results/benchmark_64-2048.txt")
+                .output("results/benchmark_threads.tx")
                 .build();
         new Runner(opt).run();
     }

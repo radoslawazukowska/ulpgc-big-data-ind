@@ -1,8 +1,6 @@
 package org.matrix.benchmark;
 
-import org.matrix.MatrixMultiplicationParralelStreams;
 import org.matrix.MatrixMultiplicationThreads;
-
 import org.openjdk.jmh.annotations.*;
 
 import java.util.Random;
@@ -11,11 +9,11 @@ import java.util.concurrent.TimeUnit;
 @BenchmarkMode(Mode.AverageTime)
 @OutputTimeUnit(TimeUnit.MILLISECONDS)
 @State(Scope.Benchmark)
-@Warmup(iterations = 1)
-@Measurement(iterations = 1)
-public class BenchmarkMatrix {
-    @Param({"64", "128", "256", "512", "1024", "2048"})
-    private int size;
+@Warmup(iterations = 5)
+@Measurement(iterations = 5)
+public class BenchmarkThreads {
+    @Param({"1", "2", "4", "8", "16", "24", "32", "40"})
+    private int nThreads;
 
     private double [][] A;
     private double [][] B;
@@ -23,6 +21,7 @@ public class BenchmarkMatrix {
     @Setup(Level.Trial)
     public void setup() {
         Random random = new Random(1234);
+        int size = 512;
         A = new double[size][size];
         B = new double[size][size];
 
@@ -36,11 +35,6 @@ public class BenchmarkMatrix {
 
     @Benchmark
     public void testThreads() {
-        MatrixMultiplicationThreads.multiply(A, B, 8);
-    }
-
-    @Benchmark
-    public void testParallelStreams() {
-        MatrixMultiplicationParralelStreams.multiply(A, B);
+        MatrixMultiplicationThreads.multiply(A, B, nThreads);
     }
 }
