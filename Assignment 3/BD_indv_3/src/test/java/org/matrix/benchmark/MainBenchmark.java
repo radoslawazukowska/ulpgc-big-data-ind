@@ -10,9 +10,9 @@ public class MainBenchmark {
         Options opt = new OptionsBuilder()
                 .include(BenchmarkMatrix.class.getSimpleName())
                 .forks(1)
-//                .addProfiler("gc")
-//                .addProfiler("stack")
-                .output("results/benchmark_64-2048.txt")
+                .addProfiler("gc")
+                .addProfiler("stack")
+                .output("results/benchmark_64-3000.txt")
                 .build();
         new Runner(opt).run();
     }

@@ -11,10 +11,10 @@ import java.util.concurrent.TimeUnit;
 @BenchmarkMode(Mode.AverageTime)
 @OutputTimeUnit(TimeUnit.MILLISECONDS)
 @State(Scope.Benchmark)
-@Warmup(iterations = 1)
-@Measurement(iterations = 1)
+@Warmup(iterations = 5)
+@Measurement(iterations = 5)
 public class BenchmarkMatrix {
-    @Param({"64", "128", "256", "512", "1024", "2048"})
+    @Param({"64", "128", "256", "512", "1024", "1500", "2048", "2500", "3000"})
     private int size;
 
     private double [][] A;
@@ -36,7 +36,7 @@ public class BenchmarkMatrix {
 
     @Benchmark
     public void testThreads() {
-        MatrixMultiplicationThreads.multiply(A, B, 8);
+        MatrixMultiplicationThreads.multiply(A, B, 16);
     }
 
     @Benchmark

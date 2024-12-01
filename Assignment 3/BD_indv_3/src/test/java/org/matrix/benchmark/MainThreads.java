@@ -10,6 +10,8 @@ public class MainThreads {
         Options opt = new OptionsBuilder()
                 .include(BenchmarkThreads.class.getSimpleName())
                 .forks(1)
+                .addProfiler("gc")
+                .addProfiler("stack")
                 .output("results/benchmark_threads.tx")
                 .build();
         new Runner(opt).run();

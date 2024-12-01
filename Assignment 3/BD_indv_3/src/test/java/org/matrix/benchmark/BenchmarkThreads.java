@@ -12,8 +12,11 @@ import java.util.concurrent.TimeUnit;
 @Warmup(iterations = 5)
 @Measurement(iterations = 5)
 public class BenchmarkThreads {
-    @Param({"1", "2", "4", "8", "16", "24", "32", "40"})
+    @Param({"1", "2", "4", "8", "16", "24"})
     private int nThreads;
+
+    @Param({"64", "128", "256", "512"})
+    private int size;
 
     private double [][] A;
     private double [][] B;
@@ -21,7 +24,6 @@ public class BenchmarkThreads {
     @Setup(Level.Trial)
     public void setup() {
         Random random = new Random(1234);
-        int size = 512;
         A = new double[size][size];
         B = new double[size][size];
 

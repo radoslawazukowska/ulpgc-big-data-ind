@@ -1,0 +1,241 @@
+Benchmark                                                      (nThreads)  (size)  Mode  Cnt         Score         Error   Units
+BenchmarkThreads.testThreads                                            1      64  avgt    5         0.274 ±       0.025   ms/op
+BenchmarkThreads.testThreads:·gc.alloc.rate                             1      64  avgt    5       142.903 ±      13.100  MB/sec
+BenchmarkThreads.testThreads:·gc.alloc.rate.norm                        1      64  avgt    5     43075.769 ±       1.291    B/op
+BenchmarkThreads.testThreads:·gc.churn.G1_Eden_Space                    1      64  avgt    5       146.289 ±      48.714  MB/sec
+BenchmarkThreads.testThreads:·gc.churn.G1_Eden_Space.norm               1      64  avgt    5     44113.999 ±   15045.818    B/op
+BenchmarkThreads.testThreads:·gc.churn.G1_Survivor_Space                1      64  avgt    5         0.003 ±       0.005  MB/sec
+BenchmarkThreads.testThreads:·gc.churn.G1_Survivor_Space.norm           1      64  avgt    5         1.021 ±       1.370    B/op
+BenchmarkThreads.testThreads:·gc.count                                  1      64  avgt    5        26.000                counts
+BenchmarkThreads.testThreads:·gc.time                                   1      64  avgt    5        20.000                    ms
+BenchmarkThreads.testThreads:·stack                                     1      64  avgt                NaN                   ---
+BenchmarkThreads.testThreads                                            1     128  avgt    5         1.223 ±       0.444   ms/op
+BenchmarkThreads.testThreads:·gc.alloc.rate                             1     128  avgt    5       111.935 ±      36.168  MB/sec
+BenchmarkThreads.testThreads:·gc.alloc.rate.norm                        1     128  avgt    5    149836.969 ±       4.804    B/op
+BenchmarkThreads.testThreads:·gc.churn.G1_Eden_Space                    1     128  avgt    5       112.630 ±       0.197  MB/sec
+BenchmarkThreads.testThreads:·gc.churn.G1_Eden_Space.norm               1     128  avgt    5    151723.776 ±   54895.630    B/op
+BenchmarkThreads.testThreads:·gc.churn.G1_Survivor_Space                1     128  avgt    5         0.010 ±       0.012  MB/sec
+BenchmarkThreads.testThreads:·gc.churn.G1_Survivor_Space.norm           1     128  avgt    5        13.877 ±      15.919    B/op
+BenchmarkThreads.testThreads:·gc.count                                  1     128  avgt    5        20.000                counts
+BenchmarkThreads.testThreads:·gc.time                                   1     128  avgt    5        18.000                    ms
+BenchmarkThreads.testThreads:·stack                                     1     128  avgt                NaN                   ---
+BenchmarkThreads.testThreads                                            1     256  avgt    5         7.829 ±       1.104   ms/op
+BenchmarkThreads.testThreads:·gc.alloc.rate                             1     256  avgt    5        65.012 ±       8.846  MB/sec
+BenchmarkThreads.testThreads:·gc.alloc.rate.norm                        1     256  avgt    5    559981.766 ±      34.052    B/op
+BenchmarkThreads.testThreads:·gc.churn.G1_Eden_Space                    1     256  avgt    5        61.932 ±      48.489  MB/sec
+BenchmarkThreads.testThreads:·gc.churn.G1_Eden_Space.norm               1     256  avgt    5    533315.858 ±  402800.421    B/op
+BenchmarkThreads.testThreads:·gc.churn.G1_Survivor_Space                1     256  avgt    5         0.085 ±       0.515  MB/sec
+BenchmarkThreads.testThreads:·gc.churn.G1_Survivor_Space.norm           1     256  avgt    5       737.574 ±    4439.253    B/op
+BenchmarkThreads.testThreads:·gc.count                                  1     256  avgt    5        11.000                counts
+BenchmarkThreads.testThreads:·gc.time                                   1     256  avgt    5        19.000                    ms
+BenchmarkThreads.testThreads:·stack                                     1     256  avgt                NaN                   ---
+BenchmarkThreads.testThreads                                            1     512  avgt    5        55.559 ±       2.448   ms/op
+BenchmarkThreads.testThreads:·gc.alloc.rate                             1     512  avgt    5        35.403 ±       1.536  MB/sec
+BenchmarkThreads.testThreads:·gc.alloc.rate.norm                        1     512  avgt    5   2166786.370 ±     273.425    B/op
+BenchmarkThreads.testThreads:·gc.churn.G1_Eden_Space                    1     512  avgt    5        33.647 ±      48.059  MB/sec
+BenchmarkThreads.testThreads:·gc.churn.G1_Eden_Space.norm               1     512  avgt    5   2058012.443 ± 2913104.459    B/op
+BenchmarkThreads.testThreads:·gc.churn.G1_Survivor_Space                1     512  avgt    5         0.096 ±       0.258  MB/sec
+BenchmarkThreads.testThreads:·gc.churn.G1_Survivor_Space.norm           1     512  avgt    5      5852.386 ±   15881.895    B/op
+BenchmarkThreads.testThreads:·gc.count                                  1     512  avgt    5         6.000                counts
+BenchmarkThreads.testThreads:·gc.time                                   1     512  avgt    5         8.000                    ms
+BenchmarkThreads.testThreads:·stack                                     1     512  avgt                NaN                   ---
+BenchmarkThreads.testThreads                                            2      64  avgt    5         0.501 ±       0.463   ms/op
+BenchmarkThreads.testThreads:·gc.alloc.rate                             2      64  avgt    5        82.707 ±      71.473  MB/sec
+BenchmarkThreads.testThreads:·gc.alloc.rate.norm                        2      64  avgt    5     43709.015 ±       6.781    B/op
+BenchmarkThreads.testThreads:·gc.churn.G1_Eden_Space                    2      64  avgt    5      5054.149 ±    4433.282  MB/sec
+BenchmarkThreads.testThreads:·gc.churn.G1_Eden_Space.norm               2      64  avgt    5   2669329.968 ±   78648.344    B/op
+BenchmarkThreads.testThreads:·gc.churn.G1_Survivor_Space                2      64  avgt    5         0.015 ±       0.020  MB/sec
+BenchmarkThreads.testThreads:·gc.churn.G1_Survivor_Space.norm           2      64  avgt    5         7.898 ±      10.115    B/op
+BenchmarkThreads.testThreads:·gc.count                                  2      64  avgt    5       458.000                counts
+BenchmarkThreads.testThreads:·gc.time                                   2      64  avgt    5       481.000                    ms
+BenchmarkThreads.testThreads:·stack                                     2      64  avgt                NaN                   ---
+BenchmarkThreads.testThreads                                            2     128  avgt    5         1.260 ±       0.127   ms/op
+BenchmarkThreads.testThreads:·gc.alloc.rate                             2     128  avgt    5       108.445 ±      10.741  MB/sec
+BenchmarkThreads.testThreads:·gc.alloc.rate.norm                        2     128  avgt    5    150469.778 ±       6.461    B/op
+BenchmarkThreads.testThreads:·gc.churn.G1_Eden_Space                    2     128  avgt    5      1170.834 ±     108.505  MB/sec
+BenchmarkThreads.testThreads:·gc.churn.G1_Eden_Space.norm               2     128  avgt    5   1624641.844 ±   37650.528    B/op
+BenchmarkThreads.testThreads:·gc.churn.G1_Survivor_Space                2     128  avgt    5         0.032 ±       0.033  MB/sec
+BenchmarkThreads.testThreads:·gc.churn.G1_Survivor_Space.norm           2     128  avgt    5        45.061 ±      47.652    B/op
+BenchmarkThreads.testThreads:·gc.count                                  2     128  avgt    5       171.000                counts
+BenchmarkThreads.testThreads:·gc.time                                   2     128  avgt    5       150.000                    ms
+BenchmarkThreads.testThreads:·stack                                     2     128  avgt                NaN                   ---
+BenchmarkThreads.testThreads                                            2     256  avgt    5         6.696 ±       0.906   ms/op
+BenchmarkThreads.testThreads:·gc.alloc.rate                             2     256  avgt    5        76.090 ±       9.837  MB/sec
+BenchmarkThreads.testThreads:·gc.alloc.rate.norm                        2     256  avgt    5    560615.941 ±      38.068    B/op
+BenchmarkThreads.testThreads:·gc.churn.G1_Eden_Space                    2     256  avgt    5       213.924 ±      59.410  MB/sec
+BenchmarkThreads.testThreads:·gc.churn.G1_Eden_Space.norm               2     256  avgt    5   1575741.616 ±  351740.289    B/op
+BenchmarkThreads.testThreads:·gc.churn.G1_Survivor_Space                2     256  avgt    5         0.047 ±       0.076  MB/sec
+BenchmarkThreads.testThreads:·gc.churn.G1_Survivor_Space.norm           2     256  avgt    5       343.501 ±     534.128    B/op
+BenchmarkThreads.testThreads:·gc.count                                  2     256  avgt    5        38.000                counts
+BenchmarkThreads.testThreads:·gc.time                                   2     256  avgt    5        41.000                    ms
+BenchmarkThreads.testThreads:·stack                                     2     256  avgt                NaN                   ---
+BenchmarkThreads.testThreads                                            2     512  avgt    5        74.427 ±     196.073   ms/op
+BenchmarkThreads.testThreads:·gc.alloc.rate                             2     512  avgt    5        33.695 ±      53.214  MB/sec
+BenchmarkThreads.testThreads:·gc.alloc.rate.norm                        2     512  avgt    5   2167466.555 ±     333.825    B/op
+BenchmarkThreads.testThreads:·gc.churn.G1_Eden_Space                    2     512  avgt    5        50.363 ±      50.303  MB/sec
+BenchmarkThreads.testThreads:·gc.churn.G1_Eden_Space.norm               2     512  avgt    5   3553510.188 ± 3796595.947    B/op
+BenchmarkThreads.testThreads:·gc.churn.G1_Survivor_Space                2     512  avgt    5         0.027 ±       0.185  MB/sec
+BenchmarkThreads.testThreads:·gc.churn.G1_Survivor_Space.norm           2     512  avgt    5      1323.244 ±    9012.676    B/op
+BenchmarkThreads.testThreads:·gc.count                                  2     512  avgt    5         9.000                counts
+BenchmarkThreads.testThreads:·gc.time                                   2     512  avgt    5        13.000                    ms
+BenchmarkThreads.testThreads:·stack                                     2     512  avgt                NaN                   ---
+BenchmarkThreads.testThreads                                            4      64  avgt    5         0.547 ±       0.045   ms/op
+BenchmarkThreads.testThreads:·gc.alloc.rate                             4      64  avgt    5        74.319 ±       6.110  MB/sec
+BenchmarkThreads.testThreads:·gc.alloc.rate.norm                        4      64  avgt    5     44814.191 ±       3.315    B/op
+BenchmarkThreads.testThreads:·gc.churn.G1_Eden_Space                    4      64  avgt    5      7959.270 ±     582.312  MB/sec
+BenchmarkThreads.testThreads:·gc.churn.G1_Eden_Space.norm               4      64  avgt    5   4799729.011 ±  139505.074    B/op
+BenchmarkThreads.testThreads:·gc.churn.G1_Survivor_Space                4      64  avgt    5         0.017 ±       0.016  MB/sec
+BenchmarkThreads.testThreads:·gc.churn.G1_Survivor_Space.norm           4      64  avgt    5        10.043 ±      10.051    B/op
+BenchmarkThreads.testThreads:·gc.count                                  4      64  avgt    5       469.000                counts
+BenchmarkThreads.testThreads:·gc.time                                   4      64  avgt    5       525.000                    ms
+BenchmarkThreads.testThreads:·stack                                     4      64  avgt                NaN                   ---
+BenchmarkThreads.testThreads                                            4     128  avgt    5         2.107 ±       0.712   ms/op
+BenchmarkThreads.testThreads:·gc.alloc.rate                             4     128  avgt    5        65.768 ±      23.794  MB/sec
+BenchmarkThreads.testThreads:·gc.alloc.rate.norm                        4     128  avgt    5    151675.278 ±      14.901    B/op
+BenchmarkThreads.testThreads:·gc.churn.G1_Eden_Space                    4     128  avgt    5      2243.125 ±     784.997  MB/sec
+BenchmarkThreads.testThreads:·gc.churn.G1_Eden_Space.norm               4     128  avgt    5   5174482.600 ±  201482.927    B/op
+BenchmarkThreads.testThreads:·gc.churn.G1_Survivor_Space                4     128  avgt    5         0.048 ±       0.073  MB/sec
+BenchmarkThreads.testThreads:·gc.churn.G1_Survivor_Space.norm           4     128  avgt    5       112.146 ±     175.880    B/op
+BenchmarkThreads.testThreads:·gc.count                                  4     128  avgt    5       226.000                counts
+BenchmarkThreads.testThreads:·gc.time                                   4     128  avgt    5       366.000                    ms
+BenchmarkThreads.testThreads:·stack                                     4     128  avgt                NaN                   ---
+BenchmarkThreads.testThreads                                            4     256  avgt    5         5.966 ±       1.643   ms/op
+BenchmarkThreads.testThreads:·gc.alloc.rate                             4     256  avgt    5        85.833 ±      21.814  MB/sec
+BenchmarkThreads.testThreads:·gc.alloc.rate.norm                        4     256  avgt    5    561901.809 ±     121.406    B/op
+BenchmarkThreads.testThreads:·gc.churn.G1_Eden_Space                    4     256  avgt    5       636.367 ±     181.631  MB/sec
+BenchmarkThreads.testThreads:·gc.churn.G1_Eden_Space.norm               4     256  avgt    5   4165401.900 ±  447335.977    B/op
+BenchmarkThreads.testThreads:·gc.churn.G1_Survivor_Space                4     256  avgt    5         0.136 ±       0.262  MB/sec
+BenchmarkThreads.testThreads:·gc.churn.G1_Survivor_Space.norm           4     256  avgt    5       891.919 ±    1661.266    B/op
+BenchmarkThreads.testThreads:·gc.count                                  4     256  avgt    5       113.000                counts
+BenchmarkThreads.testThreads:·gc.time                                   4     256  avgt    5       124.000                    ms
+BenchmarkThreads.testThreads:·stack                                     4     256  avgt                NaN                   ---
+BenchmarkThreads.testThreads                                            4     512  avgt    5        36.925 ±       8.283   ms/op
+BenchmarkThreads.testThreads:·gc.alloc.rate                             4     512  avgt    5        53.471 ±      11.298  MB/sec
+BenchmarkThreads.testThreads:·gc.alloc.rate.norm                        4     512  avgt    5   2168636.694 ±     210.717    B/op
+BenchmarkThreads.testThreads:·gc.churn.G1_Eden_Space                    4     512  avgt    5       112.546 ±      76.759  MB/sec
+BenchmarkThreads.testThreads:·gc.churn.G1_Eden_Space.norm               4     512  avgt    5   4547098.464 ± 2495356.549    B/op
+BenchmarkThreads.testThreads:·gc.churn.G1_Survivor_Space                4     512  avgt    5         0.003 ±       0.020  MB/sec
+BenchmarkThreads.testThreads:·gc.churn.G1_Survivor_Space.norm           4     512  avgt    5       111.127 ±     790.559    B/op
+BenchmarkThreads.testThreads:·gc.count                                  4     512  avgt    5        20.000                counts
+BenchmarkThreads.testThreads:·gc.time                                   4     512  avgt    5        29.000                    ms
+BenchmarkThreads.testThreads:·stack                                     4     512  avgt                NaN                   ---
+BenchmarkThreads.testThreads                                            8      64  avgt    5         0.923 ±       0.069   ms/op
+BenchmarkThreads.testThreads:·gc.alloc.rate                             8      64  avgt    5        46.341 ±       3.470  MB/sec
+BenchmarkThreads.testThreads:·gc.alloc.rate.norm                        8      64  avgt    5     47116.668 ±       2.324    B/op
+BenchmarkThreads.testThreads:·gc.churn.G1_Eden_Space                    8      64  avgt    5     10173.119 ±     802.432  MB/sec
+BenchmarkThreads.testThreads:·gc.churn.G1_Eden_Space.norm               8      64  avgt    5  10343211.835 ±   84139.898    B/op
+BenchmarkThreads.testThreads:·gc.churn.G1_Survivor_Space                8      64  avgt    5         0.030 ±       0.031  MB/sec
+BenchmarkThreads.testThreads:·gc.churn.G1_Survivor_Space.norm           8      64  avgt    5        30.164 ±      33.912    B/op
+BenchmarkThreads.testThreads:·gc.count                                  8      64  avgt    5       608.000                counts
+BenchmarkThreads.testThreads:·gc.time                                   8      64  avgt    5       622.000                    ms
+BenchmarkThreads.testThreads:·stack                                     8      64  avgt                NaN                   ---
+BenchmarkThreads.testThreads                                            8     128  avgt    5         1.718 ±       0.369   ms/op
+BenchmarkThreads.testThreads:·gc.alloc.rate                             8     128  avgt    5        81.469 ±      16.257  MB/sec
+BenchmarkThreads.testThreads:·gc.alloc.rate.norm                        8     128  avgt    5    153933.548 ±      32.993    B/op
+BenchmarkThreads.testThreads:·gc.churn.G1_Eden_Space                    8     128  avgt    5      5470.485 ±     774.332  MB/sec
+BenchmarkThreads.testThreads:·gc.churn.G1_Eden_Space.norm               8     128  avgt    5  10343891.195 ±  810112.896    B/op
+BenchmarkThreads.testThreads:·gc.churn.G1_Survivor_Space                8     128  avgt    5         0.053 ±       0.086  MB/sec
+BenchmarkThreads.testThreads:·gc.churn.G1_Survivor_Space.norm           8     128  avgt    5       101.258 ±     183.287    B/op
+BenchmarkThreads.testThreads:·gc.count                                  8     128  avgt    5       383.000                counts
+BenchmarkThreads.testThreads:·gc.time                                   8     128  avgt    5       495.000                    ms
+BenchmarkThreads.testThreads:·stack                                     8     128  avgt                NaN                   ---
+BenchmarkThreads.testThreads                                            8     256  avgt    5         5.503 ±       0.238   ms/op
+BenchmarkThreads.testThreads:·gc.alloc.rate                             8     256  avgt    5        93.128 ±       4.071  MB/sec
+BenchmarkThreads.testThreads:·gc.alloc.rate.norm                        8     256  avgt    5    564314.333 ±      72.041    B/op
+BenchmarkThreads.testThreads:·gc.churn.G1_Eden_Space                    8     256  avgt    5      1246.991 ±     123.372  MB/sec
+BenchmarkThreads.testThreads:·gc.churn.G1_Eden_Space.norm               8     256  avgt    5   7556239.811 ±  674064.639    B/op
+BenchmarkThreads.testThreads:·gc.churn.G1_Survivor_Space                8     256  avgt    5         0.253 ±       0.278  MB/sec
+BenchmarkThreads.testThreads:·gc.churn.G1_Survivor_Space.norm           8     256  avgt    5      1532.482 ±    1679.390    B/op
+BenchmarkThreads.testThreads:·gc.count                                  8     256  avgt    5       222.000                counts
+BenchmarkThreads.testThreads:·gc.time                                   8     256  avgt    5       328.000                    ms
+BenchmarkThreads.testThreads:·stack                                     8     256  avgt                NaN                   ---
+BenchmarkThreads.testThreads                                            8     512  avgt    5        39.384 ±      48.556   ms/op
+BenchmarkThreads.testThreads:·gc.alloc.rate                             8     512  avgt    5        53.236 ±      48.296  MB/sec
+BenchmarkThreads.testThreads:·gc.alloc.rate.norm                        8     512  avgt    5   2171237.506 ±     146.962    B/op
+BenchmarkThreads.testThreads:·gc.churn.G1_Eden_Space                    8     512  avgt    5       235.377 ±     222.805  MB/sec
+BenchmarkThreads.testThreads:·gc.churn.G1_Eden_Space.norm               8     512  avgt    5   9582742.658 ±  880409.887    B/op
+BenchmarkThreads.testThreads:·gc.churn.G1_Survivor_Space                8     512  avgt    5         0.057 ±       0.251  MB/sec
+BenchmarkThreads.testThreads:·gc.churn.G1_Survivor_Space.norm           8     512  avgt    5      2215.007 ±    9717.465    B/op
+BenchmarkThreads.testThreads:·gc.count                                  8     512  avgt    5        42.000                counts
+BenchmarkThreads.testThreads:·gc.time                                   8     512  avgt    5        91.000                    ms
+BenchmarkThreads.testThreads:·stack                                     8     512  avgt                NaN                   ---
+BenchmarkThreads.testThreads                                           16      64  avgt    5         1.804 ±       0.744   ms/op
+BenchmarkThreads.testThreads:·gc.alloc.rate                            16      64  avgt    5        26.308 ±       9.484  MB/sec
+BenchmarkThreads.testThreads:·gc.alloc.rate.norm                       16      64  avgt    5     51869.819 ±      48.358    B/op
+BenchmarkThreads.testThreads:·gc.churn.G1_Eden_Space                   16      64  avgt    5      9158.761 ±    3473.857  MB/sec
+BenchmarkThreads.testThreads:·gc.churn.G1_Eden_Space.norm              16      64  avgt    5  18055271.113 ± 1751325.387    B/op
+BenchmarkThreads.testThreads:·gc.churn.G1_Survivor_Space               16      64  avgt    5         0.034 ±       0.031  MB/sec
+BenchmarkThreads.testThreads:·gc.churn.G1_Survivor_Space.norm          16      64  avgt    5        67.168 ±      48.402    B/op
+BenchmarkThreads.testThreads:·gc.count                                 16      64  avgt    5       658.000                counts
+BenchmarkThreads.testThreads:·gc.time                                  16      64  avgt    5       698.000                    ms
+BenchmarkThreads.testThreads:·stack                                    16      64  avgt                NaN                   ---
+BenchmarkThreads.testThreads                                           16     128  avgt    5         2.656 ±       0.226   ms/op
+BenchmarkThreads.testThreads:·gc.alloc.rate                            16     128  avgt    5        54.242 ±       4.715  MB/sec
+BenchmarkThreads.testThreads:·gc.alloc.rate.norm                       16     128  avgt    5    158644.187 ±     118.717    B/op
+BenchmarkThreads.testThreads:·gc.churn.G1_Eden_Space                   16     128  avgt    5      5596.915 ±    1396.071  MB/sec
+BenchmarkThreads.testThreads:·gc.churn.G1_Eden_Space.norm              16     128  avgt    5  16368598.495 ± 3786149.798    B/op
+BenchmarkThreads.testThreads:·gc.churn.G1_Survivor_Space               16     128  avgt    5         0.066 ±       0.069  MB/sec
+BenchmarkThreads.testThreads:·gc.churn.G1_Survivor_Space.norm          16     128  avgt    5       191.815 ±     191.395    B/op
+BenchmarkThreads.testThreads:·gc.count                                 16     128  avgt    5       463.000                counts
+BenchmarkThreads.testThreads:·gc.time                                  16     128  avgt    5       567.000                    ms
+BenchmarkThreads.testThreads:·stack                                    16     128  avgt                NaN                   ---
+BenchmarkThreads.testThreads                                           16     256  avgt    5         6.531 ±       0.548   ms/op
+BenchmarkThreads.testThreads:·gc.alloc.rate                            16     256  avgt    5        79.138 ±       6.522  MB/sec
+BenchmarkThreads.testThreads:·gc.alloc.rate.norm                       16     256  avgt    5    569078.239 ±     167.846    B/op
+BenchmarkThreads.testThreads:·gc.churn.G1_Eden_Space                   16     256  avgt    5      1569.061 ±     279.226  MB/sec
+BenchmarkThreads.testThreads:·gc.churn.G1_Eden_Space.norm              16     256  avgt    5  11286283.438 ± 2090143.883    B/op
+BenchmarkThreads.testThreads:·gc.churn.G1_Survivor_Space               16     256  avgt    5         0.234 ±       0.186  MB/sec
+BenchmarkThreads.testThreads:·gc.churn.G1_Survivor_Space.norm          16     256  avgt    5      1681.971 ±    1366.875    B/op
+BenchmarkThreads.testThreads:·gc.count                                 16     256  avgt    5       279.000                counts
+BenchmarkThreads.testThreads:·gc.time                                  16     256  avgt    5       371.000                    ms
+BenchmarkThreads.testThreads:·stack                                    16     256  avgt                NaN                   ---
+BenchmarkThreads.testThreads                                           16     512  avgt    5        38.648 ±       1.447   ms/op
+BenchmarkThreads.testThreads:·gc.alloc.rate                            16     512  avgt    5        51.128 ±       1.906  MB/sec
+BenchmarkThreads.testThreads:·gc.alloc.rate.norm                       16     512  avgt    5   2176033.601 ±     559.563    B/op
+BenchmarkThreads.testThreads:·gc.churn.G1_Eden_Space                   16     512  avgt    5       314.192 ±     160.394  MB/sec
+BenchmarkThreads.testThreads:·gc.churn.G1_Eden_Space.norm              16     512  avgt    5  13372376.060 ± 6808139.580    B/op
+BenchmarkThreads.testThreads:·gc.churn.G1_Survivor_Space               16     512  avgt    5         0.202 ±       0.594  MB/sec
+BenchmarkThreads.testThreads:·gc.churn.G1_Survivor_Space.norm          16     512  avgt    5      8576.539 ±   25131.355    B/op
+BenchmarkThreads.testThreads:·gc.count                                 16     512  avgt    5        56.000                counts
+BenchmarkThreads.testThreads:·gc.time                                  16     512  avgt    5       155.000                    ms
+BenchmarkThreads.testThreads:·stack                                    16     512  avgt                NaN                   ---
+BenchmarkThreads.testThreads                                           24      64  avgt    5         2.772 ±       0.380   ms/op
+BenchmarkThreads.testThreads:·gc.alloc.rate                            24      64  avgt    5        18.463 ±       2.444  MB/sec
+BenchmarkThreads.testThreads:·gc.alloc.rate.norm                       24      64  avgt    5     56315.065 ±     145.838    B/op
+BenchmarkThreads.testThreads:·gc.churn.G1_Eden_Space                   24      64  avgt    5      6391.074 ±    1594.446  MB/sec
+BenchmarkThreads.testThreads:·gc.churn.G1_Eden_Space.norm              24      64  avgt    5  19504147.104 ± 4884885.114    B/op
+BenchmarkThreads.testThreads:·gc.churn.G1_Survivor_Space               24      64  avgt    5         0.024 ±       0.013  MB/sec
+BenchmarkThreads.testThreads:·gc.churn.G1_Survivor_Space.norm          24      64  avgt    5        73.421 ±      38.842    B/op
+BenchmarkThreads.testThreads:·gc.count                                 24      64  avgt    5       503.000                counts
+BenchmarkThreads.testThreads:·gc.time                                  24      64  avgt    5       569.000                    ms
+BenchmarkThreads.testThreads:·stack                                    24      64  avgt                NaN                   ---
+BenchmarkThreads.testThreads                                           24     128  avgt    5         4.111 ±       3.272   ms/op
+BenchmarkThreads.testThreads:·gc.alloc.rate                            24     128  avgt    5        37.086 ±      24.954  MB/sec
+BenchmarkThreads.testThreads:·gc.alloc.rate.norm                       24     128  avgt    5    163108.249 ±     136.523    B/op
+BenchmarkThreads.testThreads:·gc.churn.G1_Eden_Space                   24     128  avgt    5      5200.960 ±    3009.759  MB/sec
+BenchmarkThreads.testThreads:·gc.churn.G1_Eden_Space.norm              24     128  avgt    5  22995295.570 ± 4978454.907    B/op
+BenchmarkThreads.testThreads:·gc.churn.G1_Survivor_Space               24     128  avgt    5         0.047 ±       0.070  MB/sec
+BenchmarkThreads.testThreads:·gc.churn.G1_Survivor_Space.norm          24     128  avgt    5       206.993 ±     281.309    B/op
+BenchmarkThreads.testThreads:·gc.count                                 24     128  avgt    5       337.000                counts
+BenchmarkThreads.testThreads:·gc.time                                  24     128  avgt    5       484.000                    ms
+BenchmarkThreads.testThreads:·stack                                    24     128  avgt                NaN                   ---
+BenchmarkThreads.testThreads                                           24     256  avgt    5         7.826 ±       1.478   ms/op
+BenchmarkThreads.testThreads:·gc.alloc.rate                            24     256  avgt    5        66.629 ±      11.853  MB/sec
+BenchmarkThreads.testThreads:·gc.alloc.rate.norm                       24     256  avgt    5    573382.414 ±     256.980    B/op
+BenchmarkThreads.testThreads:·gc.churn.G1_Eden_Space                   24     256  avgt    5      2189.630 ±     769.188  MB/sec
+BenchmarkThreads.testThreads:·gc.churn.G1_Eden_Space.norm              24     256  avgt    5  18855003.541 ± 6234981.898    B/op
+BenchmarkThreads.testThreads:·gc.churn.G1_Survivor_Space               24     256  avgt    5         0.078 ±       0.079  MB/sec
+BenchmarkThreads.testThreads:·gc.churn.G1_Survivor_Space.norm          24     256  avgt    5       671.867 ±     635.751    B/op
+BenchmarkThreads.testThreads:·gc.count                                 24     256  avgt    5       215.000                counts
+BenchmarkThreads.testThreads:·gc.time                                  24     256  avgt    5       326.000                    ms
+BenchmarkThreads.testThreads:·stack                                    24     256  avgt                NaN                   ---
+BenchmarkThreads.testThreads                                           24     512  avgt    5        49.700 ±      13.666   ms/op
+BenchmarkThreads.testThreads:·gc.alloc.rate                            24     512  avgt    5        39.995 ±      11.290  MB/sec
+BenchmarkThreads.testThreads:·gc.alloc.rate.norm                       24     512  avgt    5   2180574.466 ±     504.749    B/op
+BenchmarkThreads.testThreads:·gc.churn.G1_Eden_Space                   24     512  avgt    5       285.272 ±      49.465  MB/sec
+BenchmarkThreads.testThreads:·gc.churn.G1_Eden_Space.norm              24     512  avgt    5  15604285.567 ± 4063377.452    B/op
+BenchmarkThreads.testThreads:·gc.churn.G1_Survivor_Space               24     512  avgt    5         0.210 ±       0.463  MB/sec
+BenchmarkThreads.testThreads:·gc.churn.G1_Survivor_Space.norm          24     512  avgt    5     11613.691 ±   26946.671    B/op
+BenchmarkThreads.testThreads:·gc.count                                 24     512  avgt    5        51.000                counts
+BenchmarkThreads.testThreads:·gc.time                                  24     512  avgt    5       141.000                    ms
+BenchmarkThreads.testThreads:·stack                                    24     512  avgt                NaN                   ---
