@@ -1,0 +1,185 @@
+# JMH version: 1.35
+# VM version: JDK 21.0.2, OpenJDK 64-Bit Server VM, 21.0.2+13-58
+# VM invoker: C:\Program Files\Java\OpenJDK-21\bin\java.exe
+# VM options: -javaagent:C:\Users\Radka\AppData\Local\JetBrains\IntelliJ IDEA 2024.2.3\lib\idea_rt.jar=61861:C:\Users\Radka\AppData\Local\JetBrains\IntelliJ IDEA 2024.2.3\bin -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.ulpgc.DistributedMatrixMultiplication.testDistributedMatrixMultiplication
+# Parameters: (size = 100)
+
+# Run progress: 0.00% complete, ETA 00:08:20
+# Fork: 1 of 1
+# Warmup Iteration   1: 152.871 ms/op
+# Warmup Iteration   2: 63.132 ms/op
+# Warmup Iteration   3: 58.459 ms/op
+# Warmup Iteration   4: 57.754 ms/op
+# Warmup Iteration   5: 55.838 ms/op
+Iteration   1: 58.249 ms/op
+Iteration   2: 55.253 ms/op
+Iteration   3: 55.778 ms/op
+Iteration   4: 56.330 ms/op
+Iteration   5: 55.836 ms/op
+
+
+Result "org.ulpgc.DistributedMatrixMultiplication.testDistributedMatrixMultiplication":
+  56.289 ±(99.9%) 4.467 ms/op [Average]
+  (min, avg, max) = (55.253, 56.289, 58.249), stdev = 1.160
+  CI (99.9%): [51.822, 60.757] (assumes normal distribution)
+
+
+# JMH version: 1.35
+# VM version: JDK 21.0.2, OpenJDK 64-Bit Server VM, 21.0.2+13-58
+# VM invoker: C:\Program Files\Java\OpenJDK-21\bin\java.exe
+# VM options: -javaagent:C:\Users\Radka\AppData\Local\JetBrains\IntelliJ IDEA 2024.2.3\lib\idea_rt.jar=61861:C:\Users\Radka\AppData\Local\JetBrains\IntelliJ IDEA 2024.2.3\bin -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.ulpgc.DistributedMatrixMultiplication.testDistributedMatrixMultiplication
+# Parameters: (size = 200)
+
+# Run progress: 20.00% complete, ETA 00:07:03
+# Fork: 1 of 1
+# Warmup Iteration   1: 605.401 ms/op
+# Warmup Iteration   2: 289.670 ms/op
+# Warmup Iteration   3: 261.670 ms/op
+# Warmup Iteration   4: 251.802 ms/op
+# Warmup Iteration   5: 263.352 ms/op
+Iteration   1: 250.458 ms/op
+Iteration   2: 252.513 ms/op
+Iteration   3: 245.722 ms/op
+Iteration   4: 252.206 ms/op
+Iteration   5: 252.355 ms/op
+
+
+Result "org.ulpgc.DistributedMatrixMultiplication.testDistributedMatrixMultiplication":
+  250.651 ±(99.9%) 11.080 ms/op [Average]
+  (min, avg, max) = (245.722, 250.651, 252.513), stdev = 2.877
+  CI (99.9%): [239.571, 261.731] (assumes normal distribution)
+
+
+# JMH version: 1.35
+# VM version: JDK 21.0.2, OpenJDK 64-Bit Server VM, 21.0.2+13-58
+# VM invoker: C:\Program Files\Java\OpenJDK-21\bin\java.exe
+# VM options: -javaagent:C:\Users\Radka\AppData\Local\JetBrains\IntelliJ IDEA 2024.2.3\lib\idea_rt.jar=61861:C:\Users\Radka\AppData\Local\JetBrains\IntelliJ IDEA 2024.2.3\bin -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.ulpgc.DistributedMatrixMultiplication.testDistributedMatrixMultiplication
+# Parameters: (size = 300)
+
+# Run progress: 40.00% complete, ETA 00:05:18
+# Fork: 1 of 1
+# Warmup Iteration   1: 1304.541 ms/op
+# Warmup Iteration   2: 827.767 ms/op
+# Warmup Iteration   3: 775.544 ms/op
+# Warmup Iteration   4: 733.573 ms/op
+# Warmup Iteration   5: 694.805 ms/op
+Iteration   1: 1148.686 ms/op
+Iteration   2: 858.620 ms/op
+Iteration   3: 1041.478 ms/op
+Iteration   4: 733.584 ms/op
+Iteration   5: 732.800 ms/op
+
+
+Result "org.ulpgc.DistributedMatrixMultiplication.testDistributedMatrixMultiplication":
+  903.034 ±(99.9%) 718.270 ms/op [Average]
+  (min, avg, max) = (732.800, 903.034, 1148.686), stdev = 186.532
+  CI (99.9%): [184.764, 1621.304] (assumes normal distribution)
+
+
+# JMH version: 1.35
+# VM version: JDK 21.0.2, OpenJDK 64-Bit Server VM, 21.0.2+13-58
+# VM invoker: C:\Program Files\Java\OpenJDK-21\bin\java.exe
+# VM options: -javaagent:C:\Users\Radka\AppData\Local\JetBrains\IntelliJ IDEA 2024.2.3\lib\idea_rt.jar=61861:C:\Users\Radka\AppData\Local\JetBrains\IntelliJ IDEA 2024.2.3\bin -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.ulpgc.DistributedMatrixMultiplication.testDistributedMatrixMultiplication
+# Parameters: (size = 400)
+
+# Run progress: 60.00% complete, ETA 00:03:33
+# Fork: 1 of 1
+# Warmup Iteration   1: 4041.949 ms/op
+# Warmup Iteration   2: 2687.728 ms/op
+# Warmup Iteration   3: 2718.892 ms/op
+# Warmup Iteration   4: 3194.307 ms/op
+# Warmup Iteration   5: 2889.304 ms/op
+Iteration   1: 2877.430 ms/op
+Iteration   2: 2704.338 ms/op
+Iteration   3: 2133.847 ms/op
+Iteration   4: 2182.799 ms/op
+Iteration   5: 2114.028 ms/op
+
+
+Result "org.ulpgc.DistributedMatrixMultiplication.testDistributedMatrixMultiplication":
+  2402.488 ±(99.9%) 1388.802 ms/op [Average]
+  (min, avg, max) = (2114.028, 2402.488, 2877.430), stdev = 360.668
+  CI (99.9%): [1013.686, 3791.291] (assumes normal distribution)
+
+
+# JMH version: 1.35
+# VM version: JDK 21.0.2, OpenJDK 64-Bit Server VM, 21.0.2+13-58
+# VM invoker: C:\Program Files\Java\OpenJDK-21\bin\java.exe
+# VM options: -javaagent:C:\Users\Radka\AppData\Local\JetBrains\IntelliJ IDEA 2024.2.3\lib\idea_rt.jar=61861:C:\Users\Radka\AppData\Local\JetBrains\IntelliJ IDEA 2024.2.3\bin -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.ulpgc.DistributedMatrixMultiplication.testDistributedMatrixMultiplication
+# Parameters: (size = 500)
+
+# Run progress: 80.00% complete, ETA 00:01:49
+# Fork: 1 of 1
+# Warmup Iteration   1: 8106.487 ms/op
+# Warmup Iteration   2: 5353.257 ms/op
+# Warmup Iteration   3: 5146.815 ms/op
+# Warmup Iteration   4: 5166.889 ms/op
+# Warmup Iteration   5: 5361.780 ms/op
+Iteration   1: 5417.630 ms/op
+Iteration   2: 5155.836 ms/op
+Iteration   3: 5174.894 ms/op
+Iteration   4: 5076.157 ms/op
+Iteration   5: 5319.955 ms/op
+
+
+Result "org.ulpgc.DistributedMatrixMultiplication.testDistributedMatrixMultiplication":
+  5228.895 ±(99.9%) 529.009 ms/op [Average]
+  (min, avg, max) = (5076.157, 5228.895, 5417.630), stdev = 137.382
+  CI (99.9%): [4699.885, 5757.904] (assumes normal distribution)
+
+
+# Run complete. Total time: 00:09:15
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+NOTE: Current JVM experimentally supports Compiler Blackholes, and they are in use. Please exercise
+extra caution when trusting the results, look into the generated code to check the benchmark still
+works, and factor in a small probability of new VM bugs. Additionally, while comparisons between
+different JVMs are already problematic, the performance difference caused by different Blackhole
+modes can be very significant. Please make sure you use the consistent Blackhole mode for comparisons.
+
+Benchmark                                                            (size)  Mode  Cnt     Score      Error  Units
+DistributedMatrixMultiplication.testDistributedMatrixMultiplication     100  avgt    5    56.289 ±    4.467  ms/op
+DistributedMatrixMultiplication.testDistributedMatrixMultiplication     200  avgt    5   250.651 ±   11.080  ms/op
+DistributedMatrixMultiplication.testDistributedMatrixMultiplication     300  avgt    5   903.034 ±  718.270  ms/op
+DistributedMatrixMultiplication.testDistributedMatrixMultiplication     400  avgt    5  2402.488 ± 1388.802  ms/op
+DistributedMatrixMultiplication.testDistributedMatrixMultiplication     500  avgt    5  5228.895 ±  529.009  ms/op
